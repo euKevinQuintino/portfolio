@@ -2,6 +2,8 @@ $main: #2f4f4f;
 
 html {
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -28,13 +30,15 @@ body {
 }*/
 
 .above-the-fold {
-    max-width: 1140px;
+    max-width: 1200px;
     margin: 0 auto;
     height: 100vh;
 
     &__top {
         height: 20%;
-        padding-top: 3%;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
 
         img {
             width: 48px;
@@ -73,6 +77,7 @@ body {
         font-size: 3.6em;
         text-align: center;
         line-height: 1.1em;
+        padding: 30px;
         padding-top: 20vh;
         color: $main;
     }
@@ -105,8 +110,9 @@ body {
     }
 
     &__resume {
-        max-width: 854px;
-        margin: 356px auto;
+        max-width: 960px;
+        margin: 0px auto;
+        padding: 30px;
         padding-top: 96px;
 
         h1 {
@@ -127,17 +133,13 @@ body {
     }
 
     &__summary {
-        display: flex;
-        margin: -256px auto;
-        justify-content: center;
-        align-content: center;
+        margin: 64px auto;
         margin-bottom: 32px;
         text-align: center;
 
         h1 {
             font-size: 2.4em;
             font-weight: 700;
-            margin-top: 36px;
             margin-bottom: 20px;
             color: $main;
         }
@@ -156,17 +158,22 @@ body {
             color: $main;
         }
 
+        &__row {
+            margin: auto;
+            align-content: center;
+            justify-content: center;
+            max-width: 1200px;
+        }
+
         &__left-column {
-            height: 720px;
-            border-top-left-radius: 24px;
-            border-bottom-left-radius: 24px;
+            border-top-left-radius: 16px;
+            border-bottom-left-radius: 16px;
             border: 1px solid $main;
             background-color: #fff;
             padding: 24px;
         }
 
         &__middle-column {
-            height: 720px;
             border-bottom: 1px solid $main;
             border-top: 1px solid $main;
             background-color: #fff;
@@ -174,9 +181,8 @@ body {
         }
 
         &__right-column {
-            height: 720px;
-            border-top-right-radius: 24px;
-            border-bottom-right-radius: 24px;
+            border-top-right-radius: 16px;
+            border-bottom-right-radius: 16px;
             border: 1px solid $main;
             background-color: #fff;
             padding: 24px;
@@ -193,6 +199,7 @@ body {
         width: 256px;
         height: 240px;
         margin: auto;
+        text-align: center;
 
         p {
             width: 100%;
@@ -226,8 +233,119 @@ body {
     &__message {
         width: 100%;
         text-align: center;
-        color: rgba(255,255,255,0.88);
+        color: rgba(255, 255, 255, 0.88);
         font-size: 14px;
         margin-top: 64px;
+    }
+}
+
+//BEGIN BOOTSTRAP
+.modal-title {
+    color: $main;
+    font-weight: 700;
+}
+
+.modal-body {
+    label {
+        font-size: 1.2em;
+    }
+}
+
+.modal-primary-button {
+    width: 160px;
+    height: 48px;
+    border: solid 2px $main;
+    background-color: $main;
+    color: #fff;
+    transition: 0.2s;
+    border-radius: 36px;
+    font-size: 1.6em;
+    font-weight: 700;
+
+    &:hover {
+        background-color: darken($main, 3%);
+        border-color: darken($main, 3%);
+        cursor: pointer;
+    }
+}
+
+.modal-secondary-button {
+    width: 160px;
+    height: 48px;
+    border: solid 2px $main;
+    border-radius: 36px;
+    background-color: #fff;
+    transition: 0.2s;
+    font-size: 1.6em;
+    font-weight: 700;
+    color: $main;
+
+    &:hover {
+        background-color: $main;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    border-color: rgba(47, 79, 79, 0.8);
+    box-shadow: 0 1px 1px rgba(47, 79, 79, 0.075) inset, 0 0 8px rgba(47, 79, 79, 0.6);
+    outline: 0 none;
+}
+
+//END BOOTSTRAP
+@media (max-width: 767px) {
+    .under-the-fold {
+
+        &__resume {
+            padding-top: 64px;
+
+            h1 {
+                line-height: 1.5em;
+            }
+        }
+        &__bar {
+            height: 960px;
+        }
+
+        &__summary {
+            margin-top: 32px;
+
+            &__left-column {
+                border: 1px solid $main;
+                border-top-left-radius: 16px;
+                border-top-right-radius: 16px;
+                border-bottom-left-radius: 0;
+                margin-bottom: -1px;
+            }
+
+            &__middle-column {
+                border: 1px solid $main;
+                margin-bottom: -1px;
+            }
+
+            &__right-column {
+                border: 1px solid $main;
+                border-bottom-left-radius: 16px;
+                border-bottom-right-radius: 16px;
+                border-top-right-radius: 0;
+                margin-bottom: 32px;
+            }
+        }
     }
 }
