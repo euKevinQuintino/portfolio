@@ -107,13 +107,14 @@ body {
     &__resume {
         max-width: 854px;
         margin: 356px auto;
-        padding-top: 112px;
+        padding-top: 96px;
 
         h1 {
             font-size: 2.8em;
             color: #fff;
             text-align: center;
             line-height: 2.8em;
+            font-weight: 700;
         }
 
         p {
@@ -121,12 +122,13 @@ body {
             color: #fff;
             text-align: center;
             line-height: 1.5em;
+            font-weight: 300;
         }
     }
 
     &__summary {
         display: flex;
-        margin: -220px auto;
+        margin: -256px auto;
         justify-content: center;
         align-content: center;
         margin-bottom: 32px;
@@ -144,7 +146,7 @@ body {
             font-size: 2em;
             font-weight: 700;
             color: $main;
-            margin: 20px;
+            margin-top: 20px;
         }
 
         p {
@@ -156,10 +158,11 @@ body {
 
         &__left-column {
             height: 720px;
-            border-top-left-radius: 16px;
-            border-bottom-left-radius: 16px;
+            border-top-left-radius: 24px;
+            border-bottom-left-radius: 24px;
             border: 1px solid $main;
             background-color: #fff;
+            padding: 24px;
         }
 
         &__middle-column {
@@ -167,14 +170,64 @@ body {
             border-bottom: 1px solid $main;
             border-top: 1px solid $main;
             background-color: #fff;
+            padding: 24px;
         }
 
         &__right-column {
             height: 720px;
-            border-top-right-radius: 16px;
-            border-bottom-right-radius: 16px;
+            border-top-right-radius: 24px;
+            border-bottom-right-radius: 24px;
             border: 1px solid $main;
             background-color: #fff;
+            padding: 24px;
         }
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 480px;
+    background-color: $main;
+
+    &__social-media {
+        width: 256px;
+        height: 240px;
+        margin: auto;
+
+        p {
+            width: 100%;
+            text-align: center;
+            padding-top: 160px;
+            margin-bottom: -80px;
+            font-size: 2em;
+            color: #fff;
+        }
+
+        &__icon {
+            width: 48px;
+            height: 48px;
+            border: 1px solid rgba(255, 255, 255, 0.69);
+            padding: 13.5px;
+            border-radius: 50%;
+            margin: 108px 8px;
+
+            &:hover {
+                border-color: rgba(255, 255, 255, 1);
+                cursor: pointer;
+                transition: 0.2s;
+            }
+        }
+
+        i {
+            color: #fff !important;
+        }
+    }
+
+    &__message {
+        width: 100%;
+        text-align: center;
+        color: rgba(255,255,255,0.88);
+        font-size: 14px;
+        margin-top: 64px;
     }
 }
