@@ -16,7 +16,7 @@ function backToTop() {
 }
 
 var scrollDown = function() {
-    if (window.scrollY >= 260) {
+    if (window.scrollY >= 200) {
         document.querySelector(".back-to-top").style.display = 'block'
     } else {
         document.querySelector(".back-to-top").style.display = 'none'
