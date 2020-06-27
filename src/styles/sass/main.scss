@@ -128,7 +128,7 @@ body {
 
     &__summary {
         margin: 64px auto;
-        margin-bottom: 32px;
+        margin-bottom: 144px;
         text-align: center;
 
         h1 {
@@ -157,29 +157,79 @@ body {
             align-content: center;
             justify-content: center;
             max-width: 1200px;
-        }
 
-        &__left-column {
-            border-top-left-radius: 16px;
-            border-bottom-left-radius: 16px;
-            border: 1px solid $main;
-            background-color: #fff;
-            padding: 24px;
-        }
+            &__left-column {
+                border-top-left-radius: 16px;
+                border-bottom-left-radius: 16px;
+                border: 1px solid $main;
+                background-color: #fff;
+                padding: 24px;
+            }
 
-        &__middle-column {
-            border-bottom: 1px solid $main;
-            border-top: 1px solid $main;
-            background-color: #fff;
-            padding: 24px;
-        }
+            &__middle-column {
+                border-bottom: 1px solid $main;
+                border-top: 1px solid $main;
+                background-color: #fff;
+                padding: 24px;
+            }
 
-        &__right-column {
-            border-top-right-radius: 16px;
-            border-bottom-right-radius: 16px;
-            border: 1px solid $main;
-            background-color: #fff;
-            padding: 24px;
+            &__right-column {
+                border-top-right-radius: 16px;
+                border-bottom-right-radius: 16px;
+                border: 1px solid $main;
+                background-color: #fff;
+                padding: 24px;
+            }
+        }
+    }
+
+    &__portfolio {
+        h1 {
+            margin-top: 64px;
+            text-align: center;
+            color: $main;
+        }
+        &__row {
+            margin: 104px auto;
+            margin-bottom: 144px;
+            align-content: center;
+            justify-content: center;
+            max-width: 1200px;
+
+            h3 {
+                text-align: center;
+                line-height: 208px;
+                color: $main;
+            }
+
+            &__left-column {
+                border-radius: 24px;
+                border: 1px solid $main;
+                background-color: #fff;
+                padding: 24px;
+                max-width: 380px;
+                height: 256px;
+            }
+
+            &__middle-column {
+                border-radius: 24px;
+                border: 1px solid $main;
+                background-color: #fff;
+                padding: 24px;
+                max-width: 380px;
+                height: 256px;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+
+            &__right-column {
+                border-radius: 24px;
+                border: 1px solid $main;
+                background-color: #fff;
+                padding: 24px;
+                max-width: 380px;
+                height: 256px;
+            }
         }
     }
 }
@@ -249,6 +299,10 @@ body {
         color: rgba(255, 255, 255, 0.88);
         font-size: 14px;
         margin-top: 64px;
+
+        i:hover {
+            color: rgba(255, 255, 255, 1);
+        }
     }
 }
 
@@ -308,20 +362,53 @@ body {
                 color: #000;
             }
 
-            &__left-column {
-                background-color: $inversed-main;
-                border-color: #000;
+            &__row {
 
+                &__left-column {
+                    background-color: $inversed-main;
+                    border-color: #000;
+
+                }
+
+                &__middle-column {
+                    background-color: $inversed-main;
+                    border-color: #000;
+                }
+
+                &__right-column {
+                    background-color: $inversed-main;
+                    border-color: #000;
+                }
             }
+        }
 
-            &__middle-column {
-                background-color: $inversed-main;
-                border-color: #000;
-            }
+        &__portfolio {
+            &__row {
+                margin: 80px auto;
+                align-content: center;
+                justify-content: center;
+                max-width: 1200px;
 
-            &__right-column {
-                background-color: $inversed-main;
-                border-color: #000;
+                h3 {
+                    text-align: center;
+                    line-height: 208px;
+                    color: $inversed-main;
+                }
+
+                &__left-column {
+                    border-color: $inversed-main;
+                    background-color: #000;
+                }
+
+                &__middle-column {
+                    border-color: $inversed-main;
+                    background-color: #000;
+                }
+
+                &__right-column {
+                    border-color: $inversed-main;
+                    background-color: #000;
+                }
             }
         }
     }
@@ -518,25 +605,27 @@ input[type="color"]:focus,
         &__summary {
             margin-top: 32px;
 
-            &__left-column {
-                border: 1px solid $main;
-                border-top-left-radius: 16px;
-                border-top-right-radius: 16px;
-                border-bottom-left-radius: 0;
-                margin-bottom: -1px;
-            }
+            &__row {
+                &__left-column {
+                    border: 1px solid $main;
+                    border-top-left-radius: 16px;
+                    border-top-right-radius: 16px;
+                    border-bottom-left-radius: 0;
+                    margin-bottom: -1px;
+                }
 
-            &__middle-column {
-                border: 1px solid $main;
-                margin-bottom: -1px;
-            }
+                &__middle-column {
+                    border: 1px solid $main;
+                    margin-bottom: -1px;
+                }
 
-            &__right-column {
-                border: 1px solid $main;
-                border-bottom-left-radius: 16px;
-                border-bottom-right-radius: 16px;
-                border-top-right-radius: 0;
-                margin-bottom: 32px;
+                &__right-column {
+                    border: 1px solid $main;
+                    border-bottom-left-radius: 16px;
+                    border-bottom-right-radius: 16px;
+                    border-top-right-radius: 0;
+                    margin-bottom: 32px;
+                }
             }
         }
     }

@@ -25,7 +25,7 @@ html(lang="pt-br")
         p Além de projetar e desenvolver, também conheço e aplico boas práticas de SEO e produção/criação de conteúdo e marketing digital.
       .container-lg.col-md-12.under-the-fold__summary
         .row.under-the-fold__summary__row
-          .col-md-4.under-the-fold__summary__left-column
+          .col-md-4.under-the-fold__summary__row__left-column
             h1 Desenvolvedor front-end
             p Desenvolver sites otimizados, acessíveis e responsivos é uma tarefa que me traz muito prazer e satisfação.
             h2 Tecnologias que eu uso
@@ -38,7 +38,7 @@ html(lang="pt-br")
             p WordPress
             p Bootstrap
             p Git
-          .col-md-4.under-the-fold__summary__middle-column
+          .col-md-4.under-the-fold__summary__row__middle-column
             h1 Designer de UX/UI
             p Quando designer, meu foco é projetar interfaces que proporcionem uma boa experiência aos seus usuários.
             h2 Ferramentas que utilizo
@@ -47,7 +47,7 @@ html(lang="pt-br")
             p Adobe Illustrator
             p Adobe XD
             p InVision App
-          .col-md-4.under-the-fold__summary__right-column
+          .col-md-4.under-the-fold__summary__row__right-column
             h1 Criador de conteúdo
             p Saber produzir conteúdo para a web é essencial, utilizando o marketing digital e boas técnicas de SEO.
             h2 O que eu levo em consideração
@@ -58,6 +58,18 @@ html(lang="pt-br")
             p Persuação ao engajamento
             p Criação de comunidade
             p Público-alvo
+      hr
+      br
+      .container-lg.col-md-12.under-the-fold__portfolio
+        h1 O que eu já fiz
+        .row.under-the-fold__portfolio__row
+          .col-md-4.under-the-fold__portfolio__row__left-column
+            h3 Desenvolvimento front-end
+          .col-md-4.under-the-fold__portfolio__row__middle-column
+            h3 UX/UI design
+          .col-md-4.under-the-fold__portfolio__row__right-column
+            h3 Marketing Digital
+            
     //Modal
     #exampleModalCenter.modal.fade(tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true")
       .modal-dialog.modal-dialog-centered(role="document")
@@ -82,7 +94,7 @@ html(lang="pt-br")
           .modal-footer
             input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar formulário")  
             input.modal-primary-button(type="submit" value="Enviar mensagem")
-
+    
     .back-to-top(onclick="backToTop()")
       i.fas.fa-chevron-up.fa-4x
 
