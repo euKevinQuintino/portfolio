@@ -8,7 +8,7 @@ html(lang="pt-br")
     section#sectionOne.above-the-fold
       header.above-the-fold__top
         img(src="img/logomark.svg" onclick="toHome()" alt="logomarca")
-        //input(type="button" data-toggle="modal" data-target="#exampleModalCenter" value="Diga um oi")
+        //input(type="button" data-toggle="modal" data-target="#contactModal" value="Diga um oi")
       .above-the-fold__message
         p Oi, eu sou o #[strong Kevin]. Eu projeto e desenvolvo
         p { interfaces de usuário }
@@ -27,74 +27,116 @@ html(lang="pt-br")
         .row.under-the-fold__summary__row
           .col-md-4.under-the-fold__summary__row__left-column
             h1 Desenvolvedor front-end
+            hr
             p Desenvolver sites otimizados, acessíveis e responsivos é uma tarefa que me traz muito prazer e satisfação.
-            h2 Tecnologias que eu uso
-            p HTML
-            p CSS
-            p JS
-            p GulpJS
-            p SASS
-            p PugJS
-            p WordPress
-            p Bootstrap
-            p Git
+            input(type="button" value="Tecnologias que eu utilizo" data-toggle="modal" data-target="#developerTechnologies")
+            hr
+            button(data-toggle="modal" data-target="#developerModal")
+              i.fab.fa-dev.fa-2x 
+              | Projetos desenvolvidos
           .col-md-4.under-the-fold__summary__row__middle-column
             h1 Designer de UX/UI
+            hr
             p Quando designer, meu foco é projetar interfaces que proporcionem uma boa experiência aos seus usuários.
-            h2 Ferramentas que utilizo
-            p Lápis e papel
-            p Adobe Photoshop
-            p Adobe Illustrator
-            p Adobe XD
-            p InVision App
+            input(type="button" value="Ferramentas que utilizo" data-toggle="modal" data-target="#designerTools")
+            hr
+            button(data-toggle="modal" data-target="#designerModal")
+              i.fas.fa-pencil-ruler.fa-2x
+              | Designs projetados
           .col-md-4.under-the-fold__summary__row__right-column
             h1 Criador de conteúdo
+            hr
             p Saber produzir conteúdo para a web é essencial, utilizando o marketing digital e boas técnicas de SEO.
-            h2 O que eu levo em consideração
-            p Copywriting
-            p Técnicas de SEO
-            p Pertinência do tema
-            p Clareza e coesão
-            p Persuação ao engajamento
-            p Criação de comunidade
-            p Público-alvo
-      hr
-      br
-      .container-lg.col-md-12.under-the-fold__portfolio
-        h1 O que eu já fiz
-        .row.under-the-fold__portfolio__row
-          .col-md-4.under-the-fold__portfolio__row__left-column
-            h3 Desenvolvimento front-end
-          .col-md-4.under-the-fold__portfolio__row__middle-column
-            h3 UX/UI design
-          .col-md-4.under-the-fold__portfolio__row__right-column
-            h3 Marketing Digital
-            
-    //Modal
-    #exampleModalCenter.modal.fade(tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true")
-      .modal-dialog.modal-dialog-centered(role="document")
+            input(type="button" value="O que eu considero" data-toggle="modal" data-target="#contentCreatorMindset")
+            hr
+            button(data-toggle="modal" data-target="#contentCreatorModal")
+              i.fas.fa-bullhorn.fa-2x
+              | Meus feitos e princípios
+
+    //Modal developer technologies
+    #developerTechnologies.modal.fade(tabindex="-1" role="dialog" aria-labelledby="developerTechnologies" aria-hidden="true")
+      .modal-dialog.modal-dialog-centered.modal-dialog-scrollable(role="document")
         .modal-content
           .modal-header
-            h5#exampleModalLongTitle.modal-title Entre em contato comigo
+            h5#exampleModalLongTitle.modal-title Saiba quais tecnologias eu utilizo
             button.close(type="button" data-dismiss="modal" aria-label="Close")
               span(aria-hidden="true") x
           .modal-body
-            form
-              .row
-                .col
-                  label(for="first-name") Digite seu nome
-                  input#first-name.form-control(type="text" placeholder="Nome" name="name" required)
-              br
-              .form-group
-                label(for="exampleFormControlInput1") Digite seu e-mail
-                input#exampleFormControlInput1.form-control(type="email" name="mail" placeholder="nome@exemplo.com" required)
-              .form-group
-                label(for="exampleFormControlTextarea1") Mensagem
-                textarea#exampleFormControlTextarea1.form-control(rows="3" name="message" placeholder="Digite sua mensagem" required)
+
           .modal-footer
             input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar formulário")  
             input.modal-primary-button(type="submit" value="Enviar mensagem")
-    
+
+    //Modal designer tools
+    #designerTools.modal.fade(tabindex="-1" role="dialog" aria-labelledby="designerTools" aria-hidden="true")
+      .modal-dialog.modal-dialog-centered.modal-dialog-scrollable(role="document")
+        .modal-content
+          .modal-header
+            h5#exampleModalLongTitle.modal-title Saiba quais ferramentas eu utilizo
+            button.close(type="button" data-dismiss="modal" aria-label="Close")
+              span(aria-hidden="true") x
+          .modal-body
+
+          .modal-footer
+            input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar formulário")  
+            input.modal-primary-button(type="submit" value="Enviar mensagem")
+
+    //Modal content creator mindset
+    #contentCreatorMindset.modal.fade(tabindex="-1" role="dialog" aria-labelledby="contentCreatorMindset" aria-hidden="true")
+      .modal-dialog.modal-dialog-centered.modal-dialog-scrollable(role="document")
+        .modal-content
+          .modal-header
+            h5#exampleModalLongTitle.modal-title Saiba o que levo em consideração
+            button.close(type="button" data-dismiss="modal" aria-label="Close")
+              span(aria-hidden="true") x
+          .modal-body
+
+          .modal-footer
+            input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar formulário")  
+            input.modal-primary-button(type="submit" value="Enviar mensagem")
+
+    //Modal developer
+    #developerModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="developerModal" aria-hidden="true")
+      .modal-dialog.modal-dialog-centered.modal-dialog-scrollable(role="document")
+        .modal-content
+          .modal-header
+            h5#exampleModalLongTitle.modal-title Conheça o Kevin desenvolvedor
+            button.close(type="button" data-dismiss="modal" aria-label="Close")
+              span(aria-hidden="true") x
+          .modal-body
+
+          .modal-footer
+            input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar formulário")  
+            input.modal-primary-button(type="submit" value="Enviar mensagem")
+
+    //Modal designer
+    #designerModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="designerModal" aria-hidden="true")
+      .modal-dialog.modal-dialog-centered.modal-dialog-scrollable(role="document")
+        .modal-content
+          .modal-header
+            h5#exampleModalLongTitle.modal-title Conheça o Kevin designer
+            button.close(type="button" data-dismiss="modal" aria-label="Close")
+              span(aria-hidden="true") x
+          .modal-body
+
+          .modal-footer
+            input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar formulário")  
+            input.modal-primary-button(type="submit" value="Enviar mensagem")
+
+    //Modal content creator
+    #contentCreatorModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="contentCreatorModal" aria-hidden="true")
+      .modal-dialog.modal-dialog-centered.modal-dialog-scrollable(role="document")
+        .modal-content
+          .modal-header
+            h5#exampleModalLongTitle.modal-title Conheça o Kevin criador de conteúdo
+            button.close(type="button" data-dismiss="modal" aria-label="Close")
+              span(aria-hidden="true") x
+          .modal-body
+
+          .modal-footer
+            input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar formulário")  
+            input.modal-primary-button(type="submit" value="Enviar mensagem")
+
     .back-to-top(onclick="backToTop()")
       i.fas.fa-chevron-up.fa-4x
 
@@ -112,4 +154,3 @@ html(lang="pt-br")
             i.footer__social-media__icon(data-toggle="tooltip" title="Confira meu GitHub").fab.fa-github.fa-2x
       .footer__message
         p Feito com #[i.fas.fa-heart(data-toggle="tooltip" title="amor" class="tooltip-color")] e #[i.fas.fa-mug-hot(data-toggle="tooltip" title="café")] por #[strong Kevin Quintino].
-
