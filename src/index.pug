@@ -51,7 +51,7 @@ html(lang="pt-br")
             hr
             button(data-toggle="modal" data-target="#contentCreatorModal")
               i.fas.fa-bullhorn.fa-2x
-              | Meus feitos e princípios
+              | Experiência e princípios
 
     //Modal developer technologies
     #developerTechnologies.modal.fade(tabindex="-1" role="dialog" aria-labelledby="developerTechnologies" aria-hidden="true")
@@ -62,10 +62,21 @@ html(lang="pt-br")
             button.close(type="button" data-dismiss="modal" aria-label="Close")
               span(aria-hidden="true") x
           .modal-body
+            p #[strong HTML/CSS/JS] - Digamos que este é o kit básico/essencial para o desenvolvimento web.
+            p #[strong PugJS] - Além de deixar o código HTML mais "limpo" e legível, adiciona diversas possibilidades ao HTML.
+            p #[strong SASS] - Eu amo SASS! Esta linguagem facilita muito o processo de estilização das páginas, principalmente quando utilizando o padrão BEM. Utilizo a sintaxe SCSS (Sassy CSS).
+            p #[strong GulpJS] - Esta ferramenta de automação me auxilia muito durante o desenvolvimento. Processando arquivos .pug e .scss, além de minificar os arquivos .html, .css e .js que serão enviados ao navegador do usuário.
+            p #[strong Booststrap] - Em alguns projetos, utilizar uma framework como esta, aumenta a eficiência da fase de implementação.
+            p #[strong WordPress] - Dependendo do projeto, considero muito viável utilizar o WordPress, apesar de seus contras.
+            p #[strong Git] - Afinal, versionamento é indispensável em um projeto, independente de sua grandeza ou complexidade.
+            p #[strong VS Code] - Minha IDE favorita, sem dúvidas. Suas extensões e funcionalidades me auxiliam imensamente durante o desenvolvimento.
+            hr
+            h5 Padrões de arquitetura e metodologias
+            p #[strong MVC] - Talvez o padrão de arquitetura mais popular nos dias de hoje, ele funciona muito bem com projetos web, e pode ser aplicado a praticamente qualquer projeto.
+            p #[strong BEM] - Após conhecer esta metodologia de nomenclatura de classes, passei a aplicá-la em todos os meus projetos, pois ela é extremamente útil e facilita a estilização (por meio do SASS).
 
           .modal-footer
             input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar formulário")  
-            input.modal-primary-button(type="submit" value="Enviar mensagem")
 
     //Modal designer tools
     #designerTools.modal.fade(tabindex="-1" role="dialog" aria-labelledby="designerTools" aria-hidden="true")
@@ -76,10 +87,13 @@ html(lang="pt-br")
             button.close(type="button" data-dismiss="modal" aria-label="Close")
               span(aria-hidden="true") x
           .modal-body
-
+            p #[strong Caneta e papel] - Afinal, a prototipação descartável é uma forma rápida e barata de testar e obter feedback sobre uma ideia.
+            p #[strong Adobe XD] - Quando um protótipo mais fidedigno é necessário, utilizo o XD.
+            p #[strong Adobe Photoshop] - Quando é necessário manipular alguma imagem, utilizo o Photoshop.
+            p #[strong Adobe Illustrator] - Quando é necessário criar um ícone ou vetor flat, utilizo o Illustrator.
+            p #[strong InVision] - Recorro a ele sempre que preciso construir wireframes.
           .modal-footer
             input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar formulário")  
-            input.modal-primary-button(type="submit" value="Enviar mensagem")
 
     //Modal content creator mindset
     #contentCreatorMindset.modal.fade(tabindex="-1" role="dialog" aria-labelledby="contentCreatorMindset" aria-hidden="true")
@@ -90,10 +104,13 @@ html(lang="pt-br")
             button.close(type="button" data-dismiss="modal" aria-label="Close")
               span(aria-hidden="true") x
           .modal-body
-
+            p #[strong Pertinência] - A utilidade é - para mim - um dos fatores mais importantes quando escolhendo um tema.
+            p #[strong Copywriting] - Afina, ainda que o tema seja pertinente e procurado, quando mal escrito, o artigo perde muito de seu potencial.
+            p #[strong Engajamento] - Considero extremamente importante que os posts promovam uma interação com os seguidores. Criando assim um sentimento de proximidade entre a marca e o consumidor, além de  promover - indiretamente - a postagem.
+            p #[strong SEO] - 
+            p #[strong Frequência] - 
           .modal-footer
             input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar formulário")  
-            input.modal-primary-button(type="submit" value="Enviar mensagem")
 
     //Modal developer
     #developerModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="developerModal" aria-hidden="true")
@@ -107,7 +124,6 @@ html(lang="pt-br")
 
           .modal-footer
             input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar formulário")  
-            input.modal-primary-button(type="submit" value="Enviar mensagem")
 
     //Modal designer
     #designerModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="designerModal" aria-hidden="true")
@@ -121,7 +137,6 @@ html(lang="pt-br")
 
           .modal-footer
             input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar formulário")  
-            input.modal-primary-button(type="submit" value="Enviar mensagem")
 
     //Modal content creator
     #contentCreatorModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="contentCreatorModal" aria-hidden="true")
@@ -135,7 +150,6 @@ html(lang="pt-br")
 
           .modal-footer
             input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar formulário")  
-            input.modal-primary-button(type="submit" value="Enviar mensagem")
 
     .back-to-top(onclick="backToTop()")
       i.fas.fa-chevron-up.fa-4x

@@ -1,5 +1,6 @@
 $main: #2f4f4f;
-$inversed-main: #d0b0b0;
+$bg-selection: #ff0;
+$white: #fff;
 
 html {
     scroll-behavior: smooth;
@@ -7,19 +8,22 @@ html {
     padding: 0;
 }
 
-body, input, textarea, button {
+body,
+input,
+textarea,
+button {
     font-family: 'Comic Neue', sans-serif;
     font-size: 62.5%;
     transition: all 0.69s ease;
 }
 
 ::selection {
-    background-color: #ff0;
+    background-color: $bg-selection;
     color: $main;
 }
 
 :-moz-selection {
-    background-color: #ff0;
+    background-color: $bg-selection;
     color: $main;
 }
 
@@ -54,13 +58,13 @@ body, input, textarea, button {
             font-weight: 700;
             color: $main;
             border-radius: 48px;
-            background-color: #fff;
+            background-color: $white;
             border: 2px solid $main;
             transition: 0.2s;
 
             &:hover {
                 background-color: $main;
-                color: #fff;
+                color: $white;
                 cursor: pointer;
             }
         }
@@ -87,6 +91,10 @@ body, input, textarea, button {
         }
 
         &:hover {
+            i {
+                transition: 0.2s;
+                padding-top: 3px;
+            }
             cursor: pointer;
         }
     }
@@ -111,7 +119,7 @@ body, input, textarea, button {
 
         h1 {
             font-size: 2.8em;
-            color: #fff;
+            color: $white;
             text-align: center;
             line-height: 2.8em;
             font-weight: 700;
@@ -119,7 +127,7 @@ body, input, textarea, button {
 
         p {
             font-size: 1.8em;
-            color: #fff;
+            color: $white;
             text-align: center;
             line-height: 1.5em;
             font-weight: 400;
@@ -151,19 +159,19 @@ body, input, textarea, button {
             color: $main;
             padding: 4px 12px 4px 12px;
             border-radius: 48px;
-            background-color: #fff;
+            background-color: $white;
             border: 2px solid $main;
             transition: 0.2s;
 
             &:hover {
                 background-color: $main;
-                color: #fff;
+                color: $white;
                 cursor: pointer;
             }
         }
 
         button {
-            color: #fff;
+            color: $white;
             padding: 14px 22px 12px 22px;
             border-radius: 48px;
             background-color: $main;
@@ -173,11 +181,17 @@ body, input, textarea, button {
 
             i {
                 font-size: 1em;
-                margin-right: 8px!important;  
+                margin-right: 8px !important;
             }
 
             &:hover {
                 background-color: darken($main, 5%);
+
+                /*i {
+                    transform: rotate(-8deg);
+                }*/
+
+                transform: scale(1.016);
                 cursor: pointer;
             }
         }
@@ -192,14 +206,14 @@ body, input, textarea, button {
                 border-top-left-radius: 16px;
                 border-bottom-left-radius: 16px;
                 border: 1px solid $main;
-                background-color: #fff;
+                background-color: $white;
                 padding: 24px;
             }
 
             &__middle-column {
                 border-bottom: 1px solid $main;
                 border-top: 1px solid $main;
-                background-color: #fff;
+                background-color: $white;
                 padding: 24px;
             }
 
@@ -207,74 +221,8 @@ body, input, textarea, button {
                 border-top-right-radius: 16px;
                 border-bottom-right-radius: 16px;
                 border: 1px solid $main;
-                background-color: #fff;
+                background-color: $white;
                 padding: 24px;
-            }
-        }
-    }
-
-    &__portfolio {
-        h1 {
-            margin-top: 64px;
-            text-align: center;
-            color: $main;
-        }
-
-        &__row {
-            margin: 104px auto;
-            margin-bottom: 144px;
-            align-content: center;
-            justify-content: center;
-            max-width: 1200px;
-
-            h3 {
-                text-align: center;
-                line-height: 208px;
-                color: $main;
-            }
-
-            &__left-column {
-                border-radius: 24px;
-                border: 1px solid $main;
-                background-color: #fff;
-                padding: 24px;
-                max-width: 380px;
-                height: 256px;
-
-                &:hover {
-                    cursor: pointer;
-                    filter: opacity(88%);
-                }
-            }
-
-            &__middle-column {
-                border-radius: 24px;
-                border: 1px solid $main;
-                background-color: #fff;
-                padding: 24px;
-                max-width: 380px;
-                height: 256px;
-                margin-left: 30px;
-                margin-right: 30px;
-
-                &:hover {
-                    cursor: pointer;
-                    filter: opacity(88%);
-                }
-            }
-
-            &__right-column {
-                border-radius: 24px;
-                border: 1px solid $main;
-                background-color: #fff;
-                padding: 24px;
-                max-width: 380px;
-                height: 256px;
-
-                &:hover {
-                    cursor: pointer;
-                    filter: opacity(88%);
-                }
             }
         }
     }
@@ -291,9 +239,11 @@ body, input, textarea, button {
         float: right;
         margin-right: 24px;
         color: lighten($main, 8%);
+        transition: 0.2s;
 
         &:hover {
             cursor: pointer;
+            padding-bottom: 4px;
             color: darken($main, 8%);
         }
     }
@@ -316,7 +266,12 @@ body, input, textarea, button {
             padding-top: 160px;
             margin-bottom: -80px;
             font-size: 2em;
-            color: #fff;
+            color: $white;
+        }
+
+        a {
+            margin-right:  8px;
+            margin-left: 8px;
         }
 
         &__icon {
@@ -325,7 +280,7 @@ body, input, textarea, button {
             border: 1px solid rgba(255, 255, 255, 0.69);
             padding: 13.5px;
             border-radius: 50%;
-            margin: 108px 8px;
+            margin-top: 108px;
 
             &:hover {
                 border-color: rgba(255, 255, 255, 1);
@@ -335,7 +290,7 @@ body, input, textarea, button {
         }
 
         i {
-            color: #fff !important;
+            color: $white !important;
         }
     }
 
@@ -352,248 +307,25 @@ body, input, textarea, button {
     }
 }
 
-//BEGIN DARK
-.dark {
-    background-color: $main;
-    transition: all 0.69s ease;
-    filter: invert(1)saturate(100%)brightness(100%)contrast(100%);
-
-    ::selection {
-        background-color: #0000ff;
-        color: $inversed-main;
-    }
-
-    :-moz-selection {
-        background-color: #0000ff;
-        color: $inversed-main;
-    }
-
-    .above-the-fold p,
-    i {
-        color: #000;
-    }
-
-    header {
-        img {
-            filter: saturate(0%)brightness(100%)contrast(300%);
-        }
-
-        input {
-            background-color: $inversed-main;
-            border-color: #000;
-            color: #000;
-
-            &:hover {
-                color: $inversed-main;
-                background-color: #000;
-            }
-        }
-    }
-
-    .under-the-fold {
-        &__bar {
-            background: #000;
-        }
-
-        &__resume p,
-        h1 {
-            color: $inversed-main;
-        }
-
-        &__summary {
-
-            p,
-            h1,
-            h2 {
-                color: #000;
-            }
-
-            input {
-
-                background-color: $inversed-main;
-                border-color: #000;
-                color: #000;
-
-                &:hover {
-                    background-color: #000;
-                    color: $inversed-main;
-                }
-            }
-
-            button {
-                color: $inversed-main;
-                background-color: #000;
-    
-                i {
-                    color: $inversed-main;
-                    transition: 0.2s;
-                }
-    
-                &:hover {
-                    i {
-                        transform: rotate(-16deg);
-                    }
-                    transform: scale(1.016);
-                }
-            }
-    
-
-            &__row {
-
-                &__left-column {
-                    background-color: $inversed-main;
-                    border-color: #000;
-
-                }
-
-                &__middle-column {
-                    background-color: $inversed-main;
-                    border-color: #000;
-                }
-
-                &__right-column {
-                    background-color: $inversed-main;
-                    border-color: #000;
-                }
-            }
-        }
-
-        &__portfolio {
-            &__row {
-                margin: 80px auto;
-                align-content: center;
-                justify-content: center;
-                max-width: 1200px;
-
-                h3 {
-                    text-align: center;
-                    line-height: 208px;
-                    color: $inversed-main;
-                }
-
-                &__left-column {
-                    border-color: $inversed-main;
-                    background-color: #000;
-                }
-
-                &__middle-column {
-                    border-color: $inversed-main;
-                    background-color: #000;
-                }
-
-                &__right-column {
-                    border-color: $inversed-main;
-                    background-color: #000;
-                }
-            }
-        }
-    }
-
-    .back-to-top {
-        i {
-            color: darken($inversed-main, 8%);
-
-            &:hover {
-
-                color: lighten($inversed-main, 8%);
-            }
-        }
-    }
-
-    .footer {
-        background-color: #000;
-
-        p {
-            color: $inversed-main;
-        }
-
-        .footer__social-media {
-
-            &__icon {
-                border-color: rgba(208, 176, 176, 0.69);
-
-                &:hover {
-                    border-color: rgba(208, 176, 176, 1);
-                }
-            }
-        }
-
-        i {
-            color: $inversed-main !important;
-        }
-    }
-
-    .tooltip-inner {
-        background-color: $inversed-main;
-        color: #000;
-    }
-
-    .tooltip.bs-tooltip-top .arrow:before {
-        border-top-color: $inversed-main !important;
-    }
-
-    .modal-title {
-        color: #000;
-    }
-
-    .modal-primary-button {
-        border-color: #000;
-        background-color: #000;
-        color: $inversed-main;
-
-        &:hover {
-            background-color: lighten(#000, 3%);
-            border-color: lighten(#000, 3%);
-            color: $inversed-main;
-        }
-    }
-
-    .modal-secondary-button {
-        border-color: #000;
-        background-color: $inversed-main;
-        color: #000;
-
-        &:hover {
-            background-color: #000;
-            color: $inversed-main;
-        }
-    }
-
-    textarea:focus,
-    input[type="text"]:focus,
-    input[type="password"]:focus,
-    input[type="datetime"]:focus,
-    input[type="datetime-local"]:focus,
-    input[type="date"]:focus,
-    input[type="month"]:focus,
-    input[type="time"]:focus,
-    input[type="week"]:focus,
-    input[type="number"]:focus,
-    input[type="email"]:focus,
-    input[type="url"]:focus,
-    input[type="search"]:focus,
-    input[type="tel"]:focus,
-    input[type="color"]:focus,
-    .uneditable-input:focus {
-        border-color: rgba(208, 176, 176, 0.8);
-        box-shadow: 0 1px 1px rgba(208, 176, 176, 0.075) inset, 0 0 8px rgba(208, 176, 176, 0.6);
-    }
+//BEGIN BOOTSTRAP
+.modal-open {
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-right: 0 !important;
 }
 
-//END DARK
-
-//BEGIN BOOTSTRAP
 .tooltip-inner {
-    background-color: #fff;
+    background-color: $white;
     color: $main;
 }
 
 .tooltip.bs-tooltip-top .arrow:before {
-    border-top-color: #fff !important;
+    border-top-color: $white !important;
 }
 
 .modal-title {
     color: $main;
+    font-size: 2.4em;
     font-weight: 700;
 }
 
@@ -602,6 +334,16 @@ body, input, textarea, button {
         font-size: 1.4em;
         margin-bottom: 2px;
     }
+    p {
+        font-size: 1.8em;
+        color: $main;
+    }
+
+    h5 {
+        font-size: 2.4em;
+        font-weight: bold;
+        color: $main;
+    }
 }
 
 .modal-primary-button {
@@ -609,7 +351,7 @@ body, input, textarea, button {
     height: 48px;
     border: solid 2px $main;
     background-color: $main;
-    color: #fff;
+    color: $white;
     transition: 0.2s;
     border-radius: 36px;
     font-size: 1.6em;
@@ -627,7 +369,7 @@ body, input, textarea, button {
     height: 48px;
     border: solid 2px $main;
     border-radius: 36px;
-    background-color: #fff;
+    background-color: $white;
     transition: 0.2s;
     font-size: 1.6em;
     font-weight: 700;
@@ -635,12 +377,14 @@ body, input, textarea, button {
 
     &:hover {
         background-color: $main;
-        color: #fff;
+        color: $white;
         cursor: pointer;
     }
 }
 
 textarea:focus,
+input:focus,
+button:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="datetime"]:focus,

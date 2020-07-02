@@ -1,3 +1,4 @@
 function toHome() {
-    document.body.classList.toggle("dark");
+    window.location.reload();
+    //document.body.classList.toggle("dark");
 }
