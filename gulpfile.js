@@ -1,6 +1,7 @@
 var gulp = require('gulp')
 var sass = require('gulp-sass')
 var pug = require('gulp-pug')
+var rename = require("gulp-rename");
 var concat = require('gulp-concat')
 const imagemin = require('gulp-imagemin')
 const cleanCSS = require('gulp-clean-css')
@@ -32,6 +33,9 @@ gulp.task('minify-css', () => {
     .pipe(cleanCSS({
       compatibility: 'ie8'
     }))
+    .pipe(rename({
+      suffix: '.min'
+    }))
     .pipe(gulp.dest('dist/css'))
 });
 
@@ -56,6 +60,9 @@ gulp.task('imagemin', () => {
 gulp.task('uglify', () => {
   return gulp.src('src/scripts/main.js')
     .pipe(uglify())
+    .pipe(rename({
+      suffix: '.min'
+    }))
     .pipe(gulp.dest('dist/js'))
 });
 
