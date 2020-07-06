@@ -2,234 +2,228 @@ $main: #2f4f4f;
 $inversed-main: #d0b0b0;
 
 .dark {
-    background-color: $main;
-    transition: all 0.69s ease;
-    filter: invert(1)saturate(100%)brightness(100%)contrast(100%);
+  background-color: $main;
+  transition: all 0.69s ease;
+  filter: invert(1) saturate(100%) brightness(100%) contrast(100%);
 
-    .modal-title {
-        color: $inversed-main;
+  .modal-title {
+    color: $inversed-main;
+  }
+
+  .modal-primary-button {
+    border-color: $inversed-main;
+    background-color: $inversed-main;
+    color: #000;
+
+    &:hover {
+      background-color: lighten($inversed-main, 3%);
+      border-color: lighten($inversed-main, 3%);
+    }
+  }
+
+  .modal-secondary-button {
+    border-color: $inversed-main;
+    background-color: #000;
+    color: $inversed-main;
+
+    &:hover {
+      background-color: $inversed-main;
+      color: #000;
+    }
+  }
+
+  .modal-content {
+    background-color: #000;
+    color: $inversed-main;
+
+    span {
+      color: $inversed-main;
+    }
+  }
+
+  .modal-header {
+    border-bottom-color: $inversed-main;
+  }
+
+  .modal-footer {
+    border-top-color: $inversed-main;
+  }
+
+  ::selection {
+    background-color: #0000ff;
+    color: $inversed-main;
+  }
+
+  :-moz-selection {
+    background-color: #0000ff;
+    color: $inversed-main;
+  }
+
+  .above-the-fold p,
+  i {
+    color: #000;
+  }
+
+  header {
+    img {
+      filter: saturate(0%) brightness(100%) contrast(300%);
     }
 
-    .modal-primary-button {
-        border-color: $inversed-main;
+    input {
+      background-color: $inversed-main;
+      border-color: #000;
+      color: #000;
+
+      &:hover {
+        color: $inversed-main;
+        background-color: #000;
+      }
+    }
+  }
+
+  .under-the-fold {
+    &__bar {
+      background: #000;
+    }
+
+    &__resume p,
+    h1 {
+      color: $inversed-main;
+    }
+
+    &__summary {
+      p,
+      h1,
+      h2 {
+        color: #000;
+      }
+
+      input {
         background-color: $inversed-main;
+        border-color: #000;
         color: #000;
 
         &:hover {
-            background-color: lighten($inversed-main, 3%);
-            border-color: lighten($inversed-main, 3%);
+          background-color: #000;
+          color: $inversed-main;
         }
-    }
+      }
 
-    .modal-secondary-button {
-        border-color: $inversed-main;
+      button {
+        color: $inversed-main;
         background-color: #000;
-        color: $inversed-main;
 
-        &:hover {
-            background-color: $inversed-main;
-            color: #000;
+        i {
+          color: $inversed-main;
+          transition: 0.2s;
         }
-    }
+      }
 
-    .modal-content {
-        background-color: #000;
-        color: $inversed-main;
-
-        span {
-            color: $inversed-main;
+      &__row {
+        &__left-column {
+          background-color: $inversed-main;
+          border-color: #000;
         }
-    }
 
-    .modal-header {
-        border-bottom-color: $inversed-main;
-    }
+        &__middle-column {
+          background-color: $inversed-main;
+          border-color: #000;
+        }
 
-    .modal-footer {
-        border-top-color: $inversed-main;
+        &__right-column {
+          background-color: $inversed-main;
+          border-color: #000;
+        }
+      }
     }
+  }
 
-    ::selection {
-        background-color: #0000ff;
-        color: $inversed-main;
-    }
-
-    :-moz-selection {
-        background-color: #0000ff;
-        color: $inversed-main;
-    }
-
-    .above-the-fold p,
+  .back-to-top {
     i {
-        color: #000;
+      color: darken($inversed-main, 8%);
+
+      &:hover {
+        color: lighten($inversed-main, 8%);
+      }
+    }
+  }
+
+  .footer {
+    background-color: #000;
+
+    p {
+      color: $inversed-main;
     }
 
-    header {
-        img {
-            filter: saturate(0%)brightness(100%)contrast(300%);
-        }
-
-        input {
-            background-color: $inversed-main;
-            border-color: #000;
-            color: #000;
-
-            &:hover {
-                color: $inversed-main;
-                background-color: #000;
-            }
-        }
-    }
-
-    .under-the-fold {
-        &__bar {
-            background: #000;
-        }
-
-        &__resume p,
-        h1 {
-            color: $inversed-main;
-        }
-
-        &__summary {
-
-            p,
-            h1,
-            h2 {
-                color: #000;
-            }
-
-            input {
-
-                background-color: $inversed-main;
-                border-color: #000;
-                color: #000;
-
-                &:hover {
-                    background-color: #000;
-                    color: $inversed-main;
-                }
-            }
-
-            button {
-                color: $inversed-main;
-                background-color: #000;
-
-                i {
-                    color: $inversed-main;
-                    transition: 0.2s;
-                }
-            }
-
-
-            &__row {
-
-                &__left-column {
-                    background-color: $inversed-main;
-                    border-color: #000;
-
-                }
-
-                &__middle-column {
-                    background-color: $inversed-main;
-                    border-color: #000;
-                }
-
-                &__right-column {
-                    background-color: $inversed-main;
-                    border-color: #000;
-                }
-            }
-        }
-    }
-
-    .back-to-top {
-        i {
-            color: darken($inversed-main, 8%);
-
-            &:hover {
-
-                color: lighten($inversed-main, 8%);
-            }
-        }
-    }
-
-    .footer {
-        background-color: #000;
-
-        p {
-            color: $inversed-main;
-        }
-
-        .footer__social-media {
-
-            &__icon {
-                border-color: rgba(208, 176, 176, 0.69);
-
-                &:hover {
-                    border-color: rgba(208, 176, 176, 1);
-                }
-            }
-        }
-
-        i {
-            color: $inversed-main !important;
-        }
-    }
-
-    .tooltip-inner {
-        background-color: $inversed-main;
-        color: #000;
-    }
-
-    .tooltip.bs-tooltip-top .arrow:before {
-        border-top-color: $inversed-main !important;
-    }
-
-    .modal-title {
-        color: #000;
-    }
-
-    .modal-primary-button {
-        border-color: #000;
-        background-color: #000;
-        color: $inversed-main;
+    .footer__social-media {
+      &__icon {
+        border-color: rgba(208, 176, 176, 0.69);
 
         &:hover {
-            background-color: lighten(#000, 3%);
-            border-color: lighten(#000, 3%);
-            color: $inversed-main;
+          border-color: rgba(208, 176, 176, 1);
         }
+      }
     }
 
-    .modal-secondary-button {
-        border-color: #000;
-        background-color: $inversed-main;
-        color: #000;
-
-        &:hover {
-            background-color: #000;
-            color: $inversed-main;
-        }
+    i {
+      color: $inversed-main !important;
     }
+  }
 
-    textarea:focus,
-    input[type="text"]:focus,
-    input[type="password"]:focus,
-    input[type="datetime"]:focus,
-    input[type="datetime-local"]:focus,
-    input[type="date"]:focus,
-    input[type="month"]:focus,
-    input[type="time"]:focus,
-    input[type="week"]:focus,
-    input[type="number"]:focus,
-    input[type="email"]:focus,
-    input[type="url"]:focus,
-    input[type="search"]:focus,
-    input[type="tel"]:focus,
-    input[type="color"]:focus,
-    .uneditable-input:focus {
-        border-color: rgba(208, 176, 176, 0.8);
-        box-shadow: 0 1px 1px rgba(208, 176, 176, 0.075) inset, 0 0 8px rgba(208, 176, 176, 0.6);
+  .tooltip-inner {
+    background-color: $inversed-main;
+    color: #000;
+  }
+
+  .tooltip.bs-tooltip-top .arrow:before {
+    border-top-color: $inversed-main !important;
+  }
+
+  .modal-title {
+    color: #000;
+  }
+
+  .modal-primary-button {
+    border-color: #000;
+    background-color: #000;
+    color: $inversed-main;
+
+    &:hover {
+      background-color: lighten(#000, 3%);
+      border-color: lighten(#000, 3%);
+      color: $inversed-main;
     }
+  }
+
+  .modal-secondary-button {
+    border-color: #000;
+    background-color: $inversed-main;
+    color: #000;
+
+    &:hover {
+      background-color: #000;
+      color: $inversed-main;
+    }
+  }
+
+  textarea:focus,
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="datetime"]:focus,
+  input[type="datetime-local"]:focus,
+  input[type="date"]:focus,
+  input[type="month"]:focus,
+  input[type="time"]:focus,
+  input[type="week"]:focus,
+  input[type="number"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="search"]:focus,
+  input[type="tel"]:focus,
+  input[type="color"]:focus,
+  .uneditable-input:focus {
+    border-color: rgba(208, 176, 176, 0.8);
+    box-shadow: 0 1px 1px rgba(208, 176, 176, 0.075) inset,
+      0 0 8px rgba(208, 176, 176, 0.6);
+  }
 }

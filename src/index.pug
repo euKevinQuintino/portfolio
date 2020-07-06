@@ -18,7 +18,6 @@ html(lang="pt-br")
 
     section#sectionTwo.under-the-fold
       .under-the-fold__bar
-
       .under-the-fold__resume 
         h1 Design, desenvolvimento e criação de conteúdo
         p O desenvolvimento web sempre me cativou. Projetar e desenvolver interfaces que agradem e suportem seus usuários, proporcionando-os uma experiência memorável, me traz uma enorme satisfação pessoal.
@@ -26,15 +25,6 @@ html(lang="pt-br")
       .container-lg.col-md-12.under-the-fold__summary
         .row.under-the-fold__summary__row
           .col-md-4.under-the-fold__summary__row__left-column
-            h1 Desenvolvedor front-end
-            hr
-            p Desenvolver sites otimizados, acessíveis e responsivos é uma tarefa que me traz muito prazer e satisfação.
-            input(type="button" value="Tecnologias que eu utilizo" data-toggle="modal" data-target="#developerTechnologies")
-            hr
-            button(data-toggle="modal" data-target="#developerModal")
-              i.fab.fa-dev.fa-2x 
-              | Projetos desenvolvidos
-          .col-md-4.under-the-fold__summary__row__middle-column
             h1 Designer de UX/UI
             hr
             p Quando designer, meu foco é projetar interfaces que proporcionem uma boa experiência aos seus usuários.
@@ -43,41 +33,29 @@ html(lang="pt-br")
             button(data-toggle="modal" data-target="#designerModal")
               i.fas.fa-pencil-ruler.fa-2x
               | Designs projetados
+          .col-md-4.under-the-fold__summary__row__middle-column
+            h1 Desenvolvedor front-end
+            hr
+            p Desenvolver sites otimizados, acessíveis e responsivos é uma tarefa que me traz muito prazer e satisfação.
+            input(type="button" value="Tecnologias que utilizo" data-toggle="modal" data-target="#developerTechnologies")
+            hr
+            button(data-toggle="modal" data-target="#developerModal")
+              i.fab.fa-dev.fa-2x 
+              | Projetos desenvolvidos
           .col-md-4.under-the-fold__summary__row__right-column
             h1 Criador de conteúdo
             hr
             p Saber produzir conteúdo para a web é essencial, utilizando o marketing digital e boas técnicas de SEO.
-            input(type="button" value="O que eu considero" data-toggle="modal" data-target="#contentCreatorMindset")
+            input(type="button" value="O que considero" data-toggle="modal" data-target="#contentCreatorMindset")
             hr
             button(data-toggle="modal" data-target="#contentCreatorModal")
               i.fas.fa-bullhorn.fa-2x
               | Experiência e princípios
-
-    //Modal developer technologies
-    #developerTechnologies.modal.fade(tabindex="-1" role="dialog" aria-labelledby="developerTechnologies" aria-hidden="true")
-      .modal-dialog.modal-dialog-centered.modal-dialog-scrollable(role="document")
-        .modal-content
-          .modal-header
-            h5#exampleModalLongTitle.modal-title Saiba quais tecnologias eu utilizo
-            button.close(type="button" data-dismiss="modal" aria-label="Close")
-              span(aria-hidden="true") x
-          .modal-body
-            p #[strong HTML/CSS/JS] - Digamos que este é o kit básico/essencial para o desenvolvimento web.
-            p #[strong PugJS] - Além de deixar o código HTML mais "limpo" e legível, adiciona diversas possibilidades ao HTML.
-            p #[strong SASS] - Eu amo SASS! Esta linguagem facilita muito o processo de estilização das páginas, principalmente quando utilizando o padrão BEM. Utilizo a sintaxe SCSS (Sassy CSS).
-            p #[strong GulpJS] - Esta ferramenta de automação me auxilia muito durante o desenvolvimento. Processando arquivos .pug e .scss, além de minificar os arquivos .html, .css e .js que serão enviados ao navegador do usuário.
-            p #[strong Booststrap] - Em alguns projetos, utilizar uma framework como esta, aumenta a eficiência da fase de implementação.
-            p #[strong WordPress] - Dependendo do projeto, considero muito viável utilizar o WordPress, apesar de seus contras.
-            p #[strong Git] - Afinal, versionamento é indispensável em um projeto, independente de sua grandeza ou complexidade.
-            p #[strong VS Code] - Minha IDE favorita, sem dúvidas. Suas extensões e funcionalidades me auxiliam imensamente durante o desenvolvimento.
-            hr
-            h5 Padrões de arquitetura e metodologias
-            p #[strong MVC] - Talvez o padrão de arquitetura mais popular nos dias de hoje, ele funciona muito bem com projetos web, e pode ser aplicado a praticamente qualquer projeto.
-            p #[strong BEM] - Após conhecer esta metodologia de nomenclatura de classes, passei a aplicá-la em todos os meus projetos, pois ela é extremamente útil e facilita a estilização (por meio do SASS).
-
-          .modal-footer
-            input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar formulário")  
-
+      .under-the-fold__contact-me
+        .under-the-fold__contact-me__content
+          h3 Como posso te ajudar em seu projeto?
+          p Adoraria te ajudar a solucionar seus problemas ou contribuir de alguma forma com seu projeto. Envie-me um e-mail, vamos conversar!
+          p.under-the-fold__contact-me__content__e-mail #[strong contato@kevinnicolasbq.com]
     //Modal designer tools
     #designerTools.modal.fade(tabindex="-1" role="dialog" aria-labelledby="designerTools" aria-hidden="true")
       .modal-dialog.modal-dialog-centered.modal-dialog-scrollable(role="document")
@@ -91,10 +69,33 @@ html(lang="pt-br")
             p #[strong Adobe XD] - Quando um protótipo mais fidedigno é necessário, utilizo o XD.
             p #[strong Adobe Photoshop] - Quando é necessário manipular alguma imagem, utilizo o Photoshop.
             p #[strong Adobe Illustrator] - Quando é necessário criar um ícone ou vetor flat, utilizo o Illustrator.
-            p #[strong InVision] - Recorro a ele sempre que preciso construir wireframes.
+            p #[strong InVision] - Recorro a ele sempre que preciso construir wireframes ou protótipos de baixa fidelidade.
           .modal-footer
-            input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar formulário")  
-
+            input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar")  
+    //Modal developer technologies
+    #developerTechnologies.modal.fade(tabindex="-1" role="dialog" aria-labelledby="developerTechnologies" aria-hidden="true")
+      .modal-dialog.modal-dialog-centered.modal-dialog-scrollable(role="document")
+        .modal-content
+          .modal-header
+            h5#exampleModalLongTitle.modal-title Saiba quais tecnologias eu utilizo
+            button.close(type="button" data-dismiss="modal" aria-label="Close")
+              span(aria-hidden="true") x
+          .modal-body
+            p #[strong HTML/CSS/JS] - Digamos que este é o kit básico/essencial para o desenvolvimento web.
+            p #[strong PugJS] - Além de deixar o código HTML mais "limpo" e legível, adiciona diversas possibilidades ao HTML.
+            p #[strong SASS] - Eu amo SASS! Esta linguagem facilita muito o processo de estilização das páginas, principalmente quando utilizando o padrão BEM. Utilizo a sintaxe SCSS (Sassy CSS).
+            p #[strong GulpJS] - Esta ferramenta de automação me auxilia muito durante o desenvolvimento. Processando arquivos .pug e .scss, além de minificar os arquivos .html, .css e .js que serão enviados ao navegador do usuário.
+            p #[strong Bootstrap] - Em alguns projetos, utilizar uma framework como esta, aumenta a eficiência da fase de implementação.
+            p #[strong WordPress] - Dependendo do projeto, considero muito viável utilizar o WordPress, apesar de seus contras.
+            p #[strong Git] - Afinal, versionamento é indispensável em um projeto, independente de sua grandeza ou complexidade.
+            p #[strong VS Code] - Minha IDE favorita, sem dúvidas. Suas extensões e funcionalidades me auxiliam imensamente durante o desenvolvimento.
+            hr
+            h5 Padrões de arquitetura e metodologias
+            p #[strong MVC] - Talvez o padrão de arquitetura mais popular nos dias de hoje, ele funciona muito bem com projetos web, e pode ser aplicado a praticamente qualquer projeto.
+            p #[strong BEM] - Após conhecer esta metodologia de nomenclatura de classes, passei a aplicá-la em todos os meus projetos, pois ela é extremamente útil e facilita a estilização (por meio do SASS).
+            p #[strong SCRUM] - Um dos frameworks de gerenciamento de projetos mais populares e utilizados no mercado de trabalho, traz uma enorme eficiência e agilidade - afinal, é uma metodologia de desenvolvimento ágil - para a equipe.
+          .modal-footer
+            input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar")  
     //Modal content creator mindset
     #contentCreatorMindset.modal.fade(tabindex="-1" role="dialog" aria-labelledby="contentCreatorMindset" aria-hidden="true")
       .modal-dialog.modal-dialog-centered.modal-dialog-scrollable(role="document")
@@ -105,26 +106,12 @@ html(lang="pt-br")
               span(aria-hidden="true") x
           .modal-body
             p #[strong Pertinência] - A utilidade é - para mim - um dos fatores mais importantes quando escolhendo um tema.
-            p #[strong Copywriting] - Afina, ainda que o tema seja pertinente e procurado, quando mal escrito, o artigo perde muito de seu potencial.
+            p #[strong Copywriting] - Afinal, ainda que o tema seja pertinente e procurado, quando mal escrito, o artigo perde muito de seu potencial.
             p #[strong Engajamento] - Considero extremamente importante que os posts promovam uma interação com os seguidores. Criando assim um sentimento de proximidade entre a marca e o consumidor, além de  promover - indiretamente - a postagem.
-            p #[strong SEO] - 
-            p #[strong Frequência] - 
+            p #[strong SEO] - Afinal, com tanta concorrência, qualquer ajuda para ranquear melhor nos buscadores é bem-vinda.
+            p #[strong Frequência] - Os usuários e algoritmos das redes sociais gostam de páginas/perfis que postam conteúdo frequentemente.
           .modal-footer
-            input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar formulário")  
-
-    //Modal developer
-    #developerModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="developerModal" aria-hidden="true")
-      .modal-dialog.modal-dialog-centered.modal-dialog-scrollable(role="document")
-        .modal-content
-          .modal-header
-            h5#exampleModalLongTitle.modal-title Conheça o Kevin desenvolvedor
-            button.close(type="button" data-dismiss="modal" aria-label="Close")
-              span(aria-hidden="true") x
-          .modal-body
-
-          .modal-footer
-            input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar formulário")  
-
+            input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar")    
     //Modal designer
     #designerModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="designerModal" aria-hidden="true")
       .modal-dialog.modal-dialog-centered.modal-dialog-scrollable(role="document")
@@ -134,10 +121,42 @@ html(lang="pt-br")
             button.close(type="button" data-dismiss="modal" aria-label="Close")
               span(aria-hidden="true") x
           .modal-body
-
+            h5 Bella&Vaidosa
+            p Este projeto - desenvolvido para a disciplina de engenharia de software no curso de ADS da Fatec-SP - consistia em um sistema de controle de agendamentos de um salão de beleza de médio porte. Nele, fiquei responsável pelo design de UX/UI e front-end. 
+            p Pelo levantamento de requisitos, conseguimos entender que a necessidade do cliente era ter um sistema informatizado que ao mesmo tempo que aumentasse a enficiência desta tarefa repetitiva, também fornecesse uma segurança maior para a integridade dos dados e informações (pois o método anterior - que era um caderno de anotações - já tinha sido danificado e extraviado algumas vezes).
+            p No design da interface, tive como prioridade sua facilidade de uso, e conclusão das tarefas com a menor quantidade de cliques/telas possível, sendo que seria utilizado repetidamente para uma mesma tarefa e por pessoas com grau de instrução intermediário. Além de a tematizar com a identidade visual da empresa.
+            hr
+            h5 Segredos do Sensei
+            p  Este projeto pessoal, consiste em um site de publicação de artigos sobre eSports. O design da interface foi feito com base em estudos sobre interfaces de sites desenvolvidos para o mesmo público-alvo (gamers). 
+            p Notei que temas escuros agradam mais este público e, por ser um site de leitura, considerei essencial que a paleta de cores fosse suave e propiciasse uma boa leitura em qualquer nível de iluminação. 
+            a(href="https://www.segredosdosensei.com.br/" rel="noopener" target="_blank")  Confira a página do projeto 
+              i.fas.fa-arrow-right.fa-1x
           .modal-footer
-            input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar formulário")  
-
+            input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar") 
+    //Modal developer
+    #developerModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="developerModal" aria-hidden="true")
+      .modal-dialog.modal-dialog-centered.modal-dialog-scrollable(role="document")
+        .modal-content
+          .modal-header
+            h5#exampleModalLongTitle.modal-title Conheça o Kevin desenvolvedor
+            button.close(type="button" data-dismiss="modal" aria-label="Close")
+              span(aria-hidden="true") x
+          .modal-body
+            h5 Bella&Vaidosa
+            p Este projeto - desenvolvido para a disciplina de engenharia de software no curso de ADS da Fatec-SP - consistia em um sistema de controle de agendamentos de um salão de beleza de médio porte. Nele, fiquei responsável pelo design de UX/UI e front-end. 
+            p O projeto foi desenvolvido com a metodologia ágil FDD e com um paradigma de equipes randômico.
+            p Optei por utilizar as tecnologias:
+            p GulpJS: Para automatizar tarefas - principalmente o processamento e minificação dos arquivos .pug e .sass.
+            p PugJS: Pois, pelo enorme número de páginas do projeto, utilizei o sistema de includes dele para diminuir o conteúdo de cada arquivo e ter uma leitura mais fácil.
+            p SASS: Pois, por adotar a metodologia BEM para este projeto, utilizei o SASS para facilitar o processo de estilização da página e sua manutenção.
+            hr
+            h5 Segredos do Sensei
+            p Neste projeto pessoal, por - basicamente - ser um blog, optei por utilizar o WordPress, que conta com inúmeros plugins úteis para suportar este tipo de website.
+            p Busquei otimizar o site o máximo possível, principalmente na versão desktop. Para que ele seja leve e carregue rapidamente, além de contar com uma boa responsividade.
+            a(href="https://www.segredosdosensei.com.br/" rel="noopener" target="_blank")  Confira a página do projeto 
+              i.fas.fa-arrow-right.fa-1x
+          .modal-footer
+            input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar") 
     //Modal content creator
     #contentCreatorModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="contentCreatorModal" aria-hidden="true")
       .modal-dialog.modal-dialog-centered.modal-dialog-scrollable(role="document")
@@ -147,9 +166,28 @@ html(lang="pt-br")
             button.close(type="button" data-dismiss="modal" aria-label="Close")
               span(aria-hidden="true") x
           .modal-body
-
+            h5 Cidade Vida Real da Depressão
+            p De dezembo de 2013 à dezembro de 2017, eu gerenciei uma página de memes no facebook que tinha como público-alvo, os jogadores de um servidor de San Andreas Multiplayer (SA-MP). 
+            p Durante este período eu produzi postagens que os entretiam (com foco no humor) os seguidores da página. Contei com a ajuda de alguns criadores de conteúdo, que eram voluntários (também jogadores) e também produziam postagens para a página.
+            p Em seu auge (2016), a página chegou a alcançar 1.763 seguidores, e uma média de 52 reações e 15 compartilhamentos por publicação - às quais alcançavam uma média de 483 pessoas. Sendo - naquele momento - o criador de conteúdo mais influente do servidor, cheguei a formalizar parcerias com outros criadores de conteúdo do servidor.
+            p Por falta de incentivo da administração do servidor, decidi parar com o projeto no final de 2017, agradecendo os seguidores e os criadores de conteúdo.
+            hr
+            h5 Algumas verdades com artes de jogos
+            p De janeiro de 2019 à julho de 2019, gerenciei uma página de memes no facebook que tinha como público-alvo, gamers (jogadores de jogos eletrônicos).
+            p Neste projeto, atuei sozinho durante todo o seu ciclo de vida. Produzindo postagens diárias para entreter (com foco no humor) os seguidores da página.
+            p Em seu auge (junho de 2019), a página chegou a alcançar 6.324 seguidores, e uma média de 180 reações e 210 compartilhamentos por publicação - às quais alcançavam uma média de 8 mil pessoas. Algumas postagens chegaram a alcançar entre 20 e 150 mil pessoas.
+            p Mas, por falta de tempo para dedicar ao projeto, e também um sentimento de que minha criatividade não estava mais me possibilitando criar postagens no padrão de qualidade que eu exigia à mim mesmo (afinal, não era simples postar diariamente postagens diferentes e que deveriam entreter milhares de pessoas), decidi finalizar o projeto. 
+            a(href="https://www.facebook.com/AlgumasVerdadesComArtesDeJogos" rel="noopener" target="_blank")  Confira a página do projeto 
+              i.fas.fa-arrow-right.fa-1x
+            hr
+            h5 Segredos do Sensei
+            p No momento, trabalho em um projeto pessoal que consiste em fornecer artigos pertinentes a jogadores competitivos - pois eSports é um assunto que me interessa muito. 
+            p Foco em produzir artigos que forneçam informações e conhecimentos que os auxiliem a conseguir desempenhar melhor dentro de jogo, melhorando sua mecânica ou - principalmente - sua noção de jogo.
+            p Como forma de treino, utilizo este projeto para elevar meu conhecimento sobre SEO, copywriting e redes sociais.
+            a(href="https://www.segredosdosensei.com.br/" rel="noopener" target="_blank")  Confira a página do projeto 
+              i.fas.fa-arrow-right.fa-1x
           .modal-footer
-            input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar formulário")  
+            input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar")  
 
     .back-to-top(onclick="backToTop()")
       i.fas.fa-chevron-up.fa-4x

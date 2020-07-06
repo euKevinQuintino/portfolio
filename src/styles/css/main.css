@@ -7,7 +7,7 @@ body,
 input,
 textarea,
 button {
-  font-family: 'Comic Neue', sans-serif;
+  font-family: "Comic Neue", sans-serif;
   font-size: 62.5%;
   transition: all 0.69s ease; }
 
@@ -99,7 +99,6 @@ button {
       font-weight: 400; }
   .under-the-fold__summary {
     margin: 64px auto;
-    margin-bottom: 144px;
     text-align: center; }
     .under-the-fold__summary h1 {
       font-size: 2.4em;
@@ -164,6 +163,28 @@ button {
         border: 1px solid #2f4f4f;
         background-color: #fff;
         padding: 24px; }
+  .under-the-fold__contact-me {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: auto; }
+    .under-the-fold__contact-me__content {
+      width: 860px;
+      height: 256px;
+      color: #2f4f4f;
+      text-align: center;
+      margin: 128px auto; }
+      .under-the-fold__contact-me__content h3 {
+        font-size: 3.6em;
+        padding: 16px; }
+      .under-the-fold__contact-me__content p {
+        padding: 16px;
+        font-size: 2em; }
+      .under-the-fold__contact-me__content__e-mail {
+        padding: 16px;
+        font-size: 2.4em !important; }
 
 .back-to-top {
   display: none;
@@ -227,6 +248,9 @@ button {
   overflow-y: scroll;
   padding-right: 0 !important; }
 
+.modal-content {
+  width: 760px; }
+
 .tooltip-inner {
   background-color: #fff;
   color: #2f4f4f; }
@@ -251,6 +275,11 @@ button {
   font-size: 2.4em;
   font-weight: bold;
   color: #2f4f4f; }
+
+.modal-body a {
+  font-size: 1.8em;
+  color: #2f4f4f;
+  font-weight: 700; }
 
 .modal-primary-button {
   width: 160px;
@@ -305,6 +334,8 @@ input[type="color"]:focus,
   outline: 0 none; }
 
 @media (max-width: 767px) {
+  .modal-content {
+    width: 98%; }
   .under-the-fold__resume {
     padding-top: 64px; }
     .under-the-fold__resume h1 {
