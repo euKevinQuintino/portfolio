@@ -242,7 +242,7 @@ button {
       text-align: center;
       margin: 128px auto;
 
-      h3 {
+      h1 {
         font-size: 3.6em;
         padding: 16px;
       }
@@ -261,11 +261,11 @@ button {
 }
 
 .back-to-top {
-  display: none;
   position: fixed;
   width: 100%;
   z-index: 2;
   bottom: 16px;
+  transition: 0.2s;
 
   i {
     float: right;
@@ -455,6 +455,18 @@ input[type="color"]:focus,
   .modal-content {
     width: 98%;
   }
+
+  .back-to-top {
+    display: none;
+  }
+
+  .above-the-fold {
+    &__message {
+      margin-top: -24px;
+      margin-bottom: 12px;
+    }
+  }
+
   .under-the-fold {
     &__resume {
       padding-top: 64px;
@@ -492,6 +504,34 @@ input[type="color"]:focus,
           border-top-right-radius: 0;
           margin-bottom: 32px;
         }
+      }
+    }
+
+    &__contact-me {
+      padding: 0;
+
+      &__content {
+        margin-top: 0;
+        padding: 0;
+        padding-top: 24px;
+        margin-bottom: -200px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .above-the-fold {
+    &__message {
+      margin-top: 36px;
+      margin-bottom: -20px;
+    }
+  }
+
+  .under-the-fold {
+    &__contact-me {
+      &__content {
+        max-width: 720px;
       }
     }
   }

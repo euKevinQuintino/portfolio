@@ -35,7 +35,6 @@
   "dependencies": {
     "gulp-rename": "^2.0.0",
     "gulp-terser-js": "^5.2.2",
-    "smooth-scrollbar": "^8.5.2",
     "terser": "^4.8.0"
   }
 }

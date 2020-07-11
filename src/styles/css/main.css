@@ -176,7 +176,7 @@ button {
       color: #2f4f4f;
       text-align: center;
       margin: 128px auto; }
-      .under-the-fold__contact-me__content h3 {
+      .under-the-fold__contact-me__content h1 {
         font-size: 3.6em;
         padding: 16px; }
       .under-the-fold__contact-me__content p {
@@ -187,11 +187,11 @@ button {
         font-size: 2.4em !important; }
 
 .back-to-top {
-  display: none;
   position: fixed;
   width: 100%;
   z-index: 2;
-  bottom: 16px; }
+  bottom: 16px;
+  transition: 0.2s; }
   .back-to-top i {
     float: right;
     margin-right: 24px;
@@ -336,6 +336,11 @@ input[type="color"]:focus,
 @media (max-width: 767px) {
   .modal-content {
     width: 98%; }
+  .back-to-top {
+    display: none; }
+  .above-the-fold__message {
+    margin-top: -24px;
+    margin-bottom: 12px; }
   .under-the-fold__resume {
     padding-top: 64px; }
     .under-the-fold__resume h1 {
@@ -358,4 +363,18 @@ input[type="color"]:focus,
       border-bottom-left-radius: 16px;
       border-bottom-right-radius: 16px;
       border-top-right-radius: 0;
-      margin-bottom: 32px; } }
+      margin-bottom: 32px; }
+  .under-the-fold__contact-me {
+    padding: 0; }
+    .under-the-fold__contact-me__content {
+      margin-top: 0;
+      padding: 0;
+      padding-top: 24px;
+      margin-bottom: -200px; } }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .above-the-fold__message {
+    margin-top: 36px;
+    margin-bottom: -20px; }
+  .under-the-fold__contact-me__content {
+    max-width: 720px; } }

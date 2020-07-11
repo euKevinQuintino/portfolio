@@ -1,22 +1,25 @@
 function scrollToSectionTwo() {
-  document.querySelector("#sectionTwo").scrollIntoView({
+  gsap.to(window, {duration: 1, scrollTo:"#sectionTwo", ease: "circ"});
+  /*document.querySelector("#sectionTwo").scrollIntoView({
     behavior: "smooth",
     block: "start",
-  });
+  });*/
 }
 
+
 function backToTop() {
-  document.querySelector("#sectionOne").scrollIntoView({
+  gsap.to(window, {duration: 1, scrollTo:"#sectionOne", ease: "circ"});
+  /*document.querySelector("#sectionOne").scrollIntoView({
     behavior: "smooth",
     block: "start",
-  });
+  });*/
 }
 
 var scrollDown = function () {
-  if (window.scrollY >= 200) {
-    document.querySelector(".back-to-top").style.display = "block";
+  if (window.scrollY <= 69) {
+    document.querySelector(".back-to-top").style.opacity = "0";
   } else {
-    document.querySelector(".back-to-top").style.display = "none";
+    document.querySelector(".back-to-top").style.opacity = "1";
   }
 };
 
