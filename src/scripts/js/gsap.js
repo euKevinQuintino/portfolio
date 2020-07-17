@@ -21,7 +21,10 @@ gsap.from(".above-the-fold__check-more", {
 });
 
 gsap.from(".under-the-fold__resume", {
-  scrollTrigger: ".under-the-fold__summary",
+  scrollTrigger: {
+    trigger: ".under-the-fold__resume",
+    start: "top center",
+  },
   opacity: 0,
   x: 69,
   duration: 0.69,
@@ -53,7 +56,6 @@ gsap.from(".under-the-fold__summary__row__right-column", {
 gsap.from(".under-the-fold__contact-me__content", {
   scrollTrigger: ".under-the-fold__contact-me__content__e-mail",
   opacity: 0,
-  y: -128,
   duration: 0.69,
 });
 
@@ -64,8 +66,21 @@ gsap.from(".back-to-top", {
   duration: 0.69,
 });
 
-gsap.from("footer", {
-  scrollTrigger: ".footer",
+gsap.from(".footer__social-media", {
+  scrollTrigger: {
+    trigger: ".footer__social-media",
+    start: "top bottom",
+  },
+  opacity: 0,
+  y: 256,
+  duration: 0.69,
+});
+
+gsap.from(".footer__message", {
+  scrollTrigger: {
+    trigger: ".footer__social-media",
+    start: "top bottom",
+  },
   opacity: 0,
   y: 256,
   duration: 0.69,

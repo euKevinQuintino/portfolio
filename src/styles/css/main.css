@@ -69,8 +69,7 @@ button {
     .above-the-fold__check-more:hover {
       cursor: pointer; }
       .above-the-fold__check-more:hover i {
-        transition: 0.2s;
-        padding-top: 3px; }
+        transition: 0.2s; }
 
 .under-the-fold {
   width: 100%; }
@@ -136,9 +135,6 @@ button {
         margin-right: 8px !important; }
       .under-the-fold__summary button:hover {
         background-color: #253f3f;
-        /*i {
-                    transform: rotate(-8deg);
-                }*/
         transform: scale(1.016);
         cursor: pointer; }
     .under-the-fold__summary__row {
@@ -165,7 +161,7 @@ button {
         padding: 24px; }
   .under-the-fold__contact-me {
     width: 100%;
-    height: 600px;
+    height: 636px;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -180,11 +176,16 @@ button {
         font-size: 3.6em;
         padding: 16px; }
       .under-the-fold__contact-me__content p {
-        padding: 16px;
+        padding: 8px;
         font-size: 2em; }
       .under-the-fold__contact-me__content__e-mail {
-        padding: 16px;
+        padding: 8px;
         font-size: 2.4em !important; }
+      .under-the-fold__contact-me__content__location {
+        padding-top: 12px;
+        font-size: 1.8em; }
+        .under-the-fold__contact-me__content__location i {
+          margin-right: 8px; }
 
 .back-to-top {
   position: fixed;
@@ -199,7 +200,6 @@ button {
     transition: 0.2s; }
     .back-to-top i:hover {
       cursor: pointer;
-      padding-bottom: 4px;
       color: #203535; }
 
 .footer {
@@ -338,9 +338,11 @@ input[type="color"]:focus,
     width: 98%; }
   .back-to-top {
     display: none; }
-  .above-the-fold__message {
-    margin-top: -24px;
-    margin-bottom: 12px; }
+  .above-the-fold {
+    height: 90vh; }
+    .above-the-fold__message {
+      margin-top: -56px;
+      margin-bottom: 48px; }
   .under-the-fold__resume {
     padding-top: 64px; }
     .under-the-fold__resume h1 {
