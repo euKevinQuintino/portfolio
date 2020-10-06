@@ -1,5 +1,5 @@
 function scrollToSectionTwo() {
-  gsap.to(window, {duration: 1, scrollTo:"#sectionTwo", ease: "circ"});
+  gsap.to(window, {duration: 0.2, scrollTo:"#sectionTwo", ease: "sine"});
   /*document.querySelector("#sectionTwo").scrollIntoView({
     behavior: "smooth",
     block: "start",
@@ -8,7 +8,7 @@ function scrollToSectionTwo() {
 
 
 function backToTop() {
-  gsap.to(window, {duration: 1, scrollTo:"#sectionOne", ease: "circ"});
+  gsap.to(window, {duration: 0.2, scrollTo:"#sectionOne", ease: "sine"});
   /*document.querySelector("#sectionOne").scrollIntoView({
     behavior: "smooth",
     block: "start",

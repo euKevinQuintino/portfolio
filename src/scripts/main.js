@@ -10,60 +10,64 @@ gsap.from(".above-the-fold__top", {
   x: -69,
   duration: 0.69,
   ease: "Power1.easeInOut",
-  delay: 1.5,
+  delay: 1.24,
 });
 
 gsap.from(".above-the-fold__check-more", {
   opacity: 0,
   y: 69,
   duration: 0.69,
-  delay: 1.5,
+  delay: 1.24,
 });
 
 gsap.from(".under-the-fold__resume", {
   scrollTrigger: {
     trigger: ".under-the-fold__resume",
-    start: "top center",
+    start: "top bottom",
   },
   opacity: 0,
   x: 69,
-  duration: 0.69,
+  duration: 0.96,
 });
 
 gsap.from(".under-the-fold__summary__row__left-column", {
-  scrollTrigger: ".under-the-fold__summary__row__left-column",
+  scrollTrigger: ".under-the-fold__resume",
+  start: "top center",
   opacity: 0,
   y: 100,
-  duration: 0.69,
+  duration: 0.96,
 });
 
 gsap.from(".under-the-fold__summary__row__middle-column", {
-  scrollTrigger: ".under-the-fold__summary__row__left-column",
+  scrollTrigger: ".under-the-fold__resume",
+  start: "top center",
   opacity: 0,
   y: 100,
-  duration: 0.69,
-  delay: 0.1,
+  duration: 0.96,
+  delay: 0.064,
 });
 
 gsap.from(".under-the-fold__summary__row__right-column", {
-  scrollTrigger: ".under-the-fold__summary__row__left-column",
+  scrollTrigger: ".under-the-fold__resume",
+  start: "top center",
   opacity: 0,
   y: 100,
-  duration: 0.69,
-  delay: 0.2,
+  duration: 0.96,
+  delay: 0.124,
 });
 
 gsap.from(".under-the-fold__contact-me__content", {
-  scrollTrigger: ".under-the-fold__contact-me__content__e-mail",
+  scrollTrigger: ".under-the-fold__contact-me__content",
+  start: "top bottom",
   opacity: 0,
-  duration: 0.69,
+  duration: 0.96,
 });
 
 gsap.from(".back-to-top", {
   scrollTrigger: ".under-the-fold__summary",
   opacity: 0,
   y: 69,
-  duration: 0.69,
+  duration: 0.64,
 });
 
 gsap.from(".footer__social-media", {
@@ -73,17 +77,17 @@ gsap.from(".footer__social-media", {
   },
   opacity: 0,
   y: 256,
-  duration: 0.69,
+  duration: 0.64,
 });
 
 gsap.from(".footer__message", {
   scrollTrigger: {
-    trigger: ".footer__social-media",
-    start: "top bottom",
+    trigger: ".under-the-fold__contact-me__content__location",
+    start: "top center",
   },
   opacity: 0,
   y: 256,
-  duration: 0.69,
+  duration: 0.64,
 });
 
 function toHome() {
@@ -91,7 +95,7 @@ function toHome() {
 }
 
 function scrollToSectionTwo() {
-  gsap.to(window, {duration: 1, scrollTo:"#sectionTwo", ease: "circ"});
+  gsap.to(window, {duration: 0.2, scrollTo:"#sectionTwo", ease: "sine"});
   /*document.querySelector("#sectionTwo").scrollIntoView({
     behavior: "smooth",
     block: "start",
@@ -100,7 +104,7 @@ function scrollToSectionTwo() {
 
 
 function backToTop() {
-  gsap.to(window, {duration: 1, scrollTo:"#sectionOne", ease: "circ"});
+  gsap.to(window, {duration: 0.2, scrollTo:"#sectionOne", ease: "sine"});
   /*document.querySelector("#sectionOne").scrollIntoView({
     behavior: "smooth",
     block: "start",

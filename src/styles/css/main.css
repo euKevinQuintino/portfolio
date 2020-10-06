@@ -118,8 +118,14 @@ button {
       border-radius: 48px;
       background-color: #fff;
       border: 2px solid #2f4f4f;
-      transition: 0.2s; }
+      transition: 0.2s;
+      -moz-box-shadow: 0 2px 6px rgba(47, 79, 79, 0.22);
+      -webkit-box-shadow: 0 2px 6px rgba(47, 79, 79, 0.22);
+      box-shadow: 0 2px 6px rgba(47, 79, 79, 0.22); }
       .under-the-fold__summary input:hover {
+        -moz-box-shadow: 0 3px 8px rgba(86, 158, 158, 0.33);
+        -webkit-box-shadow: 0 3px 8px rgba(47, 79, 79, 0.33);
+        box-shadow: 0 3px 8px rgba(47, 79, 79, 0.33);
         background-color: #2f4f4f;
         color: #fff;
         cursor: pointer; }
@@ -130,11 +136,17 @@ button {
       background-color: #2f4f4f;
       border: none;
       transition: 0.2s;
-      font-size: 2em; }
+      font-size: 2em;
+      -moz-box-shadow: 0 2px 8px rgba(47, 79, 79, 0.4);
+      -webkit-box-shadow: 0 2px 8px rgba(47, 79, 79, 0.4);
+      box-shadow: 0 2px 8px rgba(47, 79, 79, 0.4); }
       .under-the-fold__summary button i {
         font-size: 1em;
         margin-right: 8px !important; }
       .under-the-fold__summary button:hover {
+        -moz-box-shadow: 0 4px 8px rgba(47, 79, 79, 0.44);
+        -webkit-box-shadow: 0 4px 8px rgba(47, 79, 79, 0.44);
+        box-shadow: 0 4px 8px rgba(47, 79, 79, 0.44);
         background-color: #253f3f;
         transform: scale(1.016);
         cursor: pointer; }
@@ -291,8 +303,14 @@ button {
   transition: 0.2s;
   border-radius: 36px;
   font-size: 1.6em;
-  font-weight: 700; }
+  font-weight: 700;
+  -moz-box-shadow: 0 2px 8px rgba(47, 79, 79, 0.4);
+  -webkit-box-shadow: 0 2px 8px rgba(47, 79, 79, 0.4);
+  box-shadow: 0 2px 8px rgba(47, 79, 79, 0.4); }
   .modal-primary-button:hover {
+    -moz-box-shadow: 0 4px 8px rgba(47, 79, 79, 0.44);
+    -webkit-box-shadow: 0 4px 8px rgba(47, 79, 79, 0.44);
+    box-shadow: 0 4px 8px rgba(47, 79, 79, 0.44);
     background-color: #294545;
     border-color: #294545;
     cursor: pointer; }
@@ -306,8 +324,14 @@ button {
   transition: 0.2s;
   font-size: 1.6em;
   font-weight: 700;
-  color: #2f4f4f; }
+  color: #2f4f4f;
+  -moz-box-shadow: 0 2px 8px rgba(47, 79, 79, 0.4);
+  -webkit-box-shadow: 0 2px 8px rgba(47, 79, 79, 0.4);
+  box-shadow: 0 2px 8px rgba(47, 79, 79, 0.4); }
   .modal-secondary-button:hover {
+    -moz-box-shadow: 0 4px 8px rgba(47, 79, 79, 0.44);
+    -webkit-box-shadow: 0 4px 8px rgba(47, 79, 79, 0.44);
+    box-shadow: 0 4px 8px rgba(47, 79, 79, 0.44);
     background-color: #2f4f4f;
     color: #fff;
     cursor: pointer; }
@@ -378,6 +402,7 @@ input[type="color"]:focus,
 @media (min-width: 768px) and (max-width: 1199px) {
   .above-the-fold__message {
     margin-top: 36px;
-    margin-bottom: -20px; }
+    margin-bottom: -20px;
+    height: 68%; }
   .under-the-fold__contact-me__content {
     max-width: 720px; } }

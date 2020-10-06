@@ -162,8 +162,14 @@ button {
       background-color: $white;
       border: 2px solid $main;
       transition: 0.2s;
+      -moz-box-shadow: 0 2px 6px rgba(47,79,79,.22);
+      -webkit-box-shadow: 0 2px 6px rgba(47,79,79,.22);
+      box-shadow: 0 2px 6px rgba(47,79,79,.22);
 
       &:hover {
+        -moz-box-shadow: 0 3px 8px rgba(86, 158, 158, .33);
+        -webkit-box-shadow: 0 3px 8px rgba(47,79,79,.33);
+        box-shadow: 0 3px 8px rgba(47,79,79,.33);
         background-color: $main;
         color: $white;
         cursor: pointer;
@@ -178,6 +184,9 @@ button {
       border: none;
       transition: 0.2s;
       font-size: 2em;
+      -moz-box-shadow: 0 2px 8px rgba(47,79,79,.4);
+      -webkit-box-shadow: 0 2px 8px rgba(47,79,79,.4);
+      box-shadow: 0 2px 8px rgba(47,79,79,.4);
 
       i {
         font-size: 1em;
@@ -185,6 +194,9 @@ button {
       }
 
       &:hover {
+        -moz-box-shadow: 0 4px 8px rgba(47,79,79,.44);
+        -webkit-box-shadow: 0 4px 8px rgba(47,79,79,.44);
+        box-shadow: 0 4px 8px rgba(47,79,79,.44);
         background-color: darken($main, 5%);
         transform: scale(1.016);
         cursor: pointer;
@@ -402,8 +414,14 @@ button {
   border-radius: 36px;
   font-size: 1.6em;
   font-weight: 700;
+  -moz-box-shadow: 0 2px 8px rgba(47,79,79,.4);
+  -webkit-box-shadow: 0 2px 8px rgba(47,79,79,.4);
+  box-shadow: 0 2px 8px rgba(47,79,79,.4);
 
   &:hover {
+    -moz-box-shadow: 0 4px 8px rgba(47,79,79,.44);
+    -webkit-box-shadow: 0 4px 8px rgba(47,79,79,.44);
+    box-shadow: 0 4px 8px rgba(47,79,79,.44);
     background-color: darken($main, 3%);
     border-color: darken($main, 3%);
     cursor: pointer;
@@ -420,8 +438,14 @@ button {
   font-size: 1.6em;
   font-weight: 700;
   color: $main;
+  -moz-box-shadow: 0 2px 8px rgba(47,79,79,.4);
+  -webkit-box-shadow: 0 2px 8px rgba(47,79,79,.4);
+  box-shadow: 0 2px 8px rgba(47,79,79,.4);
 
   &:hover {
+    -moz-box-shadow: 0 4px 8px rgba(47,79,79,.44);
+    -webkit-box-shadow: 0 4px 8px rgba(47,79,79,.44);
+    box-shadow: 0 4px 8px rgba(47,79,79,.44);
     background-color: $main;
     color: $white;
     cursor: pointer;
@@ -529,6 +553,7 @@ input[type="color"]:focus,
     &__message {
       margin-top: 36px;
       margin-bottom: -20px;
+      height: 68%;
     }
   }
 
