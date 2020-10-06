@@ -17,9 +17,9 @@ function backToTop() {
 
 var scrollDown = function () {
   if (window.scrollY <= 69) {
-    document.querySelector(".back-to-top").style.opacity = "0";
+    document.querySelector(".back-to-top").style.display = "none";
   } else {
-    document.querySelector(".back-to-top").style.opacity = "1";
+    document.querySelector(".back-to-top").style.display = "block";
   }
 };
 

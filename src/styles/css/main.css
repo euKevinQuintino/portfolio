@@ -62,7 +62,8 @@ button {
   .above-the-fold__check-more {
     height: 10%;
     text-align: center;
-    color: #2f4f4f; }
+    color: #2f4f4f;
+    z-index: 2; }
     .above-the-fold__check-more p {
       font-size: 1.8em;
       margin-bottom: 0; }

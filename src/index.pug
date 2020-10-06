@@ -8,55 +8,55 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/n
         img(src="img/logomark.svg" onclick="toHome()" alt="logomarca")
         //input(type="button" data-toggle="modal" data-target="#contactModal" value="Diga um oi")
       .above-the-fold__message
-        p Oi, eu sou o #[strong Kevin]. Eu projeto e desenvolvo
-        p { interfaces de usuário }
-      .above-the-fold__check-more(onclick="scrollToSectionTwo()")
-        p saiba mais sobre mim
-        i.fa.fa-chevron-down.fa-3x
+        p oi, eu sou o #[strong kevin]! eu projeto e desenvolvo
+        p { experiências de usuário }
+      .above-the-fold__check-more
+        p(onclick="scrollToSectionTwo()") saiba mais sobre mim
+        i.fa.fa-chevron-down.fa-3x(onclick="scrollToSectionTwo()")
 
     section#sectionTwo.under-the-fold
       .under-the-fold__bar
       .under-the-fold__resume 
-        h1 Design, desenvolvimento e criação de conteúdo
+        h1 design, desenvolvimento e criação de conteúdo
         p O desenvolvimento web sempre me cativou. Projetar e desenvolver interfaces que agradem e suportem seus usuários, proporcionando-os uma experiência memorável, me traz uma enorme satisfação pessoal.
         p Além de projetar e desenvolver, também conheço e aplico boas práticas de SEO e produção/criação de conteúdo e marketing digital.
       .container-lg.col-md-12.under-the-fold__summary
         .row.under-the-fold__summary__row
           .col-md-4.under-the-fold__summary__row__left-column
-            h1 Designer de UX/UI
+            h1 designer de UX/UI
             hr
-            p Quando designer, meu foco é projetar interfaces que proporcionem uma boa experiência aos seus usuários.
-            input(type="button" value="Ferramentas que utilizo" data-toggle="modal" data-target="#designerTools")
+            p quando designer, meu foco é projetar interfaces que proporcionem uma boa experiência aos seus usuários.
+            input(type="button" value="ferramentas que utilizo" data-toggle="modal" data-target="#designerTools")
             hr
             button(data-toggle="modal" data-target="#designerModal")
               i.fas.fa-pencil-ruler.fa-2x
-              | Designs projetados
+              | designs projetados
           .col-md-4.under-the-fold__summary__row__middle-column
-            h1 Desenvolvedor front-end
+            h1 desenvolvedor front-end
             hr
-            p Desenvolver sites otimizados, acessíveis e responsivos é uma tarefa que me traz muito prazer e satisfação.
-            input(type="button" value="Tecnologias que utilizo" data-toggle="modal" data-target="#developerTechnologies")
+            p desenvolver sites otimizados, acessíveis e responsivos é uma tarefa que me traz muito prazer e satisfação.
+            input(type="button" value="tecnologias que utilizo" data-toggle="modal" data-target="#developerTechnologies")
             hr
             button(data-toggle="modal" data-target="#developerModal")
               i.fab.fa-dev.fa-2x 
-              | Projetos desenvolvidos
+              | projetos desenvolvidos
           .col-md-4.under-the-fold__summary__row__right-column
-            h1 Criador de conteúdo
+            h1 criador de conteúdo
             hr
-            p Saber produzir conteúdo para a web é essencial, utilizando o marketing digital e boas técnicas de SEO.
-            input(type="button" value="O que considero" data-toggle="modal" data-target="#contentCreatorMindset")
+            p saber produzir conteúdo para a web é essencial, utilizando o marketing digital e boas técnicas de SEO.
+            input(type="button" value="o que considero" data-toggle="modal" data-target="#contentCreatorMindset")
             hr
             button(data-toggle="modal" data-target="#contentCreatorModal")
               i.fas.fa-bullhorn.fa-2x
-              | Experiência e princípios
+              | experiência e princípios
       .under-the-fold__contact-me
         .under-the-fold__contact-me__content
-          h1 Como posso te ajudar em seu projeto?
-          p Adoraria te ajudar a solucionar seus problemas ou contribuir de alguma forma com seu projeto. Envie-me um e-mail, vamos conversar!
+          h1 como posso te ajudar em seu projeto?
+          p adoraria te ajudar a solucionar seus problemas ou contribuir de alguma forma com seu projeto envie-me um e-mail, vamos conversar!
           p.under-the-fold__contact-me__content__e-mail #[strong contato@kevinnicolasbq.com]
           .under-the-fold__contact-me__content__location
             i.fas.fa-map-marker-alt
-            | São Paulo, SP, Brasil.
+            | são paulo, sp, brasil.
     //Modal designer tools
     #designerTools.modal.fade(tabindex="-1" role="dialog" aria-labelledby="designerTools" aria-hidden="true")
       .modal-dialog.modal-dialog-centered.modal-dialog-scrollable(role="document")
@@ -189,20 +189,20 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/n
               i.fas.fa-arrow-right.fa-1x
           .modal-footer
             input.modal-secondary-button(type="button" data-dismiss="modal" value="Fechar")  
-    .back-to-top(onclick="backToTop()")
-      i.fas.fa-chevron-up.fa-4x
+    .back-to-top
+      i.fas.fa-chevron-up.fa-4x(onclick="backToTop()")
 
     footer.footer
       .footer__social-media
-        p Confira minhas redes sociais
+        p confira minhas redes sociais
         .footer__social-media__links
           a(href="https://www.instagram.com/kevinnicolasbq/" rel="noopener" target="_blank")
-            i.footer__social-media__icon(data-toggle="tooltip" title="Siga-me no Instagram").fab.fa-instagram.fa-2x
+            i.footer__social-media__icon(data-toggle="tooltip" title="siga-me no instagram").fab.fa-instagram.fa-2x
           a(href="https://twitter.com/kevinnicolasbq" rel="noopener" target="_blank")
-            i.footer__social-media__icon(data-toggle="tooltip" title="Siga-me no Twitter").fab.fa-twitter.fa-2x
+            i.footer__social-media__icon(data-toggle="tooltip" title="siga-me no twitter").fab.fa-twitter.fa-2x
           a(href="https://www.linkedin.com/in/kevinnicolasbq/" rel="noopener" target="_blank")
-            i.footer__social-media__icon(data-toggle="tooltip" title="Confira meu LinkedIn").fab.fa-linkedin-in.fa-2x
+            i.footer__social-media__icon(data-toggle="tooltip" title="confira meu linkedin").fab.fa-linkedin-in.fa-2x
           a(href="https://github.com/kevinnicolasbq/" rel="noopener" target="_blank" class="tooltip-color")
-            i.footer__social-media__icon(data-toggle="tooltip" title="Confira meu GitHub").fab.fa-github.fa-2x
+            i.footer__social-media__icon(data-toggle="tooltip" title="confira meu github").fab.fa-github.fa-2x
       .footer__message
-        p Feito com #[i.fas.fa-heart(data-toggle="tooltip" title="amor" class="tooltip-color")] e #[i.fas.fa-mug-hot(data-toggle="tooltip" title="café")] por #[strong Kevin Quintino] #[i.far.fa-copyright(data-toggle="tooltip" title="todos os direitos reservados")] vintevinte.
+        p feito com #[i.fas.fa-heart(data-toggle="tooltip" title="amor" class="tooltip-color")] e #[i.fas.fa-mug-hot(data-toggle="tooltip" title="café")] por #[strong kevin quintino] #[i.far.fa-copyright(data-toggle="tooltip" title="todos os direitos reservados")] vintevinte.
