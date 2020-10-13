@@ -9,7 +9,8 @@ textarea,
 button {
   font-family: "Comic Neue", sans-serif;
   font-size: 62.5%;
-  transition: all 0.69s ease; }
+  transition: all 0.69s ease;
+  letter-spacing: 0.032em; }
 
 ::selection {
   background-color: #ff0;
