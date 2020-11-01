@@ -13,9 +13,9 @@ sass.compiler = require('node-sass')
 /*const minifyJS = () =>
   gulp.src('src/js/*.js')
     .pipe(terser({
-       mangle: {
-         toplevel: true
-       }
+      mangle: {
+        toplevel: true
+      }
     }))
     .on('error', function (error) {
       this.emit('end')
@@ -74,7 +74,7 @@ gulp.task('run', gulp.series('sass', 'minify-css', 'pug', 'concat', 'uglify'))
 gulp.task('watch', () => {
   gulp.watch('src/styles/sass/*.scss', gulp.series('sass'))
   gulp.watch('src/styles/css/*.css', gulp.series('minify-css'))
-  gulp.watch('src/*.pug', gulp.series('pug'))
+  gulp.watch('src/**/*.pug', gulp.series('pug'))
   gulp.watch('src/scripts/js/*.js', gulp.series('concat'))
   //gulp.watch('src/js/*.js', gulp.series('minifyJS'))
   gulp.watch('src/scripts/main.js', gulp.series('uglify'))
