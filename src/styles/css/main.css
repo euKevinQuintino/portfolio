@@ -12,6 +12,10 @@ button {
   transition: all 0.69s ease;
   letter-spacing: 0.032em; }
 
+strong {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600; }
+
 ::selection {
   background-color: #ff0;
   color: #2f4f4f; }
@@ -19,6 +23,66 @@ button {
 :-moz-selection {
   background-color: #ff0;
   color: #2f4f4f; }
+
+.primary-button {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.8em;
+  font-weight: 500;
+  color: #fff;
+  padding: 4px 12px 4px 12px;
+  border-radius: 6px;
+  background-color: #2f4f4f;
+  border: 2px solid #2f4f4f;
+  transition: 0.2s;
+  -moz-box-shadow: 0px 2px 8px rgba(47, 79, 79, 0.44);
+  -webkit-box-shadow: 0px 2px 8px rgba(47, 79, 79, 0.44);
+  box-shadow: 0px 2px 8px rgba(47, 79, 79, 0.44); }
+  .primary-button:hover {
+    -moz-box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.44);
+    -webkit-box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.44);
+    box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.44);
+    background-color: #2b4949;
+    color: #fff;
+    cursor: pointer; }
+  .primary-button:active {
+    transform: translateY(2px);
+    -moz-box-shadow: 0px 2px 6px rgba(47, 79, 79, 0.4);
+    -webkit-box-shadow: 0px 2px 6px rgba(47, 79, 79, 0.4);
+    box-shadow: 0px 2px 6px rgba(47, 79, 79, 0.4); }
+
+.secondary-button {
+  font-size: 1.8em;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  color: #2f4f4f;
+  padding: 4px 12px 4px 12px;
+  border-radius: 6px;
+  background-color: #fff;
+  border: 2px solid #2f4f4f;
+  transition: 0.2s;
+  -moz-box-shadow: 0px 2px 8px rgba(47, 79, 79, 0.44);
+  -webkit-box-shadow: 0px 2px 8px rgba(47, 79, 79, 0.44);
+  box-shadow: 0px 2px 8px rgba(47, 79, 79, 0.44); }
+  .secondary-button:hover {
+    -moz-box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.44);
+    -webkit-box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.44);
+    box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.44);
+    background-color: #c1dada;
+    cursor: pointer; }
+  .secondary-button:active {
+    transform: translateY(2px);
+    -moz-box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.4);
+    -webkit-box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.4);
+    box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.4); }
+
+.link {
+  color: #2f4f4f;
+  text-decoration: underline;
+  font-weight: 400; }
+  .link:hover {
+    color: #467575; }
+  .link:active {
+    color: #274242; }
 
 .above-the-fold {
   max-width: 1200px;
@@ -38,20 +102,7 @@ button {
         cursor: pointer;
         transform: scale(1.069); }
     .above-the-fold__top input {
-      float: right;
-      width: 160px;
-      height: 48px;
-      font-size: 1.8em;
-      font-weight: 700;
-      color: #2f4f4f;
-      border-radius: 48px;
-      background-color: #fff;
-      border: 2px solid #2f4f4f;
-      transition: 0.2s; }
-      .above-the-fold__top input:hover {
-        background-color: #2f4f4f;
-        color: #fff;
-        cursor: pointer; }
+      float: right; }
   .above-the-fold__message {
     height: 70%;
     font-size: 3.6em;
@@ -89,9 +140,10 @@ button {
     .under-the-fold__resume h1 {
       font-size: 2.8em;
       color: #fff;
+      font-family: "Nunito", sans-serif;
       text-align: center;
       line-height: 2.8em;
-      font-weight: 700; }
+      font-weight: 600; }
     .under-the-fold__resume p {
       font-size: 1.8em;
       color: #fff;
@@ -103,8 +155,9 @@ button {
     text-align: center; }
     .under-the-fold__summary h1 {
       font-size: 2.4em;
-      font-weight: 700;
+      font-weight: 600;
       margin-bottom: 20px;
+      font-family: "Nunito", sans-serif;
       color: #2f4f4f; }
     .under-the-fold__summary p {
       font-size: 1.8em;
@@ -112,45 +165,8 @@ button {
       padding: 8px;
       color: #2f4f4f; }
     .under-the-fold__summary input {
-      font-size: 1.6em;
-      font-weight: 700;
-      color: #2f4f4f;
-      padding: 4px 12px 4px 12px;
-      border-radius: 48px;
-      background-color: #fff;
-      border: 2px solid #2f4f4f;
-      transition: 0.2s;
-      -moz-box-shadow: 0 2px 6px rgba(47, 79, 79, 0.22);
-      -webkit-box-shadow: 0 2px 6px rgba(47, 79, 79, 0.22);
-      box-shadow: 0 2px 6px rgba(47, 79, 79, 0.22); }
-      .under-the-fold__summary input:hover {
-        -moz-box-shadow: 0 3px 8px rgba(86, 158, 158, 0.33);
-        -webkit-box-shadow: 0 3px 8px rgba(47, 79, 79, 0.33);
-        box-shadow: 0 3px 8px rgba(47, 79, 79, 0.33);
-        background-color: #2f4f4f;
-        color: #fff;
-        cursor: pointer; }
-    .under-the-fold__summary button {
-      color: #fff;
-      padding: 14px 22px 12px 22px;
-      border-radius: 48px;
-      background-color: #2f4f4f;
-      border: none;
-      transition: 0.2s;
-      font-size: 2em;
-      -moz-box-shadow: 0 2px 8px rgba(47, 79, 79, 0.4);
-      -webkit-box-shadow: 0 2px 8px rgba(47, 79, 79, 0.4);
-      box-shadow: 0 2px 8px rgba(47, 79, 79, 0.4); }
-      .under-the-fold__summary button i {
-        font-size: 1em;
-        margin-right: 8px !important; }
-      .under-the-fold__summary button:hover {
-        -moz-box-shadow: 0 4px 8px rgba(47, 79, 79, 0.44);
-        -webkit-box-shadow: 0 4px 8px rgba(47, 79, 79, 0.44);
-        box-shadow: 0 4px 8px rgba(47, 79, 79, 0.44);
-        background-color: #253f3f;
-        transform: scale(1.016);
-        cursor: pointer; }
+      margin-top: 12px;
+      font-size: 1.7em; }
     .under-the-fold__summary__row {
       margin: auto;
       align-content: center;
@@ -175,7 +191,7 @@ button {
         padding: 24px; }
   .under-the-fold__contact-me {
     width: 100%;
-    height: 636px;
+    height: 540px;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -185,16 +201,18 @@ button {
       height: 256px;
       color: #2f4f4f;
       text-align: center;
-      margin: 128px auto; }
+      margin: 96px auto; }
       .under-the-fold__contact-me__content h1 {
         font-size: 3.6em;
+        font-family: "Nunito", sans-serif;
         padding: 16px; }
       .under-the-fold__contact-me__content p {
         padding: 8px;
         font-size: 2em; }
       .under-the-fold__contact-me__content__e-mail {
         padding: 8px;
-        font-size: 2.4em !important; }
+        font-size: 2.4em !important;
+        font-family: "Nunito", sans-serif; }
       .under-the-fold__contact-me__content__location {
         padding-top: 12px;
         font-size: 1.8em; }
@@ -230,8 +248,9 @@ button {
       text-align: center;
       padding-top: 160px;
       margin-bottom: -80px;
-      font-size: 2em;
-      color: #fff; }
+      font-size: 1.8em;
+      color: #fff;
+      font-family: "Nunito", sans-serif; }
     .footer__social-media a {
       margin-right: 8px;
       margin-left: 8px; }
@@ -257,6 +276,9 @@ button {
     .footer__message i:hover {
       color: white; }
 
+.modal {
+  max-height: 88%; }
+
 .modal-open {
   overflow: hidden;
   overflow-y: scroll;
@@ -275,6 +297,7 @@ button {
 .modal-title {
   color: #2f4f4f;
   font-size: 2.4em;
+  font-family: "Nunito", sans-serif;
   font-weight: 700; }
 
 .modal-body label {
@@ -287,55 +310,9 @@ button {
 
 .modal-body h5 {
   font-size: 2.4em;
-  font-weight: bold;
+  font-weight: 500;
+  font-family: "Nunito", sans-serif;
   color: #2f4f4f; }
-
-.modal-body a {
-  font-size: 1.8em;
-  color: #2f4f4f;
-  font-weight: 700; }
-
-.modal-primary-button {
-  width: 160px;
-  height: 48px;
-  border: solid 2px #2f4f4f;
-  background-color: #2f4f4f;
-  color: #fff;
-  transition: 0.2s;
-  border-radius: 36px;
-  font-size: 1.6em;
-  font-weight: 700;
-  -moz-box-shadow: 0 2px 8px rgba(47, 79, 79, 0.4);
-  -webkit-box-shadow: 0 2px 8px rgba(47, 79, 79, 0.4);
-  box-shadow: 0 2px 8px rgba(47, 79, 79, 0.4); }
-  .modal-primary-button:hover {
-    -moz-box-shadow: 0 4px 8px rgba(47, 79, 79, 0.44);
-    -webkit-box-shadow: 0 4px 8px rgba(47, 79, 79, 0.44);
-    box-shadow: 0 4px 8px rgba(47, 79, 79, 0.44);
-    background-color: #294545;
-    border-color: #294545;
-    cursor: pointer; }
-
-.modal-secondary-button {
-  width: 160px;
-  height: 48px;
-  border: solid 2px #2f4f4f;
-  border-radius: 36px;
-  background-color: #fff;
-  transition: 0.2s;
-  font-size: 1.6em;
-  font-weight: 700;
-  color: #2f4f4f;
-  -moz-box-shadow: 0 2px 8px rgba(47, 79, 79, 0.4);
-  -webkit-box-shadow: 0 2px 8px rgba(47, 79, 79, 0.4);
-  box-shadow: 0 2px 8px rgba(47, 79, 79, 0.4); }
-  .modal-secondary-button:hover {
-    -moz-box-shadow: 0 4px 8px rgba(47, 79, 79, 0.44);
-    -webkit-box-shadow: 0 4px 8px rgba(47, 79, 79, 0.44);
-    box-shadow: 0 4px 8px rgba(47, 79, 79, 0.44);
-    background-color: #2f4f4f;
-    color: #fff;
-    cursor: pointer; }
 
 textarea:focus,
 input:focus,

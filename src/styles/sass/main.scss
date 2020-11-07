@@ -18,6 +18,11 @@ button {
   letter-spacing: 0.032em;
 }
 
+strong {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+}
+
 ::selection {
   background-color: $bg-selection;
   color: $main;
@@ -26,6 +31,78 @@ button {
 :-moz-selection {
   background-color: $bg-selection;
   color: $main;
+}
+
+.primary-button {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.8em;
+  font-weight: 500;
+  color: $white;
+  padding: 4px 12px 4px 12px;
+  border-radius: 6px;
+  background-color: $main;
+  border: 2px solid $main;
+  transition: 0.2s;
+  -moz-box-shadow: 0px 2px 8px rgba(47, 79, 79, 0.44);
+  -webkit-box-shadow: 0px 2px 8px rgba(47, 79, 79, 0.44);
+  box-shadow: 0px 2px 8px rgba(47, 79, 79, 0.44);
+
+  &:hover {
+    -moz-box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.44);
+    -webkit-box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.44);
+    box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.44);
+    background-color: darken($main, 2%);
+    color: $white;
+    cursor: pointer;
+  }
+  &:active {
+    transform: translateY(2px);
+    -moz-box-shadow: 0px 2px 6px rgba(47, 79, 79, 0.4);
+    -webkit-box-shadow: 0px 2px 6px rgba(47, 79, 79, 0.4);
+    box-shadow: 0px 2px 6px rgba(47, 79, 79, 0.4);
+  }
+}
+
+.secondary-button {
+  font-size: 1.8em;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  color: $main;
+  padding: 4px 12px 4px 12px;
+  border-radius: 6px;
+  background-color: $white;
+  border: 2px solid $main;
+  transition: 0.2s;
+  -moz-box-shadow: 0px 2px 8px rgba(47, 79, 79, 0.44);
+  -webkit-box-shadow: 0px 2px 8px rgba(47, 79, 79, 0.44);
+  box-shadow: 0px 2px 8px rgba(47, 79, 79, 0.44);
+
+  &:hover {
+    -moz-box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.44);
+    -webkit-box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.44);
+    box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.44);
+    background-color: lighten($main, 56%);
+    cursor: pointer;
+  }
+  &:active {
+    transform: translateY(2px);
+    -moz-box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.4);
+    -webkit-box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.4);
+    box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.4);
+  }
+}
+
+.link {
+  color: $main;
+  text-decoration: underline;
+  font-weight: 400;
+
+  &:hover {
+    color: lighten($main, 12%);
+  }
+  &:active {
+    color: darken($main, 4%);
+  }
 }
 
 .above-the-fold {
@@ -53,21 +130,6 @@ button {
 
     input {
       float: right;
-      width: 160px;
-      height: 48px;
-      font-size: 1.8em;
-      font-weight: 700;
-      color: $main;
-      border-radius: 48px;
-      background-color: $white;
-      border: 2px solid $main;
-      transition: 0.2s;
-
-      &:hover {
-        background-color: $main;
-        color: $white;
-        cursor: pointer;
-      }
     }
   }
 
@@ -122,9 +184,10 @@ button {
     h1 {
       font-size: 2.8em;
       color: $white;
+      font-family: "Nunito", sans-serif;
       text-align: center;
       line-height: 2.8em;
-      font-weight: 700;
+      font-weight: 600;
     }
 
     p {
@@ -142,8 +205,9 @@ button {
 
     h1 {
       font-size: 2.4em;
-      font-weight: 700;
+      font-weight: 600;
       margin-bottom: 20px;
+      font-family: "Nunito", sans-serif;
       color: $main;
     }
 
@@ -155,53 +219,8 @@ button {
     }
 
     input {
-      font-size: 1.6em;
-      font-weight: 700;
-      color: $main;
-      padding: 4px 12px 4px 12px;
-      border-radius: 48px;
-      background-color: $white;
-      border: 2px solid $main;
-      transition: 0.2s;
-      -moz-box-shadow: 0 2px 6px rgba(47,79,79,.22);
-      -webkit-box-shadow: 0 2px 6px rgba(47,79,79,.22);
-      box-shadow: 0 2px 6px rgba(47,79,79,.22);
-
-      &:hover {
-        -moz-box-shadow: 0 3px 8px rgba(86, 158, 158, .33);
-        -webkit-box-shadow: 0 3px 8px rgba(47,79,79,.33);
-        box-shadow: 0 3px 8px rgba(47,79,79,.33);
-        background-color: $main;
-        color: $white;
-        cursor: pointer;
-      }
-    }
-
-    button {
-      color: $white;
-      padding: 14px 22px 12px 22px;
-      border-radius: 48px;
-      background-color: $main;
-      border: none;
-      transition: 0.2s;
-      font-size: 2em;
-      -moz-box-shadow: 0 2px 8px rgba(47,79,79,.4);
-      -webkit-box-shadow: 0 2px 8px rgba(47,79,79,.4);
-      box-shadow: 0 2px 8px rgba(47,79,79,.4);
-
-      i {
-        font-size: 1em;
-        margin-right: 8px !important;
-      }
-
-      &:hover {
-        -moz-box-shadow: 0 4px 8px rgba(47,79,79,.44);
-        -webkit-box-shadow: 0 4px 8px rgba(47,79,79,.44);
-        box-shadow: 0 4px 8px rgba(47,79,79,.44);
-        background-color: darken($main, 5%);
-        transform: scale(1.016);
-        cursor: pointer;
-      }
+      margin-top: 12px;
+      font-size: 1.7em;
     }
 
     &__row {
@@ -237,7 +256,7 @@ button {
 
   &__contact-me {
     width: 100%;
-    height: 636px;
+    height: 540px;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -248,10 +267,11 @@ button {
       height: 256px;
       color: $main;
       text-align: center;
-      margin: 128px auto;
+      margin: 96px auto;
 
       h1 {
         font-size: 3.6em;
+        font-family: "Nunito", sans-serif;
         padding: 16px;
       }
 
@@ -263,12 +283,13 @@ button {
       &__e-mail {
         padding: 8px;
         font-size: 2.4em !important;
+        font-family: "Nunito", sans-serif;
       }
 
       &__location {
         padding-top: 12px;
         font-size: 1.8em;
-        
+
         i {
           margin-right: 8px;
         }
@@ -313,8 +334,9 @@ button {
       text-align: center;
       padding-top: 160px;
       margin-bottom: -80px;
-      font-size: 2em;
+      font-size: 1.8em;
       color: $white;
+      font-family: "Nunito", sans-serif;
     }
 
     a {
@@ -356,6 +378,9 @@ button {
 }
 
 //BEGIN BOOTSTRAP
+.modal {
+  max-height: 88%;
+}
 .modal-open {
   overflow: hidden;
   overflow-y: scroll;
@@ -378,6 +403,7 @@ button {
 .modal-title {
   color: $main;
   font-size: 2.4em;
+  font-family: "Nunito", sans-serif;
   font-weight: 700;
 }
 
@@ -394,62 +420,9 @@ button {
 
   h5 {
     font-size: 2.4em;
-    font-weight: bold;
+    font-weight: 500;
+    font-family: "Nunito", sans-serif;
     color: $main;
-  }
-
-  a {
-    font-size: 1.8em;
-    color: $main;
-    font-weight: 700;
-  }
-}
-
-.modal-primary-button {
-  width: 160px;
-  height: 48px;
-  border: solid 2px $main;
-  background-color: $main;
-  color: $white;
-  transition: 0.2s;
-  border-radius: 36px;
-  font-size: 1.6em;
-  font-weight: 700;
-  -moz-box-shadow: 0 2px 8px rgba(47,79,79,.4);
-  -webkit-box-shadow: 0 2px 8px rgba(47,79,79,.4);
-  box-shadow: 0 2px 8px rgba(47,79,79,.4);
-
-  &:hover {
-    -moz-box-shadow: 0 4px 8px rgba(47,79,79,.44);
-    -webkit-box-shadow: 0 4px 8px rgba(47,79,79,.44);
-    box-shadow: 0 4px 8px rgba(47,79,79,.44);
-    background-color: darken($main, 3%);
-    border-color: darken($main, 3%);
-    cursor: pointer;
-  }
-}
-
-.modal-secondary-button {
-  width: 160px;
-  height: 48px;
-  border: solid 2px $main;
-  border-radius: 36px;
-  background-color: $white;
-  transition: 0.2s;
-  font-size: 1.6em;
-  font-weight: 700;
-  color: $main;
-  -moz-box-shadow: 0 2px 8px rgba(47,79,79,.4);
-  -webkit-box-shadow: 0 2px 8px rgba(47,79,79,.4);
-  box-shadow: 0 2px 8px rgba(47,79,79,.4);
-
-  &:hover {
-    -moz-box-shadow: 0 4px 8px rgba(47,79,79,.44);
-    -webkit-box-shadow: 0 4px 8px rgba(47,79,79,.44);
-    box-shadow: 0 4px 8px rgba(47,79,79,.44);
-    background-color: $main;
-    color: $white;
-    cursor: pointer;
   }
 }
 

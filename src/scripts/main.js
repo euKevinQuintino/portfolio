@@ -70,7 +70,7 @@ gsap.from(".back-to-top", {
   duration: 0.64,
 });
 
-gsap.from(".footer__social-media", {
+/*gsap.from(".footer__social-media", {
   scrollTrigger: {
     trigger: ".footer__social-media",
     start: "top bottom",
@@ -78,9 +78,9 @@ gsap.from(".footer__social-media", {
   opacity: 0,
   y: 256,
   duration: 0.64,
-});
+});*/
 
-gsap.from(".footer__message", {
+/*gsap.from(".footer__message", {
   scrollTrigger: {
     trigger: ".under-the-fold__contact-me__content__location",
     start: "top center",
@@ -88,7 +88,7 @@ gsap.from(".footer__message", {
   opacity: 0,
   y: 256,
   duration: 0.64,
-});
+});*/
 
 function toHome() {
   window.location.reload();
