@@ -2,10 +2,19 @@ $main: #2f4f4f;
 $bg-selection: #ff0;
 $white: #fff;
 
-html {
+html,body {
   scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
+}
+
+*:focus {
+  outline-color: lighten($main, 16%) !important;
+  outline-offset: 2px !important;
+  outline-style: dashed !important;
+  outline-width: 2px !important;
 }
 
 body,
@@ -16,6 +25,12 @@ button {
   font-size: 62.5%;
   transition: all 0.69s ease;
   letter-spacing: 0.032em;
+}
+
+mark {
+  background-color: $bg-selection;
+  padding: 0;
+  color: $main;
 }
 
 strong {
@@ -65,7 +80,7 @@ strong {
 
 .secondary-button {
   font-size: 1.8em;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 500;
   color: $main;
   padding: 4px 12px 4px 12px;
@@ -137,7 +152,7 @@ strong {
     height: 70%;
     font-size: 3.6em;
     text-align: center;
-    line-height: 1.1em;
+    line-height: 1.2em;
     padding: 16px;
     padding-top: 20vh;
     color: $main;
@@ -148,18 +163,25 @@ strong {
     text-align: center;
     color: $main;
     z-index: 2;
+    display: block;
 
-    p {
+    a {
       font-size: 1.8em;
       margin-bottom: 0;
+      color: $main;
+      text-decoration: underline;
     }
 
     &:hover {
       i {
-        transition: 0.2s;
+        transition: 0.2s ease-in-out;
+        transform: translateY(4px);
       }
-
       cursor: pointer;
+    }
+
+    i {
+      font-size: 1.8em;
     }
   }
 }
@@ -230,8 +252,8 @@ strong {
       max-width: 1200px;
 
       &__left-column {
-        border-top-left-radius: 16px;
-        border-bottom-left-radius: 16px;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
         border: 1px solid $main;
         background-color: $white;
         padding: 24px;
@@ -245,8 +267,8 @@ strong {
       }
 
       &__right-column {
-        border-top-right-radius: 16px;
-        border-bottom-right-radius: 16px;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
         border: 1px solid $main;
         background-color: $white;
         padding: 24px;
@@ -284,6 +306,16 @@ strong {
         padding: 8px;
         font-size: 2.4em !important;
         font-family: "Nunito", sans-serif;
+        color: $main;
+        text-decoration: underline;
+        font-weight: 400;
+
+        &:hover {
+          color: lighten($main, 12%);
+        }
+        &:active {
+          color: darken($main, 4%);
+        }
       }
 
       &__location {
@@ -300,10 +332,10 @@ strong {
 
 .back-to-top {
   position: fixed;
-  width: 100%;
-  z-index: 2;
+  width: 30px;
   bottom: 16px;
   transition: 0.2s;
+  right: 0;
 
   i {
     float: right;
@@ -354,6 +386,7 @@ strong {
 
       &:hover {
         border-color: rgba(255, 255, 255, 1);
+        background-color: lighten($main, 6%);
         cursor: pointer;
         transition: 0.2s;
       }
@@ -464,8 +497,9 @@ input[type="color"]:focus,
   .above-the-fold {
     height: 90vh;
     &__message {
-      margin-top: -56px;
-      margin-bottom: 48px;
+      font-size: 2.8em;
+      margin-top: -52px;
+      margin-bottom: 52px;
     }
   }
 
@@ -514,8 +548,7 @@ input[type="color"]:focus,
 
       &__content {
         margin-top: 0;
-        padding: 0;
-        padding-top: 24px;
+        padding: 24px 24px;
         margin-bottom: -200px;
       }
     }

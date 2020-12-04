@@ -1,7 +1,15 @@
-html {
+html, body {
   scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
   margin: 0;
   padding: 0; }
+
+*:focus {
+  outline-color: #4d8282 !important;
+  outline-offset: 2px !important;
+  outline-style: dashed !important;
+  outline-width: 2px !important; }
 
 body,
 input,
@@ -11,6 +19,11 @@ button {
   font-size: 62.5%;
   transition: all 0.69s ease;
   letter-spacing: 0.032em; }
+
+mark {
+  background-color: #ff0;
+  padding: 0;
+  color: #2f4f4f; }
 
 strong {
   font-family: "Nunito", sans-serif;
@@ -52,7 +65,7 @@ strong {
 
 .secondary-button {
   font-size: 1.8em;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 500;
   color: #2f4f4f;
   padding: 4px 12px 4px 12px;
@@ -107,7 +120,7 @@ strong {
     height: 70%;
     font-size: 3.6em;
     text-align: center;
-    line-height: 1.1em;
+    line-height: 1.2em;
     padding: 16px;
     padding-top: 20vh;
     color: #2f4f4f; }
@@ -115,14 +128,20 @@ strong {
     height: 10%;
     text-align: center;
     color: #2f4f4f;
-    z-index: 2; }
-    .above-the-fold__check-more p {
+    z-index: 2;
+    display: block; }
+    .above-the-fold__check-more a {
       font-size: 1.8em;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      color: #2f4f4f;
+      text-decoration: underline; }
     .above-the-fold__check-more:hover {
       cursor: pointer; }
       .above-the-fold__check-more:hover i {
-        transition: 0.2s; }
+        transition: 0.2s ease-in-out;
+        transform: translateY(4px); }
+    .above-the-fold__check-more i {
+      font-size: 1.8em; }
 
 .under-the-fold {
   width: 100%; }
@@ -173,8 +192,8 @@ strong {
       justify-content: center;
       max-width: 1200px; }
       .under-the-fold__summary__row__left-column {
-        border-top-left-radius: 16px;
-        border-bottom-left-radius: 16px;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
         border: 1px solid #2f4f4f;
         background-color: #fff;
         padding: 24px; }
@@ -184,8 +203,8 @@ strong {
         background-color: #fff;
         padding: 24px; }
       .under-the-fold__summary__row__right-column {
-        border-top-right-radius: 16px;
-        border-bottom-right-radius: 16px;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
         border: 1px solid #2f4f4f;
         background-color: #fff;
         padding: 24px; }
@@ -212,7 +231,14 @@ strong {
       .under-the-fold__contact-me__content__e-mail {
         padding: 8px;
         font-size: 2.4em !important;
-        font-family: "Nunito", sans-serif; }
+        font-family: "Nunito", sans-serif;
+        color: #2f4f4f;
+        text-decoration: underline;
+        font-weight: 400; }
+        .under-the-fold__contact-me__content__e-mail:hover {
+          color: #467575; }
+        .under-the-fold__contact-me__content__e-mail:active {
+          color: #274242; }
       .under-the-fold__contact-me__content__location {
         padding-top: 12px;
         font-size: 1.8em; }
@@ -221,10 +247,10 @@ strong {
 
 .back-to-top {
   position: fixed;
-  width: 100%;
-  z-index: 2;
+  width: 30px;
   bottom: 16px;
-  transition: 0.2s; }
+  transition: 0.2s;
+  right: 0; }
   .back-to-top i {
     float: right;
     margin-right: 24px;
@@ -263,6 +289,7 @@ strong {
       margin-top: 108px; }
       .footer__social-media__icon:hover {
         border-color: white;
+        background-color: #3a6262;
         cursor: pointer;
         transition: 0.2s; }
     .footer__social-media i {
@@ -344,8 +371,9 @@ input[type="color"]:focus,
   .above-the-fold {
     height: 90vh; }
     .above-the-fold__message {
-      margin-top: -56px;
-      margin-bottom: 48px; }
+      font-size: 2.8em;
+      margin-top: -52px;
+      margin-bottom: 52px; }
   .under-the-fold__resume {
     padding-top: 64px; }
     .under-the-fold__resume h1 {
@@ -373,8 +401,7 @@ input[type="color"]:focus,
     padding: 0; }
     .under-the-fold__contact-me__content {
       margin-top: 0;
-      padding: 0;
-      padding-top: 24px;
+      padding: 24px 24px;
       margin-bottom: -200px; } }
 
 @media (min-width: 768px) and (max-width: 1199px) {
