@@ -386,6 +386,7 @@ strong {
 
       &:hover {
         border-color: rgba(255, 255, 255, 1);
+        background-color: lighten($main, 6%);
         cursor: pointer;
         transition: 0.2s;
       }
@@ -496,8 +497,12 @@ input[type="color"]:focus,
     height: 90vh;
     &__message {
       font-size: 2.8em;
+      height: 64%;
       margin-top: -52px;
       margin-bottom: 52px;
+    }
+    &__check-more {
+      height: 14%;
     }
   }
 

@@ -289,6 +289,7 @@ strong {
       margin-top: 108px; }
       .footer__social-media__icon:hover {
         border-color: white;
+        background-color: #3a6262;
         cursor: pointer;
         transition: 0.2s; }
     .footer__social-media i {
@@ -370,8 +371,11 @@ input[type="color"]:focus,
     height: 90vh; }
     .above-the-fold__message {
       font-size: 2.8em;
+      height: 64%;
       margin-top: -52px;
       margin-bottom: 52px; }
+    .above-the-fold__check-more {
+      height: 14%; }
   .under-the-fold__resume {
     padding-top: 64px; }
     .under-the-fold__resume h1 {
