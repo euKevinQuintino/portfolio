@@ -13,31 +13,53 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/n
       .above-the-fold__message
         p oi, eu sou o #[mark kevin], eu projeto e desenvolvo #[br] { experiências de usuário memoráveis }
       .above-the-fold__check-more
-        a(href="#sectionTwo" tabindex="3") saiba mais sobre mim #[br]
+        a(href="#" tabindex="3" onclick="scrollToSecondSection('sectionTwo'); return false;") saiba mais sobre mim #[br]
           i.fa.fa-chevron-down.fa-3x
     section#sectionTwo.under-the-fold
       .under-the-fold__bar
       .under-the-fold__resume 
-        h1 pesquisa, design e desenvolvimento de experiências do usuário
-        p O desenvolvimento web sempre me cativou. Projetar e desenvolver experiências que permitem seus usuários realizarem suas tarefas de forma eficaz, eficiente e satisfatória, me traz uma enorme satisfação pessoal.
-        p Meu modus operandi consiste em alinhar os interesses dos usuários com os interesses do negócio, gerando o máximo valor para ambos.
+          h1 pesquisa, design e desenvolvimento de experiências do usuário
+          p O desenvolvimento web me cativou. Encontrar e solucionar problemas, projetando e desenvolvendo experiências que permitem seus usuários ideais atingirem seus objetivos de forma eficaz, eficiente e satisfatória, me traz uma enorme satisfação pessoal.
+          p Meu modus operandi consiste em alinhar os interesses dos usuários com os interesses do negócio, gerando o máximo valor para ambos.
+          p Atualmente, moro em São Paulo e atuo como estagiário de design de experiência do usuário na 
+            a.link-alternative(href="https://www.vhita.com.br/pages/sobre-nos-vhita" target="_blank" rel="noopener noreferrer") Vhita.
       .container-lg.col-md-12.under-the-fold__summary
         .row.under-the-fold__summary__row
           .col-md-4.under-the-fold__summary__row__left-column
             h1 UX researcher
             hr
-            p como pesquisador de UX, busco ter eficácia na identificação e definição de usuários e problemas de um design.
-            //input.secondary-button(type="button" value="como eu pesquiso" data-toggle="modal" data-target="#ResearchModal" tabindex="4")
+            p como pesquisador de UX, busco ter eficácia e evitar o meu próprio viés na identificação e definição de usuários e problemas de um design.
+            hr
+            p sigo o princípio de 
+              a.link(href="https://www.interaction-design.org/literature/article/before-you-start-designing-it-s-time-to-get-out-of-the-building" target="_blank" rel="noopener noreferrer") GOOB
+              | . 
           .col-md-4.under-the-fold__summary__row__middle-column
             h1 UX designer
             hr
-            p como designer de experiência do usuário, busco ter criatividade e eficácia na resolução de problemas de um design.
-            //input.secondary-button(type="button" value="como eu projeto" data-toggle="modal" data-target="#DesignModal" tabindex="5")
+            p como designer de experiência do usuário, busco ter criatividade e eficácia na resolução de problemas de um design, sem negligenciar nenhum usuário.
+            hr
+            p sigo os princípios e valores do 
+              a.link(href="https://www.interaction-design.org/literature/article/a-simple-introduction-to-lean-ux" target="_blank" rel="noopener noreferrer") lean UX
+              | ; 
+              a.link(href="https://agilemanifesto.org/iso/ptbr/manifesto.html" target="_blank" rel="noopener noreferrer") design thinking
+              | ; 
+              a.link(href="https://agilemanifesto.org/iso/ptbr/manifesto.html" target="_blank" rel="noopener noreferrer") user-centered design
+              | ; 
+              a.link(href="https://agilemanifesto.org/iso/ptbr/manifesto.html" target="_blank" rel="noopener noreferrer") WCAG
+              | .
+            
           .col-md-4.under-the-fold__summary__row__right-column
             h1 front-end developer
             hr
-            p como desenvolvedor front-end, busco implementar uma solução da forma mais otimizada e escalável possível.
-            //input.secondary-button(type="button" value="como eu implemento" data-toggle="modal" data-target="#DevModal" tabindex="6")
+            p como desenvolvedor front-end, busco implementar uma solução da forma mais otimizada, escalável e de fácil manutenção possível.
+            hr
+            p sigo os princípios e valores do 
+              a.link(href="https://agilemanifesto.org/iso/ptbr/manifesto.html" target="_blank" rel="noopener noreferrer") manifesto ágil
+              | ; 
+              a.link(href="https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29" target="_blank" rel="noopener noreferrer") clean code
+              |  e da 
+              a.link(href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" target="_blank" rel="noopener noreferrer") arquitetura MVC
+              | .
       .under-the-fold__contact-me
         .under-the-fold__contact-me__content
           h1 vamos desenvolver algo incrível?!
@@ -45,60 +67,10 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/n
           a.under-the-fold__contact-me__content__e-mail(href="mailto:hello@kevinnicolasbq.com" title="enviar um e-mail" tabindex="7") hello@kevinnicolasbq.com
           .under-the-fold__contact-me__content__location
             i.fas.fa-map-marker-alt
-            | são paulo, sp, brasil.
-    //modal-01
-    #ResearchModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="ResearchModal" aria-hidden="true")
-      .modal-dialog.modal-dialog-centered.modal-dialog-scrollable(role="document")
-        .modal-content
-          .modal-header
-            h5.modal-title conheça meu processo de pesquisa
-            button.close(type="button" data-dismiss="modal" aria-label="Close")
-              span(aria-hidden="true") x
-          .modal-body
-            
-          .modal-footer
-            input.primary-button(type="button" data-dismiss="modal" value="fechar janela")  
-    //modal-02
-    #DesignModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="DesignModal" aria-hidden="true")
-      .modal-dialog.modal-dialog-centered.modal-dialog-scrollable(role="document")
-        .modal-content
-          .modal-header
-            h5.modal-title conheça meu processo de design
-            button.close(type="button" data-dismiss="modal" aria-label="Close")
-              span(aria-hidden="true") x
-          .modal-body
-            p #[strong Caneta e papel] - Afinal, a prototipação descartável é uma forma rápida e barata de testar e obter feedback sobre uma ideia.
-            p #[strong InVision] - Recorro a ele sempre que preciso construir wireframes ou protótipos de baixa fidelidade.
-            p #[strong Adobe XD] - Quando um protótipo mais fidedigno é necessário, utilizo o XD.
-            p #[strong Adobe Photoshop] - Quando é necessário manipular alguma imagem, utilizo o Photoshop.
-            p #[strong Adobe Illustrator] - Quando é necessário vetorizar alguma imagem, utilizo o Illustrator.
-          .modal-footer
-            input.primary-button(type="button" data-dismiss="modal" value="fechar janela")  
-    //modal-03
-    #DevModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="DevModal" aria-hidden="true")
-      .modal-dialog.modal-dialog-centered.modal-dialog-scrollable(role="document")
-        .modal-content
-          .modal-header
-            h5.modal-title conheça meu processo de implementação
-            button.close(type="button" data-dismiss="modal" aria-label="Close")
-              span(aria-hidden="true") x
-          .modal-body
-            p Quando programando, sigo boas práticas e padrões de nomenclatura - como o BEM, do CSS - para tornar a leitura e manutenção do código, uma tarefa mais simples. Além disso, busco otimizar o sistema o máximo possível, para otimizar - consequentemente - a experiência do usuário e contribuir com a SEO.
-            h5 tecnologias que utilizo:
-            p HTML;
-            p CSS;
-            p JavaScript (JS);
-            p SASS;
-            p PugJS;
-            p GulpJS;
-            p WordPress;
-            p e, eventualmente, outras bibliotecas JS;
-          .modal-footer
-            input.primary-button(type="button" data-dismiss="modal" value="fechar janela")    
+            | são paulo, sp, brasil. 
     .back-to-top
-      a(href="#sectionOne")
-        i.fas.fa-chevron-up.fa-4x(onclick="backToTop()")
-
+      a(href="#" onclick="scrollToSecondSection('sectionOne'); return false;")
+        i.fas.fa-chevron-up.fa-4x
     footer.footer
       .footer__social-media
         p confira minhas redes sociais

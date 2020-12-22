@@ -8,3 +8,7 @@ var scrollDown = function () {
 
 window.addEventListener("scroll", scrollDown);
 
+function scrollToSecondSection(id){
+  document.getElementById(id).scrollIntoView(true);
+}
+

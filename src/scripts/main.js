@@ -104,6 +104,10 @@ var scrollDown = function () {
 
 window.addEventListener("scroll", scrollDown);
 
+function scrollToSecondSection(id){
+  document.getElementById(id).scrollIntoView(true);
+}
+
 
 $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip();

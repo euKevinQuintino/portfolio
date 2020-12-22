@@ -97,6 +97,15 @@ strong {
   .link:active {
     color: #274242; }
 
+.link-alternative {
+  color: #ff0;
+  text-decoration: underline;
+  font-weight: 400; }
+  .link-alternative:hover {
+    color: #ffff3d; }
+  .link-alternative:active {
+    color: #ebeb00; }
+
 .above-the-fold {
   max-width: 1200px;
   margin: 0 auto;
@@ -135,13 +144,18 @@ strong {
       margin-bottom: 0;
       color: #2f4f4f;
       text-decoration: underline; }
-    .above-the-fold__check-more:hover {
-      cursor: pointer; }
-      .above-the-fold__check-more:hover i {
-        transition: 0.2s ease-in-out;
-        transform: translateY(4px); }
+      .above-the-fold__check-more a:hover {
+        cursor: pointer; }
+        .above-the-fold__check-more a:hover i {
+          transition: 0.2s ease-in-out;
+          transform: translateY(4px); }
     .above-the-fold__check-more i {
       font-size: 1.8em; }
+      .above-the-fold__check-more i:hover {
+        cursor: pointer; }
+        .above-the-fold__check-more i:hover i {
+          transition: 0.2s ease-in-out;
+          transform: translateY(4px); }
 
 .under-the-fold {
   width: 100%; }
@@ -182,7 +196,7 @@ strong {
       font-size: 1.8em;
       margin: 0;
       padding: 8px;
-      color: #2f4f4f; }
+      color: #444; }
     .under-the-fold__summary input {
       margin-top: 12px;
       font-size: 1.7em; }
@@ -218,15 +232,16 @@ strong {
     .under-the-fold__contact-me__content {
       width: 860px;
       height: 256px;
-      color: #2f4f4f;
       text-align: center;
       margin: 96px auto; }
       .under-the-fold__contact-me__content h1 {
         font-size: 3.6em;
         font-family: "Nunito", sans-serif;
+        color: #2f4f4f;
         padding: 16px; }
       .under-the-fold__contact-me__content p {
         padding: 8px;
+        color: #444;
         font-size: 2em; }
       .under-the-fold__contact-me__content__e-mail {
         padding: 8px;
@@ -243,7 +258,8 @@ strong {
         padding-top: 12px;
         font-size: 1.8em; }
         .under-the-fold__contact-me__content__location i {
-          margin-right: 8px; }
+          margin-right: 8px;
+          color: #2f4f4f; }
 
 .back-to-top {
   position: fixed;
@@ -363,6 +379,12 @@ input[type="color"]:focus,
   outline: 0 none; }
 
 @media (max-width: 767px) {
+  .link, .link-alternative {
+    text-decoration: none;
+    font-weight: 700; }
+  .above-the-fold__message {
+    margin-top: -40px !important;
+    height: 66% !important; }
   .modal-content {
     width: 98%; }
   .back-to-top {
@@ -379,7 +401,10 @@ input[type="color"]:focus,
   .under-the-fold__resume {
     padding-top: 64px; }
     .under-the-fold__resume h1 {
-      line-height: 1.5em; }
+      line-height: 1.5em;
+      text-align: left; }
+    .under-the-fold__resume p {
+      text-align: left; }
   .under-the-fold__bar {
     height: 960px; }
   .under-the-fold__summary {
@@ -390,21 +415,35 @@ input[type="color"]:focus,
       border-top-right-radius: 16px;
       border-bottom-left-radius: 0;
       margin-bottom: -1px; }
+      .under-the-fold__summary__row__left-column p {
+        text-align: left; }
     .under-the-fold__summary__row__middle-column {
       border: 1px solid #2f4f4f;
       margin-bottom: -1px; }
+      .under-the-fold__summary__row__middle-column p {
+        text-align: left; }
     .under-the-fold__summary__row__right-column {
       border: 1px solid #2f4f4f;
       border-bottom-left-radius: 16px;
       border-bottom-right-radius: 16px;
       border-top-right-radius: 0;
       margin-bottom: 32px; }
+      .under-the-fold__summary__row__right-column p {
+        text-align: left; }
   .under-the-fold__contact-me {
     padding: 0; }
     .under-the-fold__contact-me__content {
+      text-align: left;
       margin-top: 0;
       padding: 24px 24px;
-      margin-bottom: -200px; } }
+      margin-bottom: -200px; }
+      .under-the-fold__contact-me__content h1 {
+        padding: 6px; }
+      .under-the-fold__contact-me__content__e-mail {
+        text-decoration: none;
+        font-weight: 700; }
+      .under-the-fold__contact-me__content__location {
+        text-align: center; } }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .above-the-fold__message {

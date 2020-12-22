@@ -1,5 +1,6 @@
 $main: #2f4f4f;
-$bg-selection: #ff0;
+$link-alternative: #ff0;
+$base-text: #444;
 $white: #fff;
 
 html,body {
@@ -28,7 +29,7 @@ button {
 }
 
 mark {
-  background-color: $bg-selection;
+  background-color: $link-alternative;
   padding: 0;
   color: $main;
 }
@@ -39,12 +40,12 @@ strong {
 }
 
 ::selection {
-  background-color: $bg-selection;
+  background-color: $link-alternative;
   color: $main;
 }
 
 :-moz-selection {
-  background-color: $bg-selection;
+  background-color: $link-alternative;
   color: $main;
 }
 
@@ -120,6 +121,19 @@ strong {
   }
 }
 
+.link-alternative {
+  color: $link-alternative;
+  text-decoration: underline;
+  font-weight: 400;
+
+  &:hover {
+    color: lighten($link-alternative, 12%);
+  }
+  &:active {
+    color: darken($link-alternative, 4%);
+  }
+}
+
 .above-the-fold {
   max-width: 1200px;
   margin: 0 auto;
@@ -170,18 +184,24 @@ strong {
       margin-bottom: 0;
       color: $main;
       text-decoration: underline;
-    }
-
-    &:hover {
-      i {
-        transition: 0.2s ease-in-out;
-        transform: translateY(4px);
+      &:hover {
+        i {
+          transition: 0.2s ease-in-out;
+          transform: translateY(4px);
+        }
+        cursor: pointer;
       }
-      cursor: pointer;
     }
 
     i {
       font-size: 1.8em;
+      &:hover {
+        i {
+          transition: 0.2s ease-in-out;
+          transform: translateY(4px);
+        }
+        cursor: pointer;
+      }
     }
   }
 }
@@ -237,7 +257,7 @@ strong {
       font-size: 1.8em;
       margin: 0;
       padding: 8px;
-      color: $main;
+      color: $base-text;
     }
 
     input {
@@ -287,18 +307,19 @@ strong {
     &__content {
       width: 860px;
       height: 256px;
-      color: $main;
       text-align: center;
       margin: 96px auto;
 
       h1 {
         font-size: 3.6em;
         font-family: "Nunito", sans-serif;
+        color: $main;
         padding: 16px;
       }
 
       p {
         padding: 8px;
+        color: $base-text;
         font-size: 2em;
       }
 
@@ -324,6 +345,7 @@ strong {
 
         i {
           margin-right: 8px;
+          color: $main;
         }
       }
     }
@@ -485,6 +507,16 @@ input[type="color"]:focus,
 //END BOOTSTRAP
 
 @media (max-width: 767px) {
+  .link, .link-alternative {
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .above-the-fold {
+    &__message {
+      margin-top: -40px !important;
+      height: 66% !important;
+    }
+  }
   .modal-content {
     width: 98%;
   }
@@ -512,6 +544,11 @@ input[type="color"]:focus,
 
       h1 {
         line-height: 1.5em;
+        text-align: left;
+      }
+
+      p {
+        text-align: left;
       }
     }
 
@@ -521,9 +558,11 @@ input[type="color"]:focus,
 
     &__summary {
       margin-top: 32px;
-
       &__row {
         &__left-column {
+          p {
+            text-align: left;
+          }
           border: 1px solid $main;
           border-top-left-radius: 16px;
           border-top-right-radius: 16px;
@@ -532,11 +571,17 @@ input[type="color"]:focus,
         }
 
         &__middle-column {
+          p {
+            text-align: left;
+          }
           border: 1px solid $main;
           margin-bottom: -1px;
         }
 
         &__right-column {
+          p {
+            text-align: left;
+          }
           border: 1px solid $main;
           border-bottom-left-radius: 16px;
           border-bottom-right-radius: 16px;
@@ -550,9 +595,23 @@ input[type="color"]:focus,
       padding: 0;
 
       &__content {
+        h1 {
+          padding: 6px;
+        }
+
+        text-align: left;
         margin-top: 0;
         padding: 24px 24px;
         margin-bottom: -200px;
+
+        &__e-mail {
+          text-decoration: none;
+          font-weight: 700;
+        }
+
+        &__location {
+          text-align: center;
+        }
       }
     }
   }
