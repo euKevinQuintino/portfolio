@@ -12,6 +12,10 @@ html,body {
 }
 
 *:focus {
+  outline: none;
+}
+
+*:focus-visible {
   outline-color: lighten($main, 16%) !important;
   outline-offset: 2px !important;
   outline-style: dashed !important;
@@ -108,29 +112,46 @@ strong {
   }
 }
 
+
 .link {
-  color: $main;
-  text-decoration: underline;
-  font-weight: 400;
+  color: inherit;
+  border-bottom: 2px solid $main;
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: inherit;
+  cursor: pointer;
 
   &:hover {
-    color: lighten($main, 12%);
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 3px solid $main;
   }
   &:active {
-    color: darken($main, 4%);
+    text-decoration: none;
+    color: $main;
+    border-bottom: 3px solid $main;
+    transition: .1s;
   }
 }
 
 .link-alternative {
-  color: $link-alternative;
-  text-decoration: underline;
+  color: inherit;
+  border-bottom: 2px solid $link-alternative;
+  border-radius: 2px;
+  text-decoration: none;
   font-weight: 400;
+  cursor: pointer;
 
   &:hover {
-    color: lighten($link-alternative, 12%);
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 3px solid $link-alternative;
   }
   &:active {
-    color: darken($link-alternative, 4%);
+    text-decoration: none;
+    color: $link-alternative;
+    border-bottom: 3px solid $link-alternative;
+    transition: .1s;
   }
 }
 
@@ -183,25 +204,18 @@ strong {
       font-size: 1.8em;
       margin-bottom: 0;
       color: $main;
-      text-decoration: underline;
-      &:hover {
-        i {
-          transition: 0.2s ease-in-out;
-          transform: translateY(4px);
-        }
-        cursor: pointer;
-      }
     }
 
     i {
-      font-size: 1.8em;
-      &:hover {
-        i {
-          transition: 0.2s ease-in-out;
-          transform: translateY(4px);
-        }
-        cursor: pointer;
+      font-size: 3.2em;
+    }
+
+    &:hover {
+      i {
+        transition: 0.2s ease-in-out;
+        transform: translateY(4px);
       }
+      cursor: pointer;
     }
   }
 }
@@ -235,7 +249,7 @@ strong {
     p {
       font-size: 1.8em;
       color: $white;
-      text-align: center;
+      //text-align: center;
       line-height: 1.5em;
       font-weight: 400;
     }
@@ -243,11 +257,11 @@ strong {
 
   &__summary {
     margin: 64px auto;
-    text-align: center;
 
     h1 {
       font-size: 2.4em;
       font-weight: 600;
+      text-align: center;
       margin-bottom: 20px;
       font-family: "Nunito", sans-serif;
       color: $main;
@@ -325,10 +339,10 @@ strong {
 
       &__e-mail {
         padding: 8px;
+        padding-bottom: 0;
         font-size: 2.4em !important;
         font-family: "Nunito", sans-serif;
         color: $main;
-        text-decoration: underline;
         font-weight: 400;
 
         &:hover {
@@ -363,11 +377,14 @@ strong {
     float: right;
     margin-right: 24px;
     color: lighten($main, 8%);
-    transition: 0.2s;
+    transition: 0.1s;
+    padding: 10px 12px 10px 12px;
 
     &:hover {
       cursor: pointer;
       color: darken($main, 8%);
+      background-color: rgba(47,79,79,0.2);
+      border-radius: 50%;
     }
   }
 }

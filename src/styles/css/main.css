@@ -6,6 +6,9 @@ html, body {
   padding: 0; }
 
 *:focus {
+  outline: none; }
+
+*:focus-visible {
   outline-color: #4d8282 !important;
   outline-offset: 2px !important;
   outline-style: dashed !important;
@@ -89,22 +92,38 @@ strong {
     box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.4); }
 
 .link {
-  color: #2f4f4f;
-  text-decoration: underline;
-  font-weight: 400; }
+  color: inherit;
+  border-bottom: 2px solid #2f4f4f;
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: inherit;
+  cursor: pointer; }
   .link:hover {
-    color: #467575; }
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 3px solid #2f4f4f; }
   .link:active {
-    color: #274242; }
+    text-decoration: none;
+    color: #2f4f4f;
+    border-bottom: 3px solid #2f4f4f;
+    transition: .1s; }
 
 .link-alternative {
-  color: #ff0;
-  text-decoration: underline;
-  font-weight: 400; }
+  color: inherit;
+  border-bottom: 2px solid #ff0;
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: 400;
+  cursor: pointer; }
   .link-alternative:hover {
-    color: #ffff3d; }
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 3px solid #ff0; }
   .link-alternative:active {
-    color: #ebeb00; }
+    text-decoration: none;
+    color: #ff0;
+    border-bottom: 3px solid #ff0;
+    transition: .1s; }
 
 .above-the-fold {
   max-width: 1200px;
@@ -142,20 +161,14 @@ strong {
     .above-the-fold__check-more a {
       font-size: 1.8em;
       margin-bottom: 0;
-      color: #2f4f4f;
-      text-decoration: underline; }
-      .above-the-fold__check-more a:hover {
-        cursor: pointer; }
-        .above-the-fold__check-more a:hover i {
-          transition: 0.2s ease-in-out;
-          transform: translateY(4px); }
+      color: #2f4f4f; }
     .above-the-fold__check-more i {
-      font-size: 1.8em; }
-      .above-the-fold__check-more i:hover {
-        cursor: pointer; }
-        .above-the-fold__check-more i:hover i {
-          transition: 0.2s ease-in-out;
-          transform: translateY(4px); }
+      font-size: 3.2em; }
+    .above-the-fold__check-more:hover {
+      cursor: pointer; }
+      .above-the-fold__check-more:hover i {
+        transition: 0.2s ease-in-out;
+        transform: translateY(4px); }
 
 .under-the-fold {
   width: 100%; }
@@ -180,15 +193,14 @@ strong {
     .under-the-fold__resume p {
       font-size: 1.8em;
       color: #fff;
-      text-align: center;
       line-height: 1.5em;
       font-weight: 400; }
   .under-the-fold__summary {
-    margin: 64px auto;
-    text-align: center; }
+    margin: 64px auto; }
     .under-the-fold__summary h1 {
       font-size: 2.4em;
       font-weight: 600;
+      text-align: center;
       margin-bottom: 20px;
       font-family: "Nunito", sans-serif;
       color: #2f4f4f; }
@@ -245,10 +257,10 @@ strong {
         font-size: 2em; }
       .under-the-fold__contact-me__content__e-mail {
         padding: 8px;
+        padding-bottom: 0;
         font-size: 2.4em !important;
         font-family: "Nunito", sans-serif;
         color: #2f4f4f;
-        text-decoration: underline;
         font-weight: 400; }
         .under-the-fold__contact-me__content__e-mail:hover {
           color: #467575; }
@@ -271,10 +283,13 @@ strong {
     float: right;
     margin-right: 24px;
     color: #3e6969;
-    transition: 0.2s; }
+    transition: 0.1s;
+    padding: 10px 12px 10px 12px; }
     .back-to-top i:hover {
       cursor: pointer;
-      color: #203535; }
+      color: #203535;
+      background-color: rgba(47, 79, 79, 0.2);
+      border-radius: 50%; }
 
 .footer {
   margin-top: 44px;
