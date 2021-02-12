@@ -138,10 +138,19 @@ strong {
       width: 48px;
       height: 48px;
       float: left;
-      transition: 0.2s; }
+      transition: 0.2s;
+      margin-right: 16px;
+      float: left; }
       .above-the-fold__top img:hover {
         cursor: pointer;
-        transform: scale(1.069); }
+        transform: translateX(2px); }
+      .above-the-fold__top img:active {
+        transform: translate(2px, 2px); }
+    .above-the-fold__top__name {
+      font-size: 2.8em;
+      color: #2f4f4f;
+      padding: 8px;
+      float: left; }
     .above-the-fold__top input {
       float: right; }
   .above-the-fold__message {
@@ -299,32 +308,34 @@ strong {
   .footer__social-media {
     width: 256px;
     height: 240px;
+    padding-top: 104px;
     margin: auto;
     text-align: center; }
     .footer__social-media p {
       width: 100%;
       text-align: center;
-      padding-top: 104px;
-      margin-bottom: -80px;
+      margin-bottom: 0;
       font-size: 2em;
       color: #fff; }
-    .footer__social-media a {
-      margin-right: 8px;
-      margin-left: 8px; }
-    .footer__social-media__icon {
-      width: 48px;
-      height: 48px;
-      border: 1px solid rgba(255, 255, 255, 0.69);
-      padding: 13.5px;
-      border-radius: 50%;
-      margin-top: 108px; }
-      .footer__social-media__icon:hover {
-        border-color: white;
-        background-color: #3a6262;
-        cursor: pointer;
-        transition: 0.2s; }
-    .footer__social-media i {
-      color: #fff !important; }
+    .footer__social-media__links {
+      padding-top: 0;
+      margin-top: 28px; }
+      .footer__social-media__links a {
+        margin-right: 8px;
+        margin-left: 8px; }
+      .footer__social-media__links__icon {
+        width: 48px;
+        height: 48px;
+        border: 1px solid rgba(255, 255, 255, 0.69);
+        padding: 13.5px;
+        border-radius: 50%; }
+        .footer__social-media__links__icon:hover {
+          border-color: white;
+          background-color: #3a6262;
+          cursor: pointer;
+          transition: 0.2s; }
+      .footer__social-media__links i {
+        color: #fff !important; }
   .footer__message {
     width: 100%;
     text-align: center;
@@ -394,12 +405,13 @@ input[type="color"]:focus,
   outline: 0 none; }
 
 @media (max-width: 767px) {
-  .link, .link-alternative {
-    text-decoration: none;
-    font-weight: 700; }
+  .above-the-fold__top__name {
+    display: none; }
   .above-the-fold__message {
-    margin-top: -40px !important;
-    height: 66% !important; }
+    margin-top: -40px;
+    height: 66%; }
+    .above-the-fold__message h1 {
+      font-size: 1em !important; }
   .modal-content {
     width: 98%; }
   .back-to-top {

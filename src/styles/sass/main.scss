@@ -171,11 +171,23 @@ strong {
       height: 48px;
       float: left;
       transition: 0.2s;
+      margin-right: 16px;
+      float: left;
 
       &:hover {
         cursor: pointer;
-        transform: scale(1.069);
+        transform: translateX(2px);
       }
+      &:active {
+        transform: translate(2px, 2px);
+      }
+    }
+
+    &__name {
+      font-size: 2.8em;
+      color: $main;
+      padding: 8px;
+      float: left;
     }
 
     input {
@@ -398,41 +410,45 @@ strong {
   &__social-media {
     width: 256px;
     height: 240px;
+    padding-top: 104px;
     margin: auto;
     text-align: center;
 
     p {
       width: 100%;
       text-align: center;
-      padding-top: 104px;
-      margin-bottom: -80px;
+      margin-bottom: 0;
       font-size: 2em;
       color: $white;
     }
 
-    a {
-      margin-right: 8px;
-      margin-left: 8px;
-    }
+    &__links {
+      padding-top: 0;
+      margin-top: 28px; 
 
-    &__icon {
-      width: 48px;
-      height: 48px;
-      border: 1px solid rgba(255, 255, 255, 0.69);
-      padding: 13.5px;
-      border-radius: 50%;
-      margin-top: 108px;
-
-      &:hover {
-        border-color: rgba(255, 255, 255, 1);
-        background-color: lighten($main, 6%);
-        cursor: pointer;
-        transition: 0.2s;
+      a {
+        margin-right: 8px;
+        margin-left: 8px;
       }
-    }
 
-    i {
-      color: $white !important;
+      &__icon {
+        width: 48px;
+        height: 48px;
+        border: 1px solid rgba(255, 255, 255, 0.69);
+        padding: 13.5px;
+        border-radius: 50%;
+
+        &:hover {
+          border-color: rgba(255, 255, 255, 1);
+          background-color: lighten($main, 6%);
+          cursor: pointer;
+          transition: 0.2s;
+        }
+      }
+
+      i {
+        color: $white !important;
+      }
     }
   }
 
@@ -524,14 +540,18 @@ input[type="color"]:focus,
 //END BOOTSTRAP
 
 @media (max-width: 767px) {
-  .link, .link-alternative {
-    text-decoration: none;
-    font-weight: 700;
-  }
   .above-the-fold {
+    &__top {
+      &__name {
+        display: none;
+      }
+    }
     &__message {
-      margin-top: -40px !important;
-      height: 66% !important;
+      h1 {
+        font-size: 1em!important;
+      }
+      margin-top: -40px;
+      height: 66%;
     }
   }
   .modal-content {
