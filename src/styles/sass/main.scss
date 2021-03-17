@@ -75,6 +75,7 @@ strong {
     color: $white;
     cursor: pointer;
   }
+  
   &:active {
     transform: translateY(2px);
     -moz-box-shadow: 0px 2px 6px rgba(47, 79, 79, 0.4);
@@ -104,6 +105,7 @@ strong {
     background-color: lighten($main, 56%);
     cursor: pointer;
   }
+
   &:active {
     transform: translateY(2px);
     -moz-box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.4);
@@ -126,6 +128,7 @@ strong {
     text-decoration: none;
     border-bottom: 3px solid $main;
   }
+
   &:active {
     text-decoration: none;
     color: $main;
@@ -147,6 +150,7 @@ strong {
     text-decoration: none;
     border-bottom: 3px solid $link-alternative;
   }
+
   &:active {
     text-decoration: none;
     color: $link-alternative;
@@ -178,6 +182,7 @@ strong {
         cursor: pointer;
         transform: translateX(2px);
       }
+
       &:active {
         transform: translate(2px, 2px);
       }
@@ -360,6 +365,7 @@ strong {
         &:hover {
           color: lighten($main, 12%);
         }
+
         &:active {
           color: darken($main, 4%);
         }
@@ -541,18 +547,26 @@ input[type="color"]:focus,
 
 @media (max-width: 767px) {
   .above-the-fold {
+    height: 90vh;
+    &__message {
+      h1 {
+        font-size: 1em!important;
+      }
+      height: 66%;
+      font-size: 2.8em;
+      height: 64%;
+      margin-top: -4px;
+      margin-bottom: 52px;
+    }
+    &__check-more {
+      height: 14%;
+    }
     &__top {
       &__name {
         display: none;
       }
     }
-    &__message {
-      h1 {
-        font-size: 1em!important;
-      }
-      margin-top: -40px;
-      height: 66%;
-    }
+    
   }
   .modal-content {
     width: 98%;
@@ -560,19 +574,6 @@ input[type="color"]:focus,
 
   .back-to-top {
     display: none;
-  }
-
-  .above-the-fold {
-    height: 90vh;
-    &__message {
-      font-size: 2.8em;
-      height: 64%;
-      margin-top: -52px;
-      margin-bottom: 52px;
-    }
-    &__check-more {
-      height: 14%;
-    }
   }
 
   .under-the-fold {

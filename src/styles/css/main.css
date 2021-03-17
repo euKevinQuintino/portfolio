@@ -405,26 +405,24 @@ input[type="color"]:focus,
   outline: 0 none; }
 
 @media (max-width: 767px) {
-  .above-the-fold__top__name {
-    display: none; }
-  .above-the-fold__message {
-    margin-top: -40px;
-    height: 66%; }
-    .above-the-fold__message h1 {
-      font-size: 1em !important; }
+  .above-the-fold {
+    height: 90vh; }
+    .above-the-fold__message {
+      height: 66%;
+      font-size: 2.8em;
+      height: 64%;
+      margin-top: -4px;
+      margin-bottom: 52px; }
+      .above-the-fold__message h1 {
+        font-size: 1em !important; }
+    .above-the-fold__check-more {
+      height: 14%; }
+    .above-the-fold__top__name {
+      display: none; }
   .modal-content {
     width: 98%; }
   .back-to-top {
     display: none; }
-  .above-the-fold {
-    height: 90vh; }
-    .above-the-fold__message {
-      font-size: 2.8em;
-      height: 64%;
-      margin-top: -52px;
-      margin-bottom: 52px; }
-    .above-the-fold__check-more {
-      height: 14%; }
   .under-the-fold__resume {
     padding-top: 64px; }
     .under-the-fold__resume h1 {

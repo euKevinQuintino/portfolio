@@ -4,19 +4,19 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/n
     include includes/head
   body
     noscript
-      iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-N8WW2TZ' height='0' width='0' style='display:none;visibility:hidden')
+      iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-N8WW2TZ' height='0' width='0' style='display:none; visibility:hidden')
     section#sectionOne.above-the-fold
       header.above-the-fold__top
-        a(href="https://blog.kevinnicolasbq.com/" name="logo kevin quintino")
+        a(href="https://kevinnicolasbq.com/" name="logo kevinnicolasbq")
           img(src="img/logomark.svg" alt="")
         h1.above-the-fold__top__name #[mark kevin quintino]
-        a(href="https://blog.kevinnicolasbq.com/" title="ir para o blog")
-          input.primary-button(type="button" value="confira meu blog")
+        a(href="https://blog.kevinnicolasbq.com/" title="visite meu blog")
+          input.primary-button(type="button" value="confira meu blog" tabindex="-1")
       .above-the-fold__message
-        h1 oi, eu sou o #[mark kevin], eu projeto e desenvolvo #[br] { experiências de usuário memoráveis }
+        h1 oi, eu sou o #[mark kevin], eu projeto e desenvolvo #[br] experiências memoráveis
       .above-the-fold__check-more
         a.link(href="#" onclick="scrollToSecondSection('sectionTwo'); return false;") saiba mais sobre mim #[br]
-        i.fa.fa-chevron-down.fa-3x(aria-hidden="true")
+        i.fa.fa-chevron-down.fa-3x(aria-hidden="true" onclick="scrollToSecondSection('sectionTwo'); return false;")
     section#sectionTwo.under-the-fold
       .under-the-fold__bar
       .under-the-fold__resume 
@@ -32,9 +32,11 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/n
             hr
             p como pesquisador de UX, busco ter eficácia e evitar o meu próprio viés na identificação e definição de usuários e problemas de um design.
             hr
-            p sigo o princípio de 
+            p sigo os princípios da pesquisa científica; 
               a.link(href="https://www.interaction-design.org/literature/article/before-you-start-designing-it-s-time-to-get-out-of-the-building" target="_blank" rel="noopener noreferrer") GOOB
-              | . 
+              | e 
+              a.link(href="https://blog.prototypr.io/what-is-atomic-research-e5d9fbc1285c" target="_blank" rel="noopener noreferrer") atomic UX research
+              | .  
           .col-md-4.under-the-fold__summary__row__middle-column
             h1 UX designer
             hr
@@ -46,7 +48,7 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/n
               a.link(href="https://www.interaction-design.org/literature/topics/design-thinking" target="_blank" rel="noopener noreferrer") design thinking
               | ; 
               a.link(href="https://www.interaction-design.org/literature/topics/user-centered-design" target="_blank" rel="noopener noreferrer") user-centered design
-              | ; 
+              | e 
               a.link(href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer") WCAG
               | .
             
@@ -59,14 +61,16 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/n
               a.link(href="https://agilemanifesto.org/iso/ptbr/manifesto.html" target="_blank" rel="noopener noreferrer") manifesto ágil
               | ; 
               a.link(href="https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29" target="_blank" rel="noopener noreferrer") clean code
-              |  e da 
+              |  ; 
               a.link(href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" target="_blank" rel="noopener noreferrer") arquitetura MVC
+              | e 
+              a.link(href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer") ARIA
               | .
       .under-the-fold__contact-me
         .under-the-fold__contact-me__content
           h1 vamos desenvolver algo incrível?!
           p adoraria te ajudar a solucionar seus problemas ou contribuir com seu projeto.#[br]envie-me um e-mail, vamos conversar!
-          a.link.under-the-fold__contact-me__content__e-mail(href="mailto:hello@kevinnicolasbq.com" title="enviar um e-mail" name="meu e-mail") hello@kevinnicolasbq.com
+          a.link.under-the-fold__contact-me__content__e-mail(href="mailto:hello@kevinnicolasbq.com" title="envie-me um e-mail" name="meu e-mail") hello@kevinnicolasbq.com
           .under-the-fold__contact-me__content__location
             i.fas.fa-map-marker-alt(aria-hidden="true")
             | são paulo, sp, brasil. 
