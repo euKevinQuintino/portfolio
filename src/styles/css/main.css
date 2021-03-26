@@ -12,7 +12,8 @@ html, body {
   outline-color: #4d8282 !important;
   outline-offset: 2px !important;
   outline-style: dashed !important;
-  outline-width: 2px !important; }
+  outline-width: 2px !important;
+  transition: .1s; }
 
 body,
 input,
