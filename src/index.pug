@@ -10,25 +10,26 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
         a(href="https://kevinnicolasbq.com/")
           img(src="img/logomark.svg" alt="")
         h1.above-the-fold__top__name #[mark kevin quintino]
-        a(href="https://blog.kevinnicolasbq.com/" title="visite meu blog")
-          input.primary-button(type="button" value="confira meu blog" tabindex="-1")
+        a.link.above-the-fold__top__blog-link(href="https://blog.kevinnicolasbq.com/" title="visite meu blog") confira meu blog
+        a(href="#contact" title="fale comigo" role="button")
+          input.primary-button(type="button" value="entrar em contato" tabindex="-1")
       .above-the-fold__message
-        h1 oi, eu sou o #[mark kevin], eu projeto e desenvolvo #[br] experiências memoráveis
+        h2 oi, eu sou o #[mark kevin], eu projeto e desenvolvo #[br] experiências memoráveis
       .above-the-fold__check-more
         a.link(href="#" onclick="scrollToSecondSection('sectionTwo'); return false;") saiba mais sobre mim #[br]
         i.fa.fa-chevron-down.fa-3x(aria-hidden="true" onclick="scrollToSecondSection('sectionTwo'); return false;")
     section#sectionTwo.under-the-fold
       .under-the-fold__bar
       .under-the-fold__resume 
-          h1 pesquisa, design e desenvolvimento de experiências do usuário
+          h2 pesquisa, design e desenvolvimento de experiências do usuário
           p O desenvolvimento web me cativou. Encontrar e solucionar problemas, projetando e desenvolvendo experiências que permitem seus usuários ideais atingirem seus objetivos de forma eficaz, eficiente e satisfatória, me traz uma enorme satisfação pessoal.
-          p Meu modus operandi consiste em alinhar os interesses dos usuários com os interesses do negócio, gerando o máximo valor para ambos.
+          p Meu #[em modus operandi] consiste em alinhar os interesses dos usuários com os interesses do negócio, gerando o máximo valor para ambos.
           p Atualmente, moro em São Paulo e atuo como designer de experiência do usuário na 
             a.link-alternative(href="https://www.vhita.com.br/pages/sobre-nos-vhita" target="_blank" rel="noopener noreferrer" translate="no") vhita.
       .container-lg.col-md-12.under-the-fold__summary
         .row.under-the-fold__summary__row
           .col-md-4.under-the-fold__summary__row__left-column
-            h1 UX researcher
+            h3 UX researcher
             hr
             p como pesquisador de UX, busco ter eficácia e evitar o meu próprio viés na identificação e definição de usuários e problemas de um design.
             hr
@@ -38,7 +39,7 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
               a.link(href="https://blog.prototypr.io/what-is-atomic-research-e5d9fbc1285c" target="_blank" rel="noopener noreferrer") atomic UX research
               | .  
           .col-md-4.under-the-fold__summary__row__middle-column
-            h1 UX designer
+            h3 UX designer
             hr
             p como designer de experiência do usuário, busco ter criatividade e eficácia na resolução de problemas de um design, sem negligenciar nenhum usuário.
             hr
@@ -53,7 +54,7 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
               | .
             
           .col-md-4.under-the-fold__summary__row__right-column
-            h1 front-end developer
+            h3 front-end developer
             hr
             p como desenvolvedor front-end, busco implementar uma solução da forma mais otimizada, escalável e de fácil manutenção possível.
             hr
@@ -66,30 +67,97 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
               |  e 
               a.link(href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer") ARIA
               | .
-      .under-the-fold__contact-me
+      #contact.under-the-fold__contact-me
         .under-the-fold__contact-me__content
-          h1 vamos desenvolver algo incrível?!
-          p adoraria te ajudar a solucionar seus problemas ou contribuir com seu projeto.#[br]envie-me um e-mail, vamos conversar!
-          a.link.under-the-fold__contact-me__content__e-mail(href="mailto:hello@kevinnicolasbq.com" title="envie-me um e-mail") hello@kevinnicolasbq.com
+          h2 vamos desenvolver algo incrível?!
+          p adoraria te ajudar a solucionar seus problemas ou contribuir com seu projeto.#[br]#[strong envie-me um e-mail, vamos conversar!]
+          div(style="text-align: center;")
+            a.link-alternative.under-the-fold__contact-me__content__e-mail(href="mailto:hello@kevinnicolasbq.com" title="envie-me um e-mail") hello@kevinnicolasbq.com
           .under-the-fold__contact-me__content__location
             i.fas.fa-map-marker-alt(aria-hidden="true")
             | são paulo, sp, brasil. 
+      .row.under-the-fold__achievements
+        .col-md-12.under-the-fold__achievements__certifications
+          h3 estes são os meus principais certificados:
+          .col-md-6.col-md-6.under-the-fold__achievements__certifications__item(style="float: left;")
+            div(style="float: left;")
+              img(src="./img/covers/yale-cover.png", alt="" width="64" height="64")
+            div
+              a.link(href="https://www.coursera.org/verify/RU2U5G4HM8YD" target="_blank" rel="noopener noreferrer" name="visualizar certificado" aria-label="acessar certificado") the science of well-being
+              p yale university
+          .col-md-6.col-md-6.under-the-fold__achievements__certifications__item(style="float: right;")
+            div(style="float: left;")
+              img(src="./img/covers/interaction-design-foundation-cover.png", alt="" width="64" height="64")
+            div
+              a.link(href="https://www.interaction-design.org/kevin-quintino/certificate/course/7fc5a633-c117-4cd6-b919-b85f52d7a954" target="_blank" rel="noopener noreferrer" name="visualizar certificado" aria-label="acessar certificado") accessibility: how to design for all
+              p interaction design foundation
+          .col-md-6.col-md-6.under-the-fold__achievements__certifications__item(style="float: left;")
+            div(style="float: left;")
+              img(src="./img/covers/interaction-design-foundation-cover.png", alt="" width="64" height="64")
+            div
+              a.link(href="https://www.interaction-design.org/kevin-quintino/certificate/course/7b5d7c80-9404-4d0e-8d04-7a6f06913770" target="_blank" rel="noopener noreferrer" name="visualizar certificado" aria-label="acessar certificado") user research: methods and best practices
+              p interaction design foundation
+          .col-md-6.col-md-6.under-the-fold__achievements__certifications__item(style="float: right;")
+            div(style="float: left;")
+              img(src="./img/covers/interaction-design-foundation-cover.png", alt="" width="64" height="64")
+            div
+              a.link(href="https://www.interaction-design.org/kevin-quintino/certificate/course/3219d88f-e8b8-4f81-831c-3a189ddadd95" target="_blank" rel="noopener noreferrer" name="visualizar certificado" aria-label="acessar certificado") psychology of e-commerce: how to sell online
+              p interaction design foundation
+          .col-md-6.col-md-6.under-the-fold__achievements__certifications__item(style="float: left;")
+            div(style="float: left;")
+              img(src="./img/covers/interaction-design-foundation-cover.png", alt="" width="64" height="64")
+            div
+              a.link(href="https://www.interaction-design.org/kevin-quintino/certificate/course/2b8efa75-0db7-4deb-94d2-e564e6950bc1" target="_blank" rel="noopener noreferrer" name="visualizar certificado" aria-label="acessar certificado") web design for usability
+              p interaction design foundation
+          .col-md-6.col-md-6.under-the-fold__achievements__certifications__item(style="float: right;")
+            div(style="float: left;")
+              img(src="./img/covers/interaction-design-foundation-cover.png", alt="" width="64" height="64")
+            div
+              a.link(href="https://www.interaction-design.org/kevin-quintino/certificate/course/678f5ac4-b2cf-45b7-90b6-c205156d4482" target="_blank" rel="noopener noreferrer" name="visualizar certificado" aria-label="acessar certificado") human-computer interaction
+              p interaction design foundation
+          .col-md-6.col-md-6.under-the-fold__achievements__certifications__item(style="float: left;")
+            div(style="float: left;")
+              img(src="./img/covers/interaction-design-foundation-cover.png", alt="" width="64" height="64")
+            div
+              a.link(href="https://www.interaction-design.org/kevin-quintino/certificate/course/ac354dd2-15b3-46fd-ba17-3766a028e0f2" target="_blank" rel="noopener noreferrer" name="visualizar certificado" aria-label="acessar certificado") mobile user experience design
+              p interaction design foundation
+        .col-md-12.under-the-fold__achievements__books
+          h3 e estas, as minhas leituras favoritas:
+          .col-md-4.under-the-fold__achievements__books__item(style="float: left;")
+            div(style="float: left;")
+              img(src="./img/covers/lean-ux-cover.jpg" alt="lean ux book cover" width="100" height="150") 
+            div
+              a.link(href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer" name="visualizar e-book" aria-label="acessar e-book lean UX") lean UX
+              p jeff gothelf e josh seiden
+          .col-md-4.under-the-fold__achievements__books__item(style="float: left;")
+            div(style="float: left;")
+              img(src="./img/covers/ego-is-the-enemy-cover.jpg" alt="ego is the enemy book cover" width="100" height="150") 
+            div
+              a.link(href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer" name="visualizar e-book" aria-label="acessar e-book ego is the enemy") ego is the enemy
+              p ryan holiday
+          .col-md-4.under-the-fold__achievements__books__item(style="float: left;")
+            div(style="float: left;")
+              img(src="./img/covers/made-to-stick-cover.jpg" alt="made to stick book cover" width="100" height="150") 
+            div
+              a.link(href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer" name="visualizar e-book" aria-label="acessar e-book made to stick") made to stick
+              p chip heath e dan heath
+
     .back-to-top
-      a(href="#" name="voltar ao topo" onclick="scrollToSecondSection('sectionOne'); return false;")
+      a(href="#" name="voltar ao topo" onclick="scrollToSecondSection('sectionOne'); return false;" role="button" aria-label="voltar ao topo")
         i.fas.fa-chevron-up.fa-4x
     footer.footer
       .footer__social-media
-        p confira minhas redes sociais
+        h2 confira minhas redes sociais
         .footer__social-media__links
-          a(href="https://www.instagram.com/kevinnicolasbq/" rel="noopener noreferrer" target="_blank")
+          a(href="https://www.instagram.com/kevinnicolasbq/" rel="noopener noreferrer" target="_blank" aria-label="acessar meu instagram")
             i.footer__social-media__links__icon(data-toggle="tooltip" title="siga-me no instagram" aria-hidden="true").fab.fa-instagram.fa-2x
-          a(href="https://twitter.com/kevinnicolasbq" rel="noopener noreferrer" target="_blank")
+          a(href="https://twitter.com/kevinnicolasbq" rel="noopener noreferrer" target="_blank" aria-label="acessar meu twitter")
             i.footer__social-media__links__icon(data-toggle="tooltip" title="siga-me no twitter" aria-hidden="true").fab.fa-twitter.fa-2x
-          a(href="https://www.linkedin.com/in/kevinnicolasbq/" rel="noopener noreferrer" target="_blank")
-            i.footer__social-media__links__icon(data-toggle="tooltip" title="conecte-se comigo" aria-hidden="true").fab.fa-linkedin-in.fa-2x
-          a(href="https://github.com/kevinnicolasbq/" rel="noopener noreferrer" target="_blank" class="tooltip-color")
+          a(href="https://www.linkedin.com/in/kevinnicolasbq/" rel="noopener noreferrer" target="_blank" aria-label="acessar meu linkedin")
+            i.footer__social-media__links__icon(data-toggle="tooltip" title="conecte-se comigo no linkedin" aria-hidden="true").fab.fa-linkedin-in.fa-2x
+          a(href="https://github.com/kevinnicolasbq/" rel="noopener noreferrer" target="_blank" class="tooltip-color" aria-label="acessar meu github")
             i.footer__social-media__links__icon(data-toggle="tooltip" title="confira meu github" aria-hidden="true").fab.fa-github.fa-2x
       .footer__message
-        p feito com #[i.fas.fa-heart(data-toggle="tooltip" title="amor" class="tooltip-color")] e #[i.fas.fa-mug-hot(data-toggle="tooltip" title="café" aria-hidden="true")] por #[strong kevin quintino] #[i.far.fa-copyright(data-toggle="tooltip" title="todos os direitos reservados" aria-hidden="true")] 2021.
+        p feito com #[i.fas.fa-heart(data-toggle="tooltip" title="amor" class="tooltip-color" aria-label="amor")] e #[i.fas.fa-mug-hot(data-toggle="tooltip" title="café" aria-label="café")] por #[strong kevin quintino] #[i.far.fa-copyright(data-toggle="tooltip" title="todos os direitos reservados" aria-hidden="true")] 2021.
     script().
       $(".fa-chevron-down").removeClass("link");

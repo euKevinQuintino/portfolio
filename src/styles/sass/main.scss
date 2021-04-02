@@ -3,7 +3,8 @@ $link-alternative: #ff0;
 $base-text: #444;
 $white: #fff;
 
-html,body {
+html,
+body {
   scroll-behavior: smooth;
   width: 100%;
   overflow-x: hidden;
@@ -20,7 +21,7 @@ html,body {
   outline-offset: 2px !important;
   outline-style: dashed !important;
   outline-width: 2px !important;
-  transition: .1s;
+  transition: 0.1s;
 }
 
 body,
@@ -76,7 +77,7 @@ strong {
     color: $white;
     cursor: pointer;
   }
-  
+
   &:active {
     transform: translateY(2px);
     -moz-box-shadow: 0px 2px 6px rgba(47, 79, 79, 0.4);
@@ -115,7 +116,6 @@ strong {
   }
 }
 
-
 .link {
   color: inherit;
   border-bottom: 2px solid $main;
@@ -134,7 +134,7 @@ strong {
     text-decoration: none;
     color: $main;
     border-bottom: 3px solid $main;
-    transition: .1s;
+    transition: 0.1s;
   }
 }
 
@@ -156,7 +156,7 @@ strong {
     text-decoration: none;
     color: $link-alternative;
     border-bottom: 3px solid $link-alternative;
-    transition: .1s;
+    transition: 0.1s;
   }
 }
 
@@ -198,6 +198,13 @@ strong {
 
     input {
       float: right;
+    }
+
+    &__blog-link {
+      font-size: 1.8em;
+      position: absolute;
+      right: 256px;
+      padding-top: 6px;
     }
   }
 
@@ -250,12 +257,12 @@ strong {
   }
 
   &__resume {
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0px auto;
     padding: 30px;
     padding-top: 96px;
 
-    h1 {
+    h2 {
       font-size: 2.8em;
       color: $white;
       font-family: "Nunito", sans-serif;
@@ -276,7 +283,7 @@ strong {
   &__summary {
     margin: 64px auto;
 
-    h1 {
+    h3 {
       font-size: 2.4em;
       font-weight: 600;
       text-align: center;
@@ -328,57 +335,102 @@ strong {
     }
   }
 
+  &__achievements {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    h3 {
+      font-size: 2.8em;
+      color: $main;
+      margin-bottom: 24px;
+      padding: 16px;
+    }
+    img {
+      margin-right: 16px;
+      margin-bottom: 64px;
+    }
+    a {
+      color: $main;
+      font-size: 2.2em;
+    }
+
+    p {
+      font-size: 1.8em;
+      color: $base-text;
+    }
+
+    &__certifications {
+      margin-bottom: 48px;
+    }
+    &__books {
+      margin-bottom: 48px;
+      p{
+        margin-top: 8px;
+      }
+      img {
+        border: 1px solid $main;
+      }
+    }
+  }
+
   &__contact-me {
     width: 100%;
-    height: 540px;
     display: flex;
     align-content: center;
     justify-content: center;
     margin: auto;
 
     &__content {
-      width: 860px;
-      height: 256px;
+      width: 1200px;
       text-align: center;
-      margin: 96px auto;
+      margin: 0;
+      margin-top: 36px;
+      margin-bottom: 56px;
+      padding: 64px;
+      background-color: $main;
+      border-radius: 12px;
 
-      h1 {
-        font-size: 3.6em;
+      h2 {
+        font-size: 3.2em;
         font-family: "Nunito", sans-serif;
-        color: $main;
-        padding: 16px;
+        color: $white;
+        padding: 0px 16px 16px 8px;
       }
 
       p {
         padding: 8px;
-        color: $base-text;
+        font-weight: 300;
+        color: $white;
         font-size: 2em;
       }
 
       &__e-mail {
-        padding: 8px;
+        margin: 8px;
         padding-bottom: 0;
         font-size: 2.4em !important;
         font-family: "Nunito", sans-serif;
-        color: $main;
+        color: $white;
         font-weight: 400;
 
         &:hover {
-          color: lighten($main, 12%);
+          color: lighten($white, 12%);
         }
 
         &:active {
-          color: darken($main, 4%);
+          color: darken($white, 4%);
         }
       }
 
       &__location {
-        padding-top: 12px;
+        margin-top: 16px;
+        padding: 0;
         font-size: 1.8em;
+        font-weight: 300;
+        color: $white;
 
         i {
           margin-right: 8px;
-          color: $main;
+          color: $white;
         }
       }
     }
@@ -402,7 +454,7 @@ strong {
     &:hover {
       cursor: pointer;
       color: darken($main, 8%);
-      background-color: rgba(47,79,79,0.2);
+      background-color: rgba(47, 79, 79, 0.2);
       border-radius: 50%;
     }
   }
@@ -421,7 +473,7 @@ strong {
     margin: auto;
     text-align: center;
 
-    p {
+    h2 {
       width: 100%;
       text-align: center;
       margin-bottom: 0;
@@ -431,7 +483,7 @@ strong {
 
     &__links {
       padding-top: 0;
-      margin-top: 28px; 
+      margin-top: 28px;
 
       a {
         margin-right: 8px;
@@ -551,7 +603,7 @@ input[type="color"]:focus,
     height: 90vh;
     &__message {
       h1 {
-        font-size: 1em!important;
+        font-size: 1em !important;
       }
       height: 66%;
       font-size: 2.8em;
@@ -567,7 +619,6 @@ input[type="color"]:focus,
         display: none;
       }
     }
-    
   }
   .modal-content {
     width: 98%;
@@ -631,24 +682,21 @@ input[type="color"]:focus,
     }
 
     &__contact-me {
-      padding: 0;
 
       &__content {
-        h1 {
-          padding: 6px;
-        }
-
+        width: calc(100% - 32px);
+        border-radius: 16px;
         text-align: left;
-        margin-top: 0;
-        padding: 24px 24px;
-        margin-bottom: -200px;
+        padding: 36px 24px;
 
         &__e-mail {
           text-decoration: none;
           font-weight: 700;
+          font-size: 1.8em!important;
         }
 
         &__location {
+          margin-top: 24px;
           text-align: center;
         }
       }
@@ -668,7 +716,7 @@ input[type="color"]:focus,
   .under-the-fold {
     &__contact-me {
       &__content {
-        max-width: 720px;
+        max-width: calc(100% - 32px);
       }
     }
   }
