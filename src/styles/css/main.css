@@ -332,8 +332,7 @@ strong {
   bottom: 16px;
   margin-right: 24px;
   transition: 0.2s;
-  right: 0;
-  display: none; }
+  right: 0; }
   .back-to-top i {
     float: right;
     color: #3e6969;
