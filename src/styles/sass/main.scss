@@ -332,50 +332,6 @@ strong {
     }
   }
 
-  &__achievements {
-    max-width: 1200px;
-    margin: 0 auto;
-
-    h3 {
-      font-size: 2.8em;
-      color: $main;
-      margin-bottom: 24px;
-      padding: 16px;
-      font-weight: 600;
-      font-family: "Nunito", sans-serif;
-    }
-    img {
-      margin-right: 16px;
-      margin-bottom: 64px;
-    }
-    a {
-      color: $main;
-      font-size: 2.2em;
-    }
-
-    p {
-      font-size: 1.8em;
-      color: $base-text;
-    }
-    &__graduations {
-      border-bottom: 1px solid rgba(47,79,79,0.16);
-      margin-bottom: 48px;
-    }
-    &__certifications {
-      border-bottom: 1px solid rgba(47,79,79,0.16);
-      margin-bottom: 48px;
-    }
-    &__books {
-      margin-bottom: 48px;
-      p{
-        margin-top: 8px;
-      }
-      img {
-        border: 1px solid $main;
-      }
-    }
-  }
-
   &__contact-me {
     width: 100%;
     display: flex;
@@ -387,9 +343,9 @@ strong {
       width: 1200px;
       text-align: center;
       margin: 0;
-      margin-top: 36apx;
+      margin-top: 28px;
       margin-bottom: 64px;
-      padding: 64px;
+      padding: 80px;
       background-color: $main;
       border-radius: 12px;
 
@@ -435,6 +391,50 @@ strong {
           margin-right: 8px;
           color: $white;
         }
+      }
+    }
+  }
+
+  &__achievements {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    h3 {
+      font-size: 2.8em;
+      color: $main;
+      margin-bottom: 24px;
+      padding: 16px;
+      font-weight: 600;
+      font-family: "Nunito", sans-serif;
+    }
+    img {
+      margin-right: 16px;
+      margin-bottom: 64px;
+    }
+    a {
+      color: $main;
+      font-size: 2.2em;
+    }
+
+    p {
+      font-size: 1.8em;
+      color: $base-text;
+    }
+    &__graduations {
+      border-bottom: 1px solid rgba(47,79,79,0.16);
+      margin-bottom: 48px;
+    }
+    &__certifications {
+      border-bottom: 1px solid rgba(47,79,79,0.16);
+      margin-bottom: 48px;
+    }
+    &__books {
+      margin-bottom: 48px;
+      p{
+        margin-top: 8px;
+      }
+      img {
+        border: 1px solid $main;
       }
     }
   }

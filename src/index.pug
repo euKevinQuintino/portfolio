@@ -7,18 +7,18 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
       iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-N8WW2TZ' height='0' width='0' style='display:none; visibility:hidden')
     section#sectionOne.above-the-fold
       header.above-the-fold__top
-        a(href="https://kevinnicolasbq.com/" style="float: left;" data-toggle="tooltip" title="minha logomarca (clique para recarregar a página)")
+        a(href="https://kevinnicolasbq.com/" style="float: left;" data-toggle="tooltip" title="minha logomarca (clique para recarregar a página)" aria-hidden="true")
           img(src="img/logomark.svg" alt="")
         h1(data-toggle="tooltip" title="este é meu nome :v").above-the-fold__top__name #[mark kevin quintino]
         div(style="display: block; float: right;")
           a.link.above-the-fold__top__blog-link(href="https://blog.kevinnicolasbq.com/" data-toggle="tooltip" title="visite meu blog") confira meu blog
-          a(href="#contact" data-toggle="tooltip" title="fale comigo" role="button")
+          a(href="#" onclick="ScrollTo('contact'); return false;" data-toggle="tooltip" title="fale comigo" role="button")
             input.primary-button(type="button" value="entrar em contato" tabindex="-1")
       .above-the-fold__message
         h2 oi, eu sou o #[mark(data-toggle="tooltip" title="meu nome :v") kevin], eu projeto e desenvolvo #[br] experiências memoráveis
       .above-the-fold__check-more
-        a.link(href="#" onclick="scrollToSecondSection('sectionTwo'); return false;" data-toggle="tooltip" title="descer para a próxima seção") saiba mais sobre mim #[br]
-        i.fa.fa-chevron-down.fa-3x(aria-hidden="true" onclick="scrollToSecondSection('sectionTwo'); return false;" data-toggle="tooltip" title="descer para a próxima seção")
+        a.link(href="#" onclick="ScrollTo('sectionTwo'); return false;" data-toggle="tooltip" title="descer para a próxima seção") saiba mais sobre mim #[br]
+        i.fa.fa-chevron-down.fa-3x(aria-hidden="true" onclick="ScrollTo('sectionTwo'); return false;" data-toggle="tooltip" title="descer para a próxima seção")
     section#sectionTwo.under-the-fold
       .under-the-fold__bar
       .under-the-fold__resume 
@@ -68,7 +68,7 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
               |  e 
               a.link(href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="saber mais sobre Acessible Rich Internet Applications") ARIA
               | .
-      #contact.under-the-fold__contact-me
+      .under-the-fold__contact-me#contact
         .under-the-fold__contact-me__content
           h2 vamos desenvolver algo incrível?!
           p adoraria te ajudar a solucionar seus problemas ou contribuir com seu projeto.#[br]#[strong envie-me um e-mail, vamos conversar!]
@@ -141,25 +141,25 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
           h3 e estas, as minhas leituras favoritas:
           .col-md-4.under-the-fold__achievements__books__item(style="float: left;")
             div(style="float: left;")
-              img(src="./img/covers/lean-ux-cover.jpg" alt="capa do livro Lean UX" width="100" height="150") 
-            div
-              a.link(href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar e-book na amazon" aria-label="acessar e-book lean UX") lean UX
-              p(aria-label="autores") jeff gothelf e josh seiden
-          .col-md-4.under-the-fold__achievements__books__item(style="float: left;")
-            div(style="float: left;")
-              img(src="./img/covers/ego-is-the-enemy-cover.jpg" alt="capa do livro Ego is the Enemy" width="100" height="150") 
+              img(src="./img/covers/ego-is-the-enemy-cover.jpg" alt="capa do livro Ego is the Enemy" width="100" height="150" loading="lazy") 
             div
               a.link(href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar e-book na amazon" aria-label="acessar e-book ego is the enemy") ego is the enemy
               p(aria-label="autor") ryan holiday
           .col-md-4.under-the-fold__achievements__books__item(style="float: left;")
             div(style="float: left;")
-              img(src="./img/covers/made-to-stick-cover.jpg" alt="capa do livro Made to Stick" width="100" height="150") 
+              img(src="./img/covers/lean-ux-cover.jpg" alt="capa do livro Lean UX" width="100" height="150" loading="lazy") 
+            div
+              a.link(href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar e-book na amazon" aria-label="acessar e-book lean UX") lean UX
+              p(aria-label="autores") jeff gothelf e josh seiden
+          .col-md-4.under-the-fold__achievements__books__item(style="float: left;")
+            div(style="float: left;")
+              img(src="./img/covers/made-to-stick-cover.jpg" alt="capa do livro Made to Stick" width="100" height="150" loading="lazy") 
             div
               a.link(href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar e-book na amazon" aria-label="acessar e-book made to stick") made to stick
               p(aria-label="autores") chip heath e dan heath
 
-    .back-to-top
-      a(href="#" data-toggle="tooltip" title="voltar ao topo" onclick="scrollToSecondSection('sectionOne'); return false;" aria-hidden="true")
+    .back-to-top(style="display: none;")
+      a(href="#" data-toggle="tooltip" title="voltar ao topo" onclick="ScrollTo('sectionOne'); return false;" aria-hidden="true")
         i.fas.fa-chevron-up.fa-4x
     footer.footer
       .footer__social-media
@@ -175,5 +175,9 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
             i.footer__social-media__links__icon(data-toggle="tooltip" title="confira meu github" aria-hidden="true").fab.fa-github.fa-2x
       .footer__message
         p feito com #[i.fas.fa-heart(data-toggle="tooltip" title="amor" class="tooltip-color" aria-label="amor")] e #[i.fas.fa-mug-hot(data-toggle="tooltip" title="café" aria-label="café")] por #[strong kevin quintino] #[i.far.fa-copyright(data-toggle="tooltip" title="todos os direitos reservados" aria-hidden="true")] 2021.
-    script().
+    script.
       $(".fa-chevron-down").removeClass("link");
+
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });

@@ -249,37 +249,6 @@ strong {
         border: 1px solid #2f4f4f;
         background-color: #fff;
         padding: 24px; }
-  .under-the-fold__achievements {
-    max-width: 1200px;
-    margin: 0 auto; }
-    .under-the-fold__achievements h3 {
-      font-size: 2.8em;
-      color: #2f4f4f;
-      margin-bottom: 24px;
-      padding: 16px;
-      font-weight: 600;
-      font-family: "Nunito", sans-serif; }
-    .under-the-fold__achievements img {
-      margin-right: 16px;
-      margin-bottom: 64px; }
-    .under-the-fold__achievements a {
-      color: #2f4f4f;
-      font-size: 2.2em; }
-    .under-the-fold__achievements p {
-      font-size: 1.8em;
-      color: #444; }
-    .under-the-fold__achievements__graduations {
-      border-bottom: 1px solid rgba(47, 79, 79, 0.16);
-      margin-bottom: 48px; }
-    .under-the-fold__achievements__certifications {
-      border-bottom: 1px solid rgba(47, 79, 79, 0.16);
-      margin-bottom: 48px; }
-    .under-the-fold__achievements__books {
-      margin-bottom: 48px; }
-      .under-the-fold__achievements__books p {
-        margin-top: 8px; }
-      .under-the-fold__achievements__books img {
-        border: 1px solid #2f4f4f; }
   .under-the-fold__contact-me {
     width: 100%;
     display: flex;
@@ -290,9 +259,9 @@ strong {
       width: 1200px;
       text-align: center;
       margin: 0;
-      margin-top: 36apx;
+      margin-top: 28px;
       margin-bottom: 64px;
-      padding: 64px;
+      padding: 80px;
       background-color: #2f4f4f;
       border-radius: 12px; }
       .under-the-fold__contact-me__content h2 {
@@ -325,6 +294,37 @@ strong {
         .under-the-fold__contact-me__content__location i {
           margin-right: 8px;
           color: #fff; }
+  .under-the-fold__achievements {
+    max-width: 1200px;
+    margin: 0 auto; }
+    .under-the-fold__achievements h3 {
+      font-size: 2.8em;
+      color: #2f4f4f;
+      margin-bottom: 24px;
+      padding: 16px;
+      font-weight: 600;
+      font-family: "Nunito", sans-serif; }
+    .under-the-fold__achievements img {
+      margin-right: 16px;
+      margin-bottom: 64px; }
+    .under-the-fold__achievements a {
+      color: #2f4f4f;
+      font-size: 2.2em; }
+    .under-the-fold__achievements p {
+      font-size: 1.8em;
+      color: #444; }
+    .under-the-fold__achievements__graduations {
+      border-bottom: 1px solid rgba(47, 79, 79, 0.16);
+      margin-bottom: 48px; }
+    .under-the-fold__achievements__certifications {
+      border-bottom: 1px solid rgba(47, 79, 79, 0.16);
+      margin-bottom: 48px; }
+    .under-the-fold__achievements__books {
+      margin-bottom: 48px; }
+      .under-the-fold__achievements__books p {
+        margin-top: 8px; }
+      .under-the-fold__achievements__books img {
+        border: 1px solid #2f4f4f; }
 
 .back-to-top {
   position: fixed;
