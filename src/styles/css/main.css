@@ -71,7 +71,7 @@ strong {
 .secondary-button {
   font-size: 1.8em;
   font-family: "Nunito", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   color: #2f4f4f;
   padding: 4px 12px 4px 12px;
   border-radius: 6px;
@@ -133,15 +133,14 @@ strong {
   height: 100vh; }
   .above-the-fold__top {
     height: 20%;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px; }
+    padding-top: 32px;
+    padding-left: 0px;
+    padding-right: 0px; }
     .above-the-fold__top img {
       width: 48px;
       height: 48px;
       float: left;
       transition: 0.2s;
-      margin-right: 16px;
       float: left; }
       .above-the-fold__top img:hover {
         cursor: pointer;
@@ -152,16 +151,17 @@ strong {
       font-size: 2.8em;
       color: #2f4f4f;
       padding: 8px;
-      float: left; }
+      float: left;
+      margin-left: 16px; }
     .above-the-fold__top input {
       float: right; }
     .above-the-fold__top__blog-link {
       font-size: 1.8em;
       position: absolute;
-      right: 256px;
+      right: 224px;
       padding-top: 6px; }
   .above-the-fold__message {
-    height: 70%;
+    height: 72%;
     font-size: 3.6em;
     text-align: center;
     line-height: 1.2em;
@@ -169,7 +169,7 @@ strong {
     padding-top: 20vh;
     color: #2f4f4f; }
   .above-the-fold__check-more {
-    height: 10%;
+    height: 8%;
     text-align: center;
     color: #2f4f4f;
     z-index: 2;
@@ -198,6 +198,8 @@ strong {
     max-width: 1200px;
     margin: 0px auto;
     padding: 30px;
+    padding-left: 24px;
+    padding-right: 24px;
     padding-top: 96px; }
     .under-the-fold__resume h2 {
       font-size: 2.8em;
@@ -257,7 +259,9 @@ strong {
       font-size: 2.8em;
       color: #2f4f4f;
       margin-bottom: 24px;
-      padding: 16px; }
+      padding: 16px;
+      font-weight: 600;
+      font-family: "Nunito", sans-serif; }
     .under-the-fold__achievements img {
       margin-right: 16px;
       margin-bottom: 64px; }
@@ -267,7 +271,11 @@ strong {
     .under-the-fold__achievements p {
       font-size: 1.8em;
       color: #444; }
+    .under-the-fold__achievements__graduations {
+      border-bottom: 1px solid rgba(47, 79, 79, 0.16);
+      margin-bottom: 48px; }
     .under-the-fold__achievements__certifications {
+      border-bottom: 1px solid rgba(47, 79, 79, 0.16);
       margin-bottom: 48px; }
     .under-the-fold__achievements__books {
       margin-bottom: 48px; }
@@ -285,8 +293,8 @@ strong {
       width: 1200px;
       text-align: center;
       margin: 0;
-      margin-top: 36px;
-      margin-bottom: 56px;
+      margin-top: 36apx;
+      margin-bottom: 64px;
       padding: 64px;
       background-color: #2f4f4f;
       border-radius: 12px; }
@@ -325,11 +333,11 @@ strong {
   position: fixed;
   width: 30px;
   bottom: 16px;
+  margin-right: 24px;
   transition: 0.2s;
   right: 0; }
   .back-to-top i {
     float: right;
-    margin-right: 24px;
     color: #3e6969;
     transition: 0.1s;
     padding: 10px 12px 10px 12px; }
@@ -395,11 +403,11 @@ strong {
   width: 760px; }
 
 .tooltip-inner {
-  background-color: #fff;
-  color: #2f4f4f; }
+  background-color: #182929;
+  color: #fff; }
 
 .tooltip.bs-tooltip-top .arrow:before {
-  border-top-color: #fff !important; }
+  border-top-color: #182929 !important; }
 
 .modal-title {
   color: #2f4f4f;
@@ -417,7 +425,7 @@ strong {
 
 .modal-body h5 {
   font-size: 2.4em;
-  font-weight: 500;
+  font-weight: 600;
   font-family: "Nunito", sans-serif;
   color: #2f4f4f; }
 

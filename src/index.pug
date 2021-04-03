@@ -7,17 +7,17 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
       iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-N8WW2TZ' height='0' width='0' style='display:none; visibility:hidden')
     section#sectionOne.above-the-fold
       header.above-the-fold__top
-        a(href="https://kevinnicolasbq.com/")
+        a(href="https://kevinnicolasbq.com/" style="float: left;" data-toggle="tooltip" title="minha logomarca (clique para recarregar a página)")
           img(src="img/logomark.svg" alt="")
-        h1.above-the-fold__top__name #[mark kevin quintino]
-        a.link.above-the-fold__top__blog-link(href="https://blog.kevinnicolasbq.com/" title="visite meu blog") confira meu blog
-        a(href="#contact" title="fale comigo" role="button")
+        h1(data-toggle="tooltip" title="este é meu nome :v").above-the-fold__top__name #[mark kevin quintino]
+        a.link.above-the-fold__top__blog-link(href="https://blog.kevinnicolasbq.com/" data-toggle="tooltip" title="visite meu blog") confira meu blog
+        a(href="#contact" data-toggle="tooltip" title="fale comigo" role="button" style="float: right;")
           input.primary-button(type="button" value="entrar em contato" tabindex="-1")
       .above-the-fold__message
-        h2 oi, eu sou o #[mark kevin], eu projeto e desenvolvo #[br] experiências memoráveis
+        h2 oi, eu sou o #[mark(data-toggle="tooltip" title="meu nome :v") kevin], eu projeto e desenvolvo #[br] experiências memoráveis
       .above-the-fold__check-more
-        a.link(href="#" onclick="scrollToSecondSection('sectionTwo'); return false;") saiba mais sobre mim #[br]
-        i.fa.fa-chevron-down.fa-3x(aria-hidden="true" onclick="scrollToSecondSection('sectionTwo'); return false;")
+        a.link(href="#" onclick="scrollToSecondSection('sectionTwo'); return false;" data-toggle="tooltip" title="descer para a próxima seção") saiba mais sobre mim #[br]
+        i.fa.fa-chevron-down.fa-3x(aria-hidden="true" onclick="scrollToSecondSection('sectionTwo'); return false;" data-toggle="tooltip" title="descer para a próxima seção")
     section#sectionTwo.under-the-fold
       .under-the-fold__bar
       .under-the-fold__resume 
@@ -25,7 +25,7 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
           p O desenvolvimento web me cativou. Encontrar e solucionar problemas, projetando e desenvolvendo experiências que permitem seus usuários ideais atingirem seus objetivos de forma eficaz, eficiente e satisfatória, me traz uma enorme satisfação pessoal.
           p Meu #[em modus operandi] consiste em alinhar os interesses dos usuários com os interesses do negócio, gerando o máximo valor para ambos.
           p Atualmente, moro em São Paulo e atuo como designer de experiência do usuário na 
-            a.link-alternative(href="https://www.vhita.com.br/pages/sobre-nos-vhita" target="_blank" rel="noopener noreferrer" translate="no") vhita.
+            a.link-alternative(href="https://www.vhita.com.br/pages/sobre-nos-vhita" target="_blank" rel="noopener noreferrer" translate="no" data-toggle="tooltip" title="saber mais sobre a Vhita") vhita.
       .container-lg.col-md-12.under-the-fold__summary
         .row.under-the-fold__summary__row
           .col-md-4.under-the-fold__summary__row__left-column
@@ -34,9 +34,9 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
             p como pesquisador de UX, busco ter eficácia e evitar o meu próprio viés na identificação e definição de usuários e problemas de um design.
             hr
             p sigo os princípios da pesquisa científica; 
-              a.link(href="https://www.interaction-design.org/literature/article/before-you-start-designing-it-s-time-to-get-out-of-the-building" target="_blank" rel="noopener noreferrer") GOOB
+              a.link(href="https://www.interaction-design.org/literature/article/before-you-start-designing-it-s-time-to-get-out-of-the-building" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="saber mais sobre o conceito de Get Out Of the Building") GOOB
               |  e 
-              a.link(href="https://blog.prototypr.io/what-is-atomic-research-e5d9fbc1285c" target="_blank" rel="noopener noreferrer") atomic UX research
+              a.link(href="https://blog.prototypr.io/what-is-atomic-research-e5d9fbc1285c" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="saber mais sobre atomic UX research") atomic UX research
               | .  
           .col-md-4.under-the-fold__summary__row__middle-column
             h3 UX designer
@@ -44,13 +44,13 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
             p como designer de experiência do usuário, busco ter criatividade e eficácia na resolução de problemas de um design, sem negligenciar nenhum usuário.
             hr
             p sigo os princípios e valores do 
-              a.link(href="https://www.interaction-design.org/literature/article/a-simple-introduction-to-lean-ux" target="_blank" rel="noopener noreferrer") lean UX
+              a.link(href="https://www.interaction-design.org/literature/article/a-simple-introduction-to-lean-ux" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="saber mais sobre lean UX") lean UX
               | ; 
-              a.link(href="https://www.interaction-design.org/literature/topics/design-thinking" target="_blank" rel="noopener noreferrer") design thinking
+              a.link(href="https://www.interaction-design.org/literature/topics/design-thinking" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="saber mais sobre design thinking") design thinking
               | ; 
-              a.link(href="https://www.interaction-design.org/literature/topics/user-centered-design" target="_blank" rel="noopener noreferrer") user-centered design
+              a.link(href="https://www.interaction-design.org/literature/topics/user-centered-design" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="saber mais sobre user-centered design (UCD)") user-centered design
               |  e 
-              a.link(href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer") WCAG
+              a.link(href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="saber mais sobre Web Content Accessibility Guidelines") WCAG
               | .
             
           .col-md-4.under-the-fold__summary__row__right-column
@@ -59,91 +59,106 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
             p como desenvolvedor front-end, busco implementar uma solução da forma mais otimizada, escalável e de fácil manutenção possível.
             hr
             p sigo os princípios e valores do 
-              a.link(href="https://agilemanifesto.org/iso/ptbr/manifesto.html" target="_blank" rel="noopener noreferrer") manifesto ágil
+              a.link(href="https://agilemanifesto.org/iso/ptbr/manifesto.html" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="saber mais sobre o manifesto ágil") manifesto ágil
               | ; 
-              a.link(href="https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29" target="_blank" rel="noopener noreferrer") clean code
+              a.link(href="https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="saber mais sobre clean code") clean code
               | ; 
-              a.link(href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" target="_blank" rel="noopener noreferrer") arquitetura MVC
+              a.link(href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="saber mais sobre a arquitetura Model-View-Controller") arquitetura MVC
               |  e 
-              a.link(href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer") ARIA
+              a.link(href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="saber mais sobre Acessible Rich Internet Applications") ARIA
               | .
       #contact.under-the-fold__contact-me
         .under-the-fold__contact-me__content
           h2 vamos desenvolver algo incrível?!
           p adoraria te ajudar a solucionar seus problemas ou contribuir com seu projeto.#[br]#[strong envie-me um e-mail, vamos conversar!]
           div(style="text-align: center;")
-            a.link-alternative.under-the-fold__contact-me__content__e-mail(href="mailto:hello@kevinnicolasbq.com" title="envie-me um e-mail") hello@kevinnicolasbq.com
+            a.link-alternative.under-the-fold__contact-me__content__e-mail(href="mailto:hello@kevinnicolasbq.com" data-toggle="tooltip" title="envie-me um e-mail") hello@kevinnicolasbq.com
           .under-the-fold__contact-me__content__location
             i.fas.fa-map-marker-alt(aria-hidden="true")
             | são paulo, sp, brasil. 
       .row.under-the-fold__achievements
-        .col-md-12.under-the-fold__achievements__certifications
-          h3 estes são os meus principais certificados:
+        .col-md-12.under-the-fold__achievements__graduations
+          h3 estas são minhas graduações:
+          .col-md-6.col-md-6.under-the-fold__achievements__graduations__item(style="float: left;")
+            div(style="float: left;")
+              img(src="./img/covers/fatec-sp-logo.svg", alt="logomarca da faculdade de tecnologia de São Paulo" width="64" height="64")
+            div
+              a.link(href="http://www.fatecsp.br/?c=ti_new" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar a página do curso" aria-label="acessar página do curso") análise e desenvolvimento de sistemas
+              p #[strong fatec são paulo] - tecnólogo (em andamento)
+          .col-md-6.col-md-6.under-the-fold__achievements__graduations__item(style="float: left;")
+            div(style="float: left;")
+              img(src="./img/covers/uc-san-diego-logo.svg", alt="logomarca da universidade da Califórnia em San Diego" width="64" height="64")
+            div
+              a.link(href="https://www.coursera.org/specializations/interaction-design" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar a página do curso" aria-label="acessar página do curso") interaction design
+              p #[strong UC san diego] - especialização (em andamento)
+        .col-md-12.under-the-fold__achievements__certifications    
+          h3 estes, os meus principais certificados:
           .col-md-6.col-md-6.under-the-fold__achievements__certifications__item(style="float: left;")
             div(style="float: left;")
-              img(src="./img/covers/yale-cover.png", alt="" width="64" height="64")
+              img(src="./img/covers/yale-logo.svg", alt="logomarca da universidade de Yale" width="64" height="64")
             div
-              a.link(href="https://www.coursera.org/verify/RU2U5G4HM8YD" target="_blank" rel="noopener noreferrer" name="visualizar certificado" aria-label="acessar certificado") the science of well-being
+              a.link(href="https://www.coursera.org/verify/RU2U5G4HM8YD" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado") the science of well-being
               p yale university
           .col-md-6.col-md-6.under-the-fold__achievements__certifications__item(style="float: right;")
             div(style="float: left;")
-              img(src="./img/covers/interaction-design-foundation-cover.png", alt="" width="64" height="64")
+              img(src="./img/covers/interaction-design-foundation-logo.svg", alt="logomarca da fundação design de interação" width="64" height="64")
             div
-              a.link(href="https://www.interaction-design.org/kevin-quintino/certificate/course/7fc5a633-c117-4cd6-b919-b85f52d7a954" target="_blank" rel="noopener noreferrer" name="visualizar certificado" aria-label="acessar certificado") accessibility: how to design for all
+              a.link(href="https://www.interaction-design.org/kevin-quintino/certificate/course/7fc5a633-c117-4cd6-b919-b85f52d7a954" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado") accessibility: how to design for all
               p interaction design foundation
           .col-md-6.col-md-6.under-the-fold__achievements__certifications__item(style="float: left;")
             div(style="float: left;")
-              img(src="./img/covers/interaction-design-foundation-cover.png", alt="" width="64" height="64")
+              img(src="./img/covers/interaction-design-foundation-logo.svg", alt="logomarca da fundação design de interação" width="64" height="64")
             div
-              a.link(href="https://www.interaction-design.org/kevin-quintino/certificate/course/7b5d7c80-9404-4d0e-8d04-7a6f06913770" target="_blank" rel="noopener noreferrer" name="visualizar certificado" aria-label="acessar certificado") user research: methods and best practices
+              a.link(href="https://www.interaction-design.org/kevin-quintino/certificate/course/7b5d7c80-9404-4d0e-8d04-7a6f06913770" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado") user research: methods and best practices
               p interaction design foundation
           .col-md-6.col-md-6.under-the-fold__achievements__certifications__item(style="float: right;")
             div(style="float: left;")
-              img(src="./img/covers/interaction-design-foundation-cover.png", alt="" width="64" height="64")
+              img(src="./img/covers/interaction-design-foundation-logo.svg", alt="logomarca da fundação design de interação" width="64" height="64")
             div
-              a.link(href="https://www.interaction-design.org/kevin-quintino/certificate/course/3219d88f-e8b8-4f81-831c-3a189ddadd95" target="_blank" rel="noopener noreferrer" name="visualizar certificado" aria-label="acessar certificado") psychology of e-commerce: how to sell online
+              a.link(href="https://www.interaction-design.org/kevin-quintino/certificate/course/3219d88f-e8b8-4f81-831c-3a189ddadd95" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado") psychology of e-commerce: how to sell online
               p interaction design foundation
           .col-md-6.col-md-6.under-the-fold__achievements__certifications__item(style="float: left;")
             div(style="float: left;")
-              img(src="./img/covers/interaction-design-foundation-cover.png", alt="" width="64" height="64")
+              img(src="./img/covers/interaction-design-foundation-logo.svg", alt="logomarca da fundação design de interação" width="64" height="64")
             div
-              a.link(href="https://www.interaction-design.org/kevin-quintino/certificate/course/2b8efa75-0db7-4deb-94d2-e564e6950bc1" target="_blank" rel="noopener noreferrer" name="visualizar certificado" aria-label="acessar certificado") web design for usability
+              a.link(href="https://www.interaction-design.org/kevin-quintino/certificate/course/2b8efa75-0db7-4deb-94d2-e564e6950bc1" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado") web design for usability
               p interaction design foundation
           .col-md-6.col-md-6.under-the-fold__achievements__certifications__item(style="float: right;")
             div(style="float: left;")
-              img(src="./img/covers/interaction-design-foundation-cover.png", alt="" width="64" height="64")
+              img(src="./img/covers/interaction-design-foundation-logo.svg", alt="logomarca da fundação design de interação" width="64" height="64")
             div
-              a.link(href="https://www.interaction-design.org/kevin-quintino/certificate/course/678f5ac4-b2cf-45b7-90b6-c205156d4482" target="_blank" rel="noopener noreferrer" name="visualizar certificado" aria-label="acessar certificado") human-computer interaction
+              a.link(href="https://www.interaction-design.org/kevin-quintino/certificate/course/678f5ac4-b2cf-45b7-90b6-c205156d4482" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado") human-computer interaction
               p interaction design foundation
           .col-md-6.col-md-6.under-the-fold__achievements__certifications__item(style="float: left;")
             div(style="float: left;")
-              img(src="./img/covers/interaction-design-foundation-cover.png", alt="" width="64" height="64")
+              img(src="./img/covers/interaction-design-foundation-logo.svg", alt="logomarca da fundação design de interação" width="64" height="64")
             div
-              a.link(href="https://www.interaction-design.org/kevin-quintino/certificate/course/ac354dd2-15b3-46fd-ba17-3766a028e0f2" target="_blank" rel="noopener noreferrer" name="visualizar certificado" aria-label="acessar certificado") mobile user experience design
+              a.link(href="https://www.interaction-design.org/kevin-quintino/certificate/course/ac354dd2-15b3-46fd-ba17-3766a028e0f2" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado") mobile user experience design
               p interaction design foundation
+
         .col-md-12.under-the-fold__achievements__books
           h3 e estas, as minhas leituras favoritas:
           .col-md-4.under-the-fold__achievements__books__item(style="float: left;")
             div(style="float: left;")
-              img(src="./img/covers/lean-ux-cover.jpg" alt="lean ux book cover" width="100" height="150") 
+              img(src="./img/covers/lean-ux-cover.jpg" alt="capa do livro Lean UX" width="100" height="150") 
             div
-              a.link(href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer" name="visualizar e-book" aria-label="acessar e-book lean UX") lean UX
-              p jeff gothelf e josh seiden
+              a.link(href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar e-book na amazon" aria-label="acessar e-book lean UX") lean UX
+              p(aria-label="autores") jeff gothelf e josh seiden
           .col-md-4.under-the-fold__achievements__books__item(style="float: left;")
             div(style="float: left;")
-              img(src="./img/covers/ego-is-the-enemy-cover.jpg" alt="ego is the enemy book cover" width="100" height="150") 
+              img(src="./img/covers/ego-is-the-enemy-cover.jpg" alt="capa do livro Ego is the Enemy" width="100" height="150") 
             div
-              a.link(href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer" name="visualizar e-book" aria-label="acessar e-book ego is the enemy") ego is the enemy
-              p ryan holiday
+              a.link(href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar e-book na amazon" aria-label="acessar e-book ego is the enemy") ego is the enemy
+              p(aria-label="autor") ryan holiday
           .col-md-4.under-the-fold__achievements__books__item(style="float: left;")
             div(style="float: left;")
-              img(src="./img/covers/made-to-stick-cover.jpg" alt="made to stick book cover" width="100" height="150") 
+              img(src="./img/covers/made-to-stick-cover.jpg" alt="capa do livro Made to Stick" width="100" height="150") 
             div
-              a.link(href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer" name="visualizar e-book" aria-label="acessar e-book made to stick") made to stick
-              p chip heath e dan heath
+              a.link(href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar e-book na amazon" aria-label="acessar e-book made to stick") made to stick
+              p(aria-label="autores") chip heath e dan heath
 
     .back-to-top
-      a(href="#" name="voltar ao topo" onclick="scrollToSecondSection('sectionOne'); return false;" role="button" aria-label="voltar ao topo")
+      a(href="#" data-toggle="tooltip" title="voltar ao topo" onclick="scrollToSecondSection('sectionOne'); return false;" aria-hidden="true")
         i.fas.fa-chevron-up.fa-4x
     footer.footer
       .footer__social-media

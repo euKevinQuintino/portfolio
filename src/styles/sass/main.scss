@@ -89,7 +89,7 @@ strong {
 .secondary-button {
   font-size: 1.8em;
   font-family: "Nunito", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   color: $main;
   padding: 4px 12px 4px 12px;
   border-radius: 6px;
@@ -167,16 +167,15 @@ strong {
 
   &__top {
     height: 20%;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 32px;
+    padding-left: 0px;
+    padding-right: 0px;
 
     img {
       width: 48px;
       height: 48px;
       float: left;
       transition: 0.2s;
-      margin-right: 16px;
       float: left;
 
       &:hover {
@@ -194,6 +193,7 @@ strong {
       color: $main;
       padding: 8px;
       float: left;
+      margin-left: 16px;
     }
 
     input {
@@ -203,13 +203,13 @@ strong {
     &__blog-link {
       font-size: 1.8em;
       position: absolute;
-      right: 256px;
+      right: 224px;
       padding-top: 6px;
     }
   }
 
   &__message {
-    height: 70%;
+    height: 72%;
     font-size: 3.6em;
     text-align: center;
     line-height: 1.2em;
@@ -219,7 +219,7 @@ strong {
   }
 
   &__check-more {
-    height: 10%;
+    height: 8%;
     text-align: center;
     color: $main;
     z-index: 2;
@@ -260,6 +260,8 @@ strong {
     max-width: 1200px;
     margin: 0px auto;
     padding: 30px;
+    padding-left: 24px;
+    padding-right: 24px;
     padding-top: 96px;
 
     h2 {
@@ -344,6 +346,8 @@ strong {
       color: $main;
       margin-bottom: 24px;
       padding: 16px;
+      font-weight: 600;
+      font-family: "Nunito", sans-serif;
     }
     img {
       margin-right: 16px;
@@ -358,8 +362,12 @@ strong {
       font-size: 1.8em;
       color: $base-text;
     }
-
+    &__graduations {
+      border-bottom: 1px solid rgba(47,79,79,0.16);
+      margin-bottom: 48px;
+    }
     &__certifications {
+      border-bottom: 1px solid rgba(47,79,79,0.16);
       margin-bottom: 48px;
     }
     &__books {
@@ -384,8 +392,8 @@ strong {
       width: 1200px;
       text-align: center;
       margin: 0;
-      margin-top: 36px;
-      margin-bottom: 56px;
+      margin-top: 36apx;
+      margin-bottom: 64px;
       padding: 64px;
       background-color: $main;
       border-radius: 12px;
@@ -441,12 +449,12 @@ strong {
   position: fixed;
   width: 30px;
   bottom: 16px;
+  margin-right: 24px;
   transition: 0.2s;
   right: 0;
 
   i {
     float: right;
-    margin-right: 24px;
     color: lighten($main, 8%);
     transition: 0.1s;
     padding: 10px 12px 10px 12px;
@@ -538,12 +546,12 @@ strong {
 }
 
 .tooltip-inner {
-  background-color: $white;
-  color: $main;
+  background-color: darken($main, 12%);
+  color: $white;
 }
 
 .tooltip.bs-tooltip-top .arrow:before {
-  border-top-color: $white !important;
+  border-top-color: darken($main, 12%) !important;
 }
 
 .modal-title {
@@ -566,7 +574,7 @@ strong {
 
   h5 {
     font-size: 2.4em;
-    font-weight: 500;
+    font-weight: 600;
     font-family: "Nunito", sans-serif;
     color: $main;
   }
