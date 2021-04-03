@@ -153,13 +153,10 @@ strong {
       padding: 8px;
       float: left;
       margin-left: 16px; }
-    .above-the-fold__top input {
-      float: right; }
     .above-the-fold__top__blog-link {
       font-size: 1.8em;
-      position: absolute;
-      right: 224px;
-      padding-top: 6px; }
+      padding-top: 6px;
+      margin-right: 32px; }
   .above-the-fold__message {
     height: 72%;
     font-size: 3.6em;
