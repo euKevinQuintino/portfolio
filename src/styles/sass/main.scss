@@ -452,6 +452,7 @@ strong {
   margin-right: 24px;
   transition: 0.2s;
   right: 0;
+  display: none;
 
   i {
     float: right;
@@ -623,7 +624,13 @@ input[type="color"]:focus,
       height: 14%;
     }
     &__top {
+      padding-top: 24px;
+      padding-left: 16px;
+      padding-right: 16px;
       &__name {
+        display: none;
+      }
+      &__blog-link {
         display: none;
       }
     }
@@ -639,10 +646,12 @@ input[type="color"]:focus,
   .under-the-fold {
     &__resume {
       padding-top: 64px;
+      margin-top: 24px;
 
-      h1 {
+      h2 {
         line-height: 1.5em;
         text-align: left;
+        padding-bottom: 16px;
       }
 
       p {
@@ -714,6 +723,10 @@ input[type="color"]:focus,
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .above-the-fold {
+    &__top {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
     &__message {
       margin-top: 36px;
       margin-bottom: -20px;

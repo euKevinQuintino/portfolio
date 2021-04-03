@@ -335,7 +335,8 @@ strong {
   bottom: 16px;
   margin-right: 24px;
   transition: 0.2s;
-  right: 0; }
+  right: 0;
+  display: none; }
   .back-to-top i {
     float: right;
     color: #3e6969;
@@ -464,17 +465,25 @@ input[type="color"]:focus,
         font-size: 1em !important; }
     .above-the-fold__check-more {
       height: 14%; }
-    .above-the-fold__top__name {
-      display: none; }
+    .above-the-fold__top {
+      padding-top: 24px;
+      padding-left: 16px;
+      padding-right: 16px; }
+      .above-the-fold__top__name {
+        display: none; }
+      .above-the-fold__top__blog-link {
+        display: none; }
   .modal-content {
     width: 98%; }
   .back-to-top {
     display: none; }
   .under-the-fold__resume {
-    padding-top: 64px; }
-    .under-the-fold__resume h1 {
+    padding-top: 64px;
+    margin-top: 24px; }
+    .under-the-fold__resume h2 {
       line-height: 1.5em;
-      text-align: left; }
+      text-align: left;
+      padding-bottom: 16px; }
     .under-the-fold__resume p {
       text-align: left; }
   .under-the-fold__bar {
@@ -516,6 +525,9 @@ input[type="color"]:focus,
       text-align: center; } }
 
 @media (min-width: 768px) and (max-width: 1199px) {
+  .above-the-fold__top {
+    padding-left: 16px;
+    padding-right: 16px; }
   .above-the-fold__message {
     margin-top: 36px;
     margin-bottom: -20px;
