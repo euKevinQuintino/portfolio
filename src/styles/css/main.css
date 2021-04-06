@@ -129,10 +129,9 @@ strong {
 
 .above-the-fold {
   max-width: 1200px;
-  margin: 0 auto;
-  height: 100vh; }
+  margin: 0 auto; }
   .above-the-fold__top {
-    height: 20%;
+    height: 80px;
     padding-top: 32px;
     padding-left: 0px;
     padding-right: 0px; }
@@ -158,19 +157,18 @@ strong {
       padding-top: 6px;
       margin-right: 32px; }
   .above-the-fold__message {
-    height: 72%;
+    height: 80px;
     font-size: 3.6em;
     text-align: center;
     line-height: 1.2em;
     padding: 16px;
-    padding-top: 20vh;
+    margin-top: 160px;
     color: #2f4f4f; }
   .above-the-fold__check-more {
-    height: 8%;
+    height: 80px;
     text-align: center;
     color: #2f4f4f;
-    z-index: 2;
-    display: block; }
+    margin-top: 240px; }
     .above-the-fold__check-more a {
       font-size: 1.8em;
       margin-bottom: 0;
@@ -450,17 +448,14 @@ input[type="color"]:focus,
 
 @media (max-width: 767px) {
   .above-the-fold {
-    height: 90vh; }
+    height: 88vh; }
     .above-the-fold__message {
-      height: 66%;
       font-size: 2.8em;
-      height: 64%;
-      margin-top: -4px;
-      margin-bottom: 52px; }
+      margin-top: calc(-240px + 100vh - 44vh); }
       .above-the-fold__message h1 {
         font-size: 1em !important; }
     .above-the-fold__check-more {
-      height: 14%; }
+      margin-top: calc(-240px + 100vh - 26vh); }
     .above-the-fold__top {
       padding-top: 24px;
       padding-left: 16px;
@@ -525,8 +520,14 @@ input[type="color"]:focus,
     padding-left: 16px;
     padding-right: 16px; }
   .above-the-fold__message {
-    margin-top: 36px;
-    margin-bottom: -20px;
-    height: 68%; }
+    margin-top: calc(-240px + 100vh - 40vh); }
+  .above-the-fold__check-more {
+    margin-top: calc(-240px + 100vh - 40vh); }
   .under-the-fold__contact-me__content {
     max-width: calc(100% - 32px); } }
+
+@media (min-width: 1400px) {
+  .above-the-fold__message {
+    margin-top: 220px; }
+  .above-the-fold__check-more {
+    margin-top: 280px; } }
