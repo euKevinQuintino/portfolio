@@ -7,13 +7,13 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
       iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-N8WW2TZ' height='0' width='0' style='display:none; visibility:hidden')
     section#sectionOne.above-the-fold
       header.above-the-fold__top
-        a(href="https://kevinnicolasbq.com/" style="float: left;" data-toggle="tooltip" title="minha logomarca (clique para recarregar a página)" aria-hidden="true")
-          img(src="img/logomark.svg" alt="")
+        a(href="https://kevinnicolasbq.com/" style="float: left;" data-toggle="tooltip" title="minha logo (clique para recarregar a página)" aria-hidden="true")
+          img(src="img/logo.svg" alt="" aria-hidden="true")
         h1(data-toggle="tooltip" title="este é meu nome :v").above-the-fold__top__name kevin quintino
         div(style="display: block; float: right;")
           a.link.above-the-fold__top__blog-link(href="https://blog.kevinnicolasbq.com/" data-toggle="tooltip" title="visite meu blog") confira meu blog
-          a(href="#" onclick="ScrollTo('contact'); return false;" data-toggle="tooltip" title="fale comigo" role="button")
-            input.primary-button(type="button" value="entrar em contato" tabindex="-1")
+          a(href="#" onclick="ScrollTo('contact'); return false;" data-toggle="tooltip" title="fale comigo" role="presentation")
+            input.primary-button(type="button" value="entrar em contato" tabindex="-1" role="button")
       .above-the-fold__message
         h2 oi, eu sou o #[mark(data-toggle="tooltip" title="meu nome :v") kevin], eu projeto e desenvolvo #[br] experiências memoráveis
       .above-the-fold__check-more
@@ -22,8 +22,9 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
     section#sectionTwo.under-the-fold
       .under-the-fold__bar
       .under-the-fold__resume 
-          h2 pesquisa, design e desenvolvimento de experiências do usuário
+          h2 pesquisa, design e desenvolvimento
           p O desenvolvimento web me cativou. Encontrar e solucionar problemas, projetando e desenvolvendo experiências que permitem seus usuários ideais atingirem seus objetivos de forma eficaz, eficiente e satisfatória, me traz uma enorme satisfação pessoal.
+          br
           p Meu #[em modus operandi] consiste em alinhar os interesses dos usuários com os interesses do negócio, gerando o máximo valor para ambos.
           p Atualmente, moro em São Paulo e atuo como designer de experiência do usuário na 
             a.link-alternative(href="https://www.vhita.com.br/pages/sobre-nos-vhita" target="_blank" rel="noopener noreferrer" translate="no" data-toggle="tooltip" title="saber mais sobre a Vhita") vhita.
@@ -68,6 +69,13 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
               |  e 
               a.link(href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="saber mais sobre Acessible Rich Internet Applications") ARIA
               | .
+      .row.under-the-fold__projects(hidden) 
+        .col-md-12.under-the-fold__projects__content
+          h2 projetos que participei:
+          .col-md-6.under-the-fold__projects__content__item(style="float: left;")
+
+          .col-md-6.under-the-fold__projects__content__item(style="float: right;")
+      
       .under-the-fold__contact-me#contact
         .under-the-fold__contact-me__content
           h2 vamos desenvolver algo incrível?!
@@ -80,59 +88,59 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
       .row.under-the-fold__achievements
         .col-md-12.under-the-fold__achievements__graduations
           h3 estas são minhas graduações:
-          .col-md-6.col-md-6.under-the-fold__achievements__graduations__item(style="float: left;")
+          .col-md-6.under-the-fold__achievements__graduations__item(style="float: left;")
             div(style="float: left;")
-              img(src="./img/covers/fatec-sp-logo.svg", alt="logomarca da faculdade de tecnologia de São Paulo" width="64" height="64")
+              img(src="./img/covers/fatec-sp-logo.svg", alt="logo da faculdade de tecnologia de São Paulo" width="64" height="64")
             div
               a.link(href="http://www.fatecsp.br/?c=ti_new" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar a página do curso" aria-label="acessar página do curso") análise e desenvolvimento de sistemas
               p #[strong fatec são paulo] - tecnólogo (em andamento)
-          .col-md-6.col-md-6.under-the-fold__achievements__graduations__item(style="float: left;")
+          //.col-md-6.under-the-fold__achievements__graduations__item(style="float: left;")
             div(style="float: left;")
-              img(src="./img/covers/uc-san-diego-logo.svg", alt="logomarca da universidade da Califórnia em San Diego" width="64" height="64")
+              img(src="./img/covers/uc-san-diego-logo.svg", alt="logo da universidade da Califórnia em San Diego" width="64" height="64")
             div
               a.link(href="https://www.coursera.org/specializations/interaction-design" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar a página do curso" aria-label="acessar página do curso") interaction design
               p #[strong UC san diego] - especialização (em andamento)
         .col-md-12.under-the-fold__achievements__certifications    
           h3 estes, os meus principais certificados:
-          .col-md-6.col-md-6.under-the-fold__achievements__certifications__item(style="float: left;")
+          .col-md-6.under-the-fold__achievements__certifications__item(style="float: left;")
             div(style="float: left;")
-              img(src="./img/covers/yale-logo.svg", alt="logomarca da universidade de Yale" width="64" height="64")
+              img(src="./img/covers/yale-logo.svg", alt="logo da universidade de Yale" width="64" height="64")
             div
               a.link(href="https://www.coursera.org/verify/RU2U5G4HM8YD" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado") the science of well-being
               p yale university
-          .col-md-6.col-md-6.under-the-fold__achievements__certifications__item(style="float: right;")
+          .col-md-6.under-the-fold__achievements__certifications__item(style="float: right;")
             div(style="float: left;")
-              img(src="./img/covers/interaction-design-foundation-logo.svg", alt="logomarca da fundação design de interação" width="64" height="64")
+              img(src="./img/covers/interaction-design-foundation-logo.svg", alt="logo da fundação design de interação" width="64" height="64")
             div
               a.link(href="https://www.interaction-design.org/kevin-quintino/certificate/course/7fc5a633-c117-4cd6-b919-b85f52d7a954" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado") accessibility: how to design for all
               p interaction design foundation
-          .col-md-6.col-md-6.under-the-fold__achievements__certifications__item(style="float: left;")
+          .col-md-6.under-the-fold__achievements__certifications__item(style="float: left;")
             div(style="float: left;")
-              img(src="./img/covers/interaction-design-foundation-logo.svg", alt="logomarca da fundação design de interação" width="64" height="64")
+              img(src="./img/covers/interaction-design-foundation-logo.svg", alt="logo da fundação design de interação" width="64" height="64")
             div
               a.link(href="https://www.interaction-design.org/kevin-quintino/certificate/course/7b5d7c80-9404-4d0e-8d04-7a6f06913770" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado") user research: methods and best practices
               p interaction design foundation
-          .col-md-6.col-md-6.under-the-fold__achievements__certifications__item(style="float: right;")
+          .col-md-6.under-the-fold__achievements__certifications__item(style="float: right;")
             div(style="float: left;")
-              img(src="./img/covers/interaction-design-foundation-logo.svg", alt="logomarca da fundação design de interação" width="64" height="64")
+              img(src="./img/covers/interaction-design-foundation-logo.svg", alt="logo da fundação design de interação" width="64" height="64")
             div
               a.link(href="https://www.interaction-design.org/kevin-quintino/certificate/course/3219d88f-e8b8-4f81-831c-3a189ddadd95" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado") psychology of e-commerce: how to sell online
               p interaction design foundation
-          .col-md-6.col-md-6.under-the-fold__achievements__certifications__item(style="float: left;")
+          .col-md-6.under-the-fold__achievements__certifications__item(style="float: left;")
             div(style="float: left;")
-              img(src="./img/covers/interaction-design-foundation-logo.svg", alt="logomarca da fundação design de interação" width="64" height="64")
+              img(src="./img/covers/interaction-design-foundation-logo.svg", alt="logo da fundação design de interação" width="64" height="64")
             div
               a.link(href="https://www.interaction-design.org/kevin-quintino/certificate/course/2b8efa75-0db7-4deb-94d2-e564e6950bc1" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado") web design for usability
               p interaction design foundation
-          .col-md-6.col-md-6.under-the-fold__achievements__certifications__item(style="float: right;")
+          .col-md-6.under-the-fold__achievements__certifications__item(style="float: right;")
             div(style="float: left;")
-              img(src="./img/covers/interaction-design-foundation-logo.svg", alt="logomarca da fundação design de interação" width="64" height="64")
+              img(src="./img/covers/interaction-design-foundation-logo.svg", alt="logo da fundação design de interação" width="64" height="64")
             div
               a.link(href="https://www.interaction-design.org/kevin-quintino/certificate/course/678f5ac4-b2cf-45b7-90b6-c205156d4482" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado") human-computer interaction
               p interaction design foundation
-          .col-md-6.col-md-6.under-the-fold__achievements__certifications__item(style="float: left;")
+          .col-md-6.under-the-fold__achievements__certifications__item(style="float: left;")
             div(style="float: left;")
-              img(src="./img/covers/interaction-design-foundation-logo.svg", alt="logomarca da fundação design de interação" width="64" height="64")
+              img(src="./img/covers/interaction-design-foundation-logo.svg", alt="logo da fundação design de interação" width="64" height="64")
             div
               a.link(href="https://www.interaction-design.org/kevin-quintino/certificate/course/ac354dd2-15b3-46fd-ba17-3766a028e0f2" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado") mobile user experience design
               p interaction design foundation

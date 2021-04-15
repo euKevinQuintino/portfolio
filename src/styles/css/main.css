@@ -101,12 +101,12 @@ strong {
   font-weight: inherit;
   cursor: pointer; }
   .link:hover {
-    color: inherit;
+    color: #2f4f4f;
     text-decoration: none;
     border-bottom: 3px solid #2f4f4f; }
   .link:active {
     text-decoration: none;
-    color: #2f4f4f;
+    color: #243c3c;
     border-bottom: 3px solid #2f4f4f;
     transition: 0.1s; }
 
@@ -195,9 +195,10 @@ strong {
     padding: 30px;
     padding-left: 24px;
     padding-right: 24px;
-    padding-top: 96px; }
+    padding-top: 72px; }
     .under-the-fold__resume h2 {
       font-size: 2.8em;
+      background-color: #2f4f4f;
       color: #fff;
       font-family: "Nunito", sans-serif;
       text-align: center;
@@ -206,8 +207,11 @@ strong {
     .under-the-fold__resume p {
       font-size: 1.8em;
       color: #fff;
-      line-height: 1.5em;
-      font-weight: 400; }
+      background-color: #2f4f4f;
+      font-weight: 300;
+      max-width: 840px;
+      margin: auto;
+      line-height: 1.5em; }
   .under-the-fold__summary {
     margin: 64px auto; }
     .under-the-fold__summary h3 {
@@ -247,6 +251,29 @@ strong {
         border: 1px solid #2f4f4f;
         background-color: #fff;
         padding: 24px; }
+  .under-the-fold__projects {
+    width: 100%;
+    margin: 0 auto; }
+    .under-the-fold__projects__content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0;
+      margin-bottom: 36px; }
+      .under-the-fold__projects__content h2 {
+        font-size: 2.8em;
+        color: #2f4f4f;
+        margin-bottom: 24px;
+        padding: 16px;
+        font-weight: 600;
+        font-family: "Nunito", sans-serif; }
+      .under-the-fold__projects__content__item {
+        max-width: 576px;
+        padding: 0;
+        float: left;
+        border-radius: 12px;
+        margin-bottom: 24px;
+        height: 144px;
+        border: 1px solid darkslategray; }
   .under-the-fold__contact-me {
     width: 100%;
     display: flex;
@@ -263,7 +290,7 @@ strong {
       background-color: #2f4f4f;
       border-radius: 12px; }
       .under-the-fold__contact-me__content h2 {
-        font-size: 3.2em;
+        font-size: 2.8em;
         font-family: "Nunito", sans-serif;
         color: #fff;
         padding: 0px 16px 16px 8px; }
@@ -271,11 +298,11 @@ strong {
         padding: 8px;
         font-weight: 300;
         color: #fff;
-        font-size: 2em; }
+        font-size: 1.8em; }
       .under-the-fold__contact-me__content__e-mail {
         margin: 8px;
         padding-bottom: 0;
-        font-size: 2.4em !important;
+        font-size: 2.2em !important;
         font-family: "Nunito", sans-serif;
         color: #fff;
         font-weight: 400; }
@@ -325,12 +352,12 @@ strong {
         border: 1px solid #2f4f4f; }
 
 .back-to-top {
+  z-index: 6;
   position: fixed;
   width: 30px;
   bottom: 16px;
-  margin-right: 24px;
   transition: 0.2s;
-  right: 0; }
+  right: 24px; }
   .back-to-top i {
     float: right;
     color: #3e6969;
@@ -348,7 +375,7 @@ strong {
   height: 360px;
   background-color: #2f4f4f; }
   .footer__social-media {
-    width: 256px;
+    width: 280px;
     height: 240px;
     padding-top: 104px;
     margin: auto;
@@ -357,7 +384,7 @@ strong {
       width: 100%;
       text-align: center;
       margin-bottom: 0;
-      font-size: 2em;
+      font-size: 2.2em;
       color: #fff; }
     .footer__social-media__links {
       padding-top: 0;
@@ -455,7 +482,8 @@ input[type="color"]:focus,
       .above-the-fold__message h1 {
         font-size: 1em !important; }
     .above-the-fold__check-more {
-      margin-top: calc(-240px + 100vh - 26vh); }
+      position: relative;
+      bottom: 24px; }
     .above-the-fold__top {
       padding-top: 24px;
       padding-left: 16px;
@@ -504,7 +532,7 @@ input[type="color"]:focus,
         text-align: left; }
   .under-the-fold__contact-me__content {
     width: calc(100% - 32px);
-    border-radius: 16px;
+    border-radius: 12px;
     text-align: left;
     padding: 36px 24px; }
     .under-the-fold__contact-me__content__e-mail {
@@ -513,18 +541,31 @@ input[type="color"]:focus,
       font-size: 1.8em !important; }
     .under-the-fold__contact-me__content__location {
       margin-top: 24px;
-      text-align: center; } }
+      text-align: center; }
+  .under-the-fold__projects {
+    width: 100%;
+    margin: 0 auto; }
+    .under-the-fold__projects__content__item {
+      width: calc(100% - 32px);
+      float: left !important;
+      margin: 16px; } }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .above-the-fold__top {
     padding-left: 16px;
     padding-right: 16px; }
   .above-the-fold__message {
-    margin-top: calc(-240px + 100vh - 40vh); }
+    margin-top: calc(-240px + 100vh - 48vh); }
   .above-the-fold__check-more {
-    margin-top: calc(-240px + 100vh - 40vh); }
+    margin-top: calc(-240px + 100vh - 48vh); }
   .under-the-fold__contact-me__content {
-    max-width: calc(100% - 32px); } }
+    max-width: calc(100% - 32px); }
+  .under-the-fold__projects {
+    width: 100%;
+    margin: 0 auto; }
+    .under-the-fold__projects__content__item {
+      width: calc(50% - 32px);
+      margin: 16px; } }
 
 @media (min-width: 1400px) {
   .above-the-fold__message {
