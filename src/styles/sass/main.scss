@@ -1,5 +1,5 @@
 $main: #2f4f4f;
-$link-alternative: #ff0;
+$link-alternative: #ffe383;
 $base-text: #444;
 $white: #fff;
 
@@ -183,7 +183,7 @@ strong {
       }
 
       &:active {
-        transform: translate(2px, 2px);
+        transform: translate(1px, 1px);
       }
     }
 
@@ -352,12 +352,20 @@ strong {
       }
       &__item {
         max-width: 576px; 
-        padding: 0;
+        padding: 16px;
         float: left;
         border-radius: 12px;
         margin-bottom: 24px;
-        height: 144px;
-        border: 1px solid rgba(47,79,79,1);
+        height: 172px;
+        //border: 1px solid rgba(47,79,79,1);
+      }
+      a {
+        font-size: 2.2em;
+        color: $main;
+      }
+      p{
+        font-size: 1.8em;
+        color: $base-text;
       }
     }
   }
@@ -429,12 +437,13 @@ strong {
     max-width: 1200px;
     margin: 0 auto;
 
-    h3 {
+    h2 {
       font-size: 2.8em;
       color: $main;
       margin-bottom: 24px;
       padding: 16px;
       font-weight: 600;
+      line-height: 1.7em;
       font-family: "Nunito", sans-serif;
     }
     img {

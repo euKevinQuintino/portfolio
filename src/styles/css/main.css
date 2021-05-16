@@ -26,7 +26,7 @@ button {
   letter-spacing: 0.032em; }
 
 mark {
-  background-color: #ff0;
+  background-color: #ffe383;
   padding: 0;
   color: #2f4f4f; }
 
@@ -35,11 +35,11 @@ strong {
   font-weight: 600; }
 
 ::selection {
-  background-color: #ff0;
+  background-color: #ffe383;
   color: #2f4f4f; }
 
 :-moz-selection {
-  background-color: #ff0;
+  background-color: #ffe383;
   color: #2f4f4f; }
 
 .primary-button {
@@ -112,7 +112,7 @@ strong {
 
 .link-alternative {
   color: inherit;
-  border-bottom: 2px solid #ff0;
+  border-bottom: 2px solid #ffe383;
   border-radius: 2px;
   text-decoration: none;
   font-weight: 400;
@@ -120,11 +120,11 @@ strong {
   .link-alternative:hover {
     color: inherit;
     text-decoration: none;
-    border-bottom: 3px solid #ff0; }
+    border-bottom: 3px solid #ffe383; }
   .link-alternative:active {
     text-decoration: none;
-    color: #ff0;
-    border-bottom: 3px solid #ff0;
+    color: #ffe383;
+    border-bottom: 3px solid #ffe383;
     transition: 0.1s; }
 
 .above-the-fold {
@@ -145,7 +145,7 @@ strong {
         cursor: pointer;
         transform: translateX(2px); }
       .above-the-fold__top img:active {
-        transform: translate(2px, 2px); }
+        transform: translate(1px, 1px); }
     .above-the-fold__top__name {
       font-size: 2.8em;
       color: #2f4f4f;
@@ -268,12 +268,17 @@ strong {
         font-family: "Nunito", sans-serif; }
       .under-the-fold__projects__content__item {
         max-width: 576px;
-        padding: 0;
+        padding: 16px;
         float: left;
         border-radius: 12px;
         margin-bottom: 24px;
-        height: 144px;
-        border: 1px solid darkslategray; }
+        height: 172px; }
+      .under-the-fold__projects__content a {
+        font-size: 2.2em;
+        color: #2f4f4f; }
+      .under-the-fold__projects__content p {
+        font-size: 1.8em;
+        color: #444; }
   .under-the-fold__contact-me {
     width: 100%;
     display: flex;
@@ -322,12 +327,13 @@ strong {
   .under-the-fold__achievements {
     max-width: 1200px;
     margin: 0 auto; }
-    .under-the-fold__achievements h3 {
+    .under-the-fold__achievements h2 {
       font-size: 2.8em;
       color: #2f4f4f;
       margin-bottom: 24px;
       padding: 16px;
       font-weight: 600;
+      line-height: 1.7em;
       font-family: "Nunito", sans-serif; }
     .under-the-fold__achievements img {
       margin-right: 16px;
