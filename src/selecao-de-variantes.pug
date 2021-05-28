@@ -1,0 +1,126 @@
+doctype html
+html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
+  head
+    include includes/head
+    link(rel="canonical" href="https://kevinnicolasbq.com/")
+    title seleção das variantes - kevin quintino
+  body
+    noscript
+      iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-N8WW2TZ' height='0' width='0' style='display:none; visibility:hidden')
+    section#sectionOne.above-the-fold
+      header.above-the-fold__top
+        a(href="https://www.kevinnicolasbq.com/" style="float: left;" data-toggle="tooltip" title="minha logo (clicar levará para a página inicial)" aria-hidden="true")
+          img(src="img/logo.svg" alt="" aria-hidden="true")
+        p(data-toggle="tooltip" title="este é meu nome :v" style="padding-top: 2px;").above-the-fold__top__name kevin quintino
+        div(style="display: block; float: right;")
+          a.link.above-the-fold__top__blog-link(href="https://blog.kevinnicolasbq.com/" data-toggle="tooltip" title="visite meu blog" hidden) confira meu blog
+          input.primary-button(type="button" value="ir para a página inicial" data-toggle="tooltip" title="ir para a página inicial do portfólio")
+    section.article-page
+      article.article-page__content
+        h1 solução para a seleção de variantes dos produtos
+        span #[strong data:] realizado em março de 2021.
+        p(style="margin-top: 16px") #[strong Este projeto ocorreu na Vhita, uma #[abbr(title="Digitally Native Vertical Brand") DNVB] brasileira que oferece alimentos funcionais] - como suplementos alimentares e vitaminas - de qualidade, para todo o Brasil. Ela é 100% digital, tendo como principal canal de vendas, seu comércio eletrônico.
+        h2 desafio
+        p #[strong Descobrimos um problema de usabilidade na seleção de variantes dos produtos] (versão e quantidade), através de comentários em uma pesquisa NPS sobre a experiência compra no site e testes de usabilidade.
+        p Problemas no comércio eletrônico têm um impacto negativo forte na receita da empresa, sendo assim, #[strong este problema foi tratado com prioridade alta.]
+        p Sobretudo, o problema não prejudicava, necessariamente, a eficácia do processo de compra, porém #[strong ele deixava os consumidores com dúvidas sobre a versão que estavam comprando], isso gerava: 
+        ul 
+          li Chamados ao time de atendimento;
+          li cancelamento de compras.
+        p #[strong Ainda mais que um problema a resolver, tornou-se uma oportunidade], pois  um redesign deste elemento poderia significar melhoria na taxa de conversão e outras métricas relevantes.
+        h2 usuário/persona
+        p Naquele momento, #[strong não tínhamos uma persona bem definida], porém sabíamos que o usuário comum tendia a ter: 
+        ul 
+          li Mais de 40 anos;
+          li nível de habilidade intermediário com celulares ou computadores;
+          li experiência com compras online.
+        h2 papéis e responsabilidades
+        p Atuaram neste projeto: 
+        ul 
+          li #[strong Dois designers de experiências do usuário] - responsáveis pela pesquisa e pelo design e teste da solução;
+          li #[strong um desenvolvedor front-end] - responsável por implementar a solução no site após a conclusão (se ela fosse validada).
+        h2 escopo e restrições
+        p Embora o seletor de variantes do Collagen (colágeno para a pele) fosse o mais problemático - por ter duas versões (comprimido e em pó) -, #[strong decidimos abordar o seletor de variantes de todas as páginas de produto.]
+        p(style="color: #f00;") #[strong restrições]
+        h2 pesquisa 
+        p Antes de mais nada, realizamos: 
+        ul
+          li testes de usabilidade (remotamente);
+          li análise de mapas de calor (hotjar);
+          li análise de gravações de sessões (hotjar);
+          li análise de repostas de questionários (NPS - hotjar).
+        p para entendermos melhor o que fazia daquele seletor (retratado na imagem abaixo), um seletor ruim.
+        figure
+          img(src="" alt="")
+          figcaption seletor das variantes do Collagen antes do redesign
+        h3 resultado dos testes e análises
+        p Durante dois dias de testes de usabilidade, totalizando 6 testes realizados com 6 participantes diferentes, descobrimos: 
+
+        h2 design de soluções 
+        p Depois que identificamos as principais problemas no design atual, partimos para a prototipação de alternativas de solução.
+        p Considerando os problemas identificados, #[strong foquei em melhorar a clareza de algumas informações]: 
+        ol
+          li Versão selecionada;
+          li quantidade selecionada;
+          li desconto da versão selecionada;
+          li preço da versão selecionada.
+        p Antes de mais nada, #[strong abordamos a falta de clareza sobre a versão selecionada] (em pó ou comprimido). Com o objetivo de clarificar isso: 
+        ul 
+          li Estabelecemos que, a imagem do produto representaria a versão selecionada e, posteriormente, que a imagem também representaria a quantidade selecionada, para deixar ainda mais evidente a versão e quantidade selecionada;
+          li em vez de exibir as opções para as duas versões ao mesmo tempo, o usuário precisaria selecionar primeiro a versão que deseja, e então visualizaria as opções da versão selecionada (tendo a versão em comprimido como padrão).
+        p Além disso, #[strong decidi exibir o preço das opções sem que o usuário precise as selecionar], com esta decisão, criei algumas hipóteses afirmando que isso: 
+        ol 
+          li Diminui o esforço necessário para a comparação, por não exigir que o usuário memorize o preço de todas as opções para isso;
+          li aumenta a eficiência da interação, pois o usuário não precisa selecionar cada opção para conferir e comparar o preço delas;
+          li garante que todos os usuários tenham contato com todas as ofertas, aumentando a probabilidade de conversão.
+        p Juntamente a isso, para melhorar a clareza sobre a opção e versão selecionada, #[strong decidi revisar os estilos e o #[i(lang="en") affordance] da seleção de variantes]: 
+        ul 
+          li Deixei-a mais semelhante a um botão radio, com a finalidade de explicitar seu funcionamento (e também explicitar a versão selecionada);
+          li padronizei a largura e altura delas para facilitar a visualização.
+          li defini uma alternativa que enfatizava as informações que considerei mais importantes:
+          ul 
+            li a quantidade;
+            li o preço com desconto;
+            li o percentual de desconto.
+          li e ainda uma uma alternativa que explicitava - monetariamente - o valor do desconto.
+        h2 teste das soluções
+        p Logo depois, #[strong realizamos um teste A/B/n] com as variantes a seguir:
+        h3 variante A
+        figure
+          img(src="./img/other/teste.jpg" loading="lazy" onclick="window.open('./img/other/teste.jpg')" data-toggle="tooltip" title="abrir a imagem no tamanho original em uma nova aba")
+          figcaption 
+            a.link(href="./img/other/teste.jpg" target="_blank" title="abrir imagem no tamanho original em outra aba" data-toggle="tooltip")
+        p Nesta variante
+        h3 variante B
+        figure
+          img(src="./img/other/teste.jpg" loading="lazy" onclick="window.open('./img/other/teste.jpg')" data-toggle="tooltip" title="abrir a imagem no tamanho original em uma nova aba")
+          figcaption 
+            a.link(href="./img/other/teste.jpg" target="_blank" title="abrir imagem no tamanho original em outra aba" data-toggle="tooltip")
+        p Já, nesta variante
+        h3 variante C
+        figure
+          img(src="./img/other/teste.jpg" loading="lazy" onclick="window.open('./img/other/teste.jpg')" data-toggle="tooltip" title="abrir a imagem no tamanho original em uma nova aba")
+          figcaption 
+            a.link(href="./img/other/teste.jpg" target="_blank" title="abrir imagem no tamanho original em outra aba" data-toggle="tooltip")
+        p Nesta outra variante
+        h3 variante D
+        figure
+          img(src="./img/other/teste.jpg" loading="lazy" onclick="window.open('./img/other/teste.jpg')" data-toggle="tooltip" title="abrir a imagem no tamanho original em uma nova aba")
+          figcaption 
+            a.link(href="./img/other/teste.jpg" target="_blank" title="abrir imagem no tamanho original em outra aba" data-toggle="tooltip")
+        p Enquanto nesta variante,
+        h2 resultados e aprendizados
+        
+        
+        
+        div(style="text-align: center; margin-top: 36px;")
+          a.link(href="http://www.kevinnicolasbq.com" title="voltar para a página inicial" data-toggle="tooltip" style="font-size: 1.8em") #[i(class="fas fa-long-arrow-alt-left" style="color: #2f4f4f;font-size: 0.8em")] voltar para a página inicial 
+    .back-to-top(style="display: none;")
+      a(href="#" data-toggle="tooltip" title="voltar ao topo" onclick="ScrollTo('sectionOne'); return false;" aria-hidden="true")
+        i.fas.fa-chevron-up.fa-4x
+    include includes/footer
+    script.
+      $(".fa-chevron-down").removeClass("link");
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });

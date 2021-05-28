@@ -2,16 +2,17 @@ doctype html
 html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
   head
     include includes/head
+    title kevin quintino - designer de experiência do usuário
   body
     noscript
       iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-N8WW2TZ' height='0' width='0' style='display:none; visibility:hidden')
     section#sectionOne.above-the-fold
       header.above-the-fold__top
-        a(href="." style="float: left;" data-toggle="tooltip" title="minha logo (clique para recarregar a página)" aria-hidden="true")
+        a(href="." style="float: left;" data-toggle="tooltip" title="minha logo (clicar recarregará a página)" aria-hidden="true")
           img(src="img/logo.svg" alt="" aria-hidden="true")
         h1(data-toggle="tooltip" title="este é meu nome :v").above-the-fold__top__name kevin quintino
         div(style="display: block; float: right;")
-          a.link.above-the-fold__top__blog-link(href="https://blog.kevinnicolasbq.com/" data-toggle="tooltip" title="visite meu blog") confira meu blog
+          a.link.above-the-fold__top__blog-link(href="https://blog.kevinnicolasbq.com/" data-toggle="tooltip" title="visite meu blog" hidden) confira meu blog
           input.primary-button(type="button" value="entrar em contato" onclick="ScrollTo('contact'); return false;" data-toggle="tooltip" title="fale comigo")
       .above-the-fold__message
         h2 oi, eu sou o #[mark(data-toggle="tooltip" title="meu nome :v"  translate="no") kevin], eu projeto e desenvolvo #[br] experiências significativas
@@ -75,15 +76,18 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
         .col-md-12.under-the-fold__projects__content
           h2 conheça alguns projetos nos quais colaborei:
           .col-md-6.under-the-fold__projects__content__item(style="float: left;")
-            a.link(href="https://kevinnicolasbq.com/selecao-de-variantes" rel="noopener" data-toggle="tooltip" title="") solução para seleção de variantes dos produtos (vhita)
-            p(style="margin-top: 8px;") saiba como foi o processo de solução para um problema na usabilidade da seleção de variantes dos produtos do e-commerce.
+            a.link(href="https://kevinnicolasbq.com/selecao-de-variantes" rel="noopener" data-toggle="tooltip" title="") design e desenvolvimento do meu portfólio e blog
+            p(style="margin-top: 8px;") entenda o que me levou a tomar cada decisão de design e desenvolvimento no meu portfólio e blog.
           .col-md-6.under-the-fold__projects__content__item(style="float: right;")
+            a.link(href="https://kevinnicolasbq.com/selecao-de-variantes" rel="noopener" data-toggle="tooltip" title="") solução para a seleção de variantes dos produtos (vhita)
+            p(style="margin-top: 8px;") saiba como foi o processo de solução para um problema na usabilidade da seleção de variantes dos produtos do e-commerce.
+          .col-md-6.under-the-fold__projects__content__item(style="float: left;")
             a.link(href="https://kevinnicolasbq.com/redesign-fale-conosco" rel="noopener" data-toggle="tooltip" title="") redesign da página de atendimento (vhita)
             p(style="margin-top: 8px;") conheça o processo de redesign da página de atendimento ao cliente (fale conosco) do e-commerce.
-          .col-md-6.under-the-fold__projects__content__item(style="float: left;")
+          .col-md-6.under-the-fold__projects__content__item(style="float: right;")
             a.link(href="https://kevinnicolasbq.com/coleta-de-dados" rel="noopener" data-toggle="tooltip" title="") coleta de dados quanti-quali automatizada (vhita)
             p(style="margin-top: 8px;") entenda como pensei para definir onde e como coletar dados quantitativos e qualitativos de forma automatizada, no e-commerce.
-          .col-md-6.under-the-fold__projects__content__item(style="float: right;")
+          .col-md-6.under-the-fold__projects__content__item(style="float: left;")
             a.link(href="https://kevinnicolasbq.com/solucao-acesso-cadastro" rel="noopener" data-toggle="tooltip" title="") solução para os problemas no acesso/cadastro de contas (vhita)
             p(style="margin-top: 8px;") saiba como foram identificados e solucionados os problemas no acesso ou cadastro de contas, no e-commerce.
       .under-the-fold__contact-me#contact
@@ -185,20 +189,7 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
     .back-to-top(style="display: none;")
       a(href="#" data-toggle="tooltip" title="voltar ao topo" onclick="ScrollTo('sectionOne'); return false;" aria-hidden="true")
         i.fas.fa-chevron-up.fa-4x
-    footer.footer
-      .footer__social-media
-        h2 confira minhas redes sociais
-        .footer__social-media__links
-          a(href="https://www.instagram.com/kevinnicolasbq/" rel="noopener noreferrer" target="_blank" aria-label="acessar meu instagram")
-            i.footer__social-media__links__icon(data-toggle="tooltip" title="siga-me no instagram" aria-hidden="true").fab.fa-instagram.fa-2x
-          a(href="https://twitter.com/kevinnicolasbq" rel="noopener noreferrer" target="_blank" aria-label="acessar meu twitter")
-            i.footer__social-media__links__icon(data-toggle="tooltip" title="siga-me no twitter" aria-hidden="true").fab.fa-twitter.fa-2x
-          a(href="https://www.linkedin.com/in/kevinnicolasbq/" rel="noopener noreferrer" target="_blank" aria-label="acessar meu linkedin")
-            i.footer__social-media__links__icon(data-toggle="tooltip" title="conecte-se comigo no linkedin" aria-hidden="true").fab.fa-linkedin-in.fa-2x
-          a(href="https://github.com/kevinnicolasbq/" rel="noopener noreferrer" target="_blank" class="tooltip-color" aria-label="acessar meu github")
-            i.footer__social-media__links__icon(data-toggle="tooltip" title="confira meu github" aria-hidden="true").fab.fa-github.fa-2x
-      .footer__message
-        p feito com #[i.fas.fa-heart(data-toggle="tooltip" title="amor" class="tooltip-color" aria-label="amor")] e #[i.fas.fa-mug-hot(data-toggle="tooltip" title="café")] por #[strong kevin quintino] #[i.far.fa-copyright(data-toggle="tooltip" title="todos os direitos reservados" aria-hidden="true")] 2021.
+    include includes/footer
     script.
       $(".fa-chevron-down").removeClass("link");
 

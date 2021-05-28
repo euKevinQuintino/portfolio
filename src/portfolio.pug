@@ -1,0 +1,45 @@
+doctype html
+html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
+  head
+    include includes/head
+    link(rel="canonical" href="https://kevinnicolasbq.com/")
+    title seleção das variantes - kevin quintino
+  body
+    noscript
+      iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-N8WW2TZ' height='0' width='0' style='display:none; visibility:hidden')
+    section#sectionOne.above-the-fold
+      header.above-the-fold__top
+        a(href="https://www.kevinnicolasbq.com/" style="float: left;" data-toggle="tooltip" title="minha logo (clicar levará para a página inicial)" aria-hidden="true")
+          img(src="img/logo.svg" alt="" aria-hidden="true")
+        p(data-toggle="tooltip" title="este é meu nome :v" style="padding-top: 2px;").above-the-fold__top__name kevin quintino
+        div(style="display: block; float: right;")
+          a.link.above-the-fold__top__blog-link(href="https://blog.kevinnicolasbq.com/" data-toggle="tooltip" title="visite meu blog" hidden) confira meu blog
+          input.primary-button(type="button" value="ir para a página inicial" data-toggle="tooltip" title="ir para a página inicial do portfólio")
+    section.article-page
+      article.article-page__content
+        h1 design e desenvolvimento deste portfolio
+        span #[strong data:] início em 2020, atualizado constantemente.
+        p(style="margin-top: 16px") 
+        h2 definindo o conteúdo 
+
+        h2 escolha da tipografia 
+
+        h2 definição da paleta de cores 
+
+        h2 definição do tom de voz
+
+        h2 garantindo acessibilidade
+
+        h2 boas práticas de programação e #[abbr(title="Search Engine Optimization" lang="en" translate="no") SEO]
+        
+        div(style="text-align: center; margin-top: 36px;")
+          a.link(href="http://www.kevinnicolasbq.com" title="voltar para a página inicial" data-toggle="tooltip" style="font-size: 1.8em") #[i(class="fas fa-long-arrow-alt-left" style="color: #2f4f4f;font-size: 0.8em")] voltar para a página inicial 
+    .back-to-top(style="display: none;")
+      a(href="#" data-toggle="tooltip" title="voltar ao topo" onclick="ScrollTo('sectionOne'); return false;" aria-hidden="true")
+        i.fas.fa-chevron-up.fa-4x
+    include includes/footer
+    script.
+      $(".fa-chevron-down").removeClass("link");
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });

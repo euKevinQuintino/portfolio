@@ -1,6 +1,8 @@
 $main: #2f4f4f;
 $link-alternative: #ffe383;
 $base-text: #444;
+$titulo: #555;
+$citacao: #696969;
 $white: #fff;
 
 html,
@@ -41,18 +43,20 @@ mark {
 }
 
 strong {
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
+  //font-family: "Nunito", sans-serif;
+  font-weight: 700;
 }
 
 ::selection {
   background-color: $link-alternative;
   color: $main;
+  font-weight: 400 !important;
 }
 
 :-moz-selection {
   background-color: $link-alternative;
   color: $main;
+  font-weight: 400 !important;
 }
 
 .primary-button {
@@ -60,7 +64,7 @@ strong {
   font-size: 1.8em;
   font-weight: 500;
   color: $white;
-  padding: 4px 12px 4px 12px;
+  padding: 4px 16px 4px 16px;
   border-radius: 6px;
   background-color: $main;
   border: 2px solid $main;
@@ -74,7 +78,6 @@ strong {
     -webkit-box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.44);
     box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.44);
     background-color: darken($main, 2%);
-    color: $white;
     cursor: pointer;
   }
 
@@ -127,14 +130,19 @@ strong {
   &:hover {
     color: $main;
     text-decoration: none;
-    border-bottom: 3px solid $main;
+    border-bottom: 3.3px solid $main;
+    transition: color 0.2s;
   }
 
   &:active {
     text-decoration: none;
     color: darken($main, 6%);
-    border-bottom: 3px solid $main;
+    border-bottom: 3.3px solid $main;
     transition: 0.1s;
+  }
+
+  &:visited {
+    border-bottom: lighten($main, 20%);
   }
 }
 
@@ -143,20 +151,25 @@ strong {
   border-bottom: 2px solid $link-alternative;
   border-radius: 2px;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: inherit;
   cursor: pointer;
 
   &:hover {
-    color: inherit;
+    color: $link-alternative !important;
     text-decoration: none;
-    border-bottom: 3px solid $link-alternative;
+    border-bottom: 3.3px solid $link-alternative;
+    transition: color 0.2s;
   }
 
   &:active {
     text-decoration: none;
     color: $link-alternative;
-    border-bottom: 3px solid $link-alternative;
+    border-bottom: 3.3px solid $link-alternative;
     transition: 0.1s;
+  }
+
+  &:visited {
+    border-bottom: lighten($link-alternative, 12%);
   }
 }
 
@@ -259,7 +272,6 @@ strong {
 
     h2 {
       font-size: 2.8em;
-      background-color: $main;
       color: $white;
       font-family: "Nunito", sans-serif;
       text-align: center;
@@ -270,7 +282,6 @@ strong {
     p {
       font-size: 1.8em;
       color: $white;
-      background-color: $main;
       font-weight: 300;
       max-width: 840px;
       margin: auto;
@@ -341,7 +352,7 @@ strong {
       margin: 0 auto;
       padding: 0;
       margin-bottom: 36px;
-      
+
       h2 {
         font-size: 2.8em;
         color: $main;
@@ -351,7 +362,7 @@ strong {
         font-family: "Nunito", sans-serif;
       }
       &__item {
-        max-width: 576px; 
+        max-width: 576px;
         padding: 16px;
         float: left;
         border-radius: 12px;
@@ -363,7 +374,7 @@ strong {
         font-size: 2.2em;
         color: $main;
       }
-      p{
+      p {
         font-size: 1.8em;
         color: $base-text;
       }
@@ -460,16 +471,16 @@ strong {
       color: $base-text;
     }
     &__graduations {
-      border-bottom: 1px solid rgba(47,79,79,0.16);
+      border-bottom: 1px solid rgba(47, 79, 79, 0.16);
       margin-bottom: 48px;
     }
     &__certifications {
-      border-bottom: 1px solid rgba(47,79,79,0.16);
+      border-bottom: 1px solid rgba(47, 79, 79, 0.16);
       margin-bottom: 48px;
     }
     &__books {
       margin-bottom: 48px;
-      p{
+      p {
         margin-top: 8px;
       }
       img {
@@ -492,24 +503,25 @@ strong {
     color: lighten($main, 8%);
     transition: 0.1s;
     padding: 10px 12px 10px 12px;
+    border-radius: 50%;
 
     &:hover {
       cursor: pointer;
-      color: darken($main, 8%);
-      background-color: rgba(47, 79, 79, 0.2);
-      border-radius: 50%;
+      background-color: $link-alternative;
+      color: $main;
+      transition: 0.2s;
     }
   }
 }
 
 .footer {
-  margin-top: 44px;
+  margin-top: 48px;
   width: 100vw;
   height: 360px;
   background-color: $main;
 
   &__social-media {
-    width: 280px;
+    width: 300px;
     height: 240px;
     padding-top: 104px;
     margin: auto;
@@ -520,6 +532,7 @@ strong {
       text-align: center;
       margin-bottom: 0;
       font-size: 2.2em;
+      font-family: "Nunito", sans-serif;
       color: $white;
     }
 
@@ -540,8 +553,7 @@ strong {
         border-radius: 50%;
 
         &:hover {
-          border-color: rgba(255, 255, 255, 1);
-          background-color: lighten($main, 6%);
+          border-color: $link-alternative;
           cursor: pointer;
           transition: 0.2s;
         }
@@ -549,6 +561,10 @@ strong {
 
       i {
         color: $white !important;
+        &:hover {
+          color: $link-alternative !important;
+          transition: 0.2s;
+        }
       }
     }
   }
@@ -557,11 +573,209 @@ strong {
     width: 100%;
     text-align: center;
     color: rgba(255, 255, 255, 0.88);
-    font-size: 14px;
-    margin-top: 4px;
+    font-size: 1.6em;
+    margin-top: 5px;
 
     i:hover {
       color: rgba(255, 255, 255, 1);
+    }
+  }
+}
+
+//CASES/BLOG
+.article-page {
+  width: 100%;
+  &__content {
+    margin: 0 auto;
+    max-width: 624px;
+    padding: 24px;
+
+    h1 {
+      font-family: "Nunito", sans-serif;
+      font-weight: 900;
+      font-size: 4.8em;
+      color: $main;
+      line-height: 1.4em;
+      margin-bottom: 0.5em;
+    }
+    h2 {
+      font-family: "Nunito", sans-serif;
+      font-weight: 800;
+      line-height: 1.4em;
+      font-size: 4em;
+      color: $titulo;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+    }
+    h3 {
+      font-family: "Nunito", sans-serif;
+      font-weight: 700;
+      line-height: 1.4em;
+      font-size: 3.2em;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+      color: $titulo;
+    }
+    h4 {
+      font-family: "Nunito", sans-serif;
+      font-weight: 700;
+      line-height: 1.4em;
+      font-size: 2.8em;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+      color: $titulo;
+    }
+
+    h5 {
+      font-family: "Nunito", sans-serif;
+      font-weight: 600;
+      line-height: 1.4em;
+      font-size: 2.4em;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+      color: $titulo;
+    }
+
+    h6 {
+      font-family: "Nunito", sans-serif;
+      font-weight: 600;
+      line-height: 1.4em;
+      font-size: 2em;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+      color: $titulo;
+    }
+
+    text {
+      font-family: "Nunito", sans-serif;
+      font-weight: 300;
+      line-height: 1.8em;
+      color: $titulo;
+      float: center;
+      line-height: 1.6em;
+    }
+
+    p {
+      //font-family: 'Nunito', sans-serif;
+      font-weight: 400;
+      font-size: 1.8em;
+      color: $base-text;
+      line-height: 1.8em;
+    }
+    strong {
+      font-family: "Comic Neue", sans-serif;
+    }
+    li {
+      font-size: 1.8em;
+      line-height: 1.8em;
+      margin-left: -4px!important;
+    }
+    iframe {
+      width: 640px;
+      height: 360px;
+      display: block;
+      margin: 0 auto;
+    }
+    figcaption {
+      font-size: 1.6em;
+      text-align: center;
+      padding: 6px;
+      color: $base-text;
+    }
+    q {
+      font-size: 1.8em;
+    }
+    blockquote {
+      font-size: 1.8em;
+      line-height: 1.8em;
+      font-style: normal;
+      border-left: 4px solid $main;
+      border-radius: 4px;
+      padding-left: 16px;
+      color: $citacao;
+      p {
+        font-size: 1em;
+        color: $base-text;
+      }
+    }
+    cite {
+      font-size: 1.8em;
+      font-style: normal;
+      font-weight: 400;
+      color: $base-text;
+
+      a {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    address {
+      font-size: 1.8em;
+    }
+    abbr {
+      color: inherit;
+      border-bottom: 2px dashed $main;
+      border-radius: 2px;
+      text-decoration: none;
+      font-weight: inherit;
+    }
+    hr {
+      margin: 12px 0;
+      border-top: 1px solid rgba(47, 79, 79, 0.33);
+      border-radius: 8px;
+    }
+    br {
+      line-height: 2.4em;
+    }
+    ul {
+      color: $base-text;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      padding: 8px;
+      padding-bottom: 0;
+      max-width: 100%;
+      border: 1px solid $main;
+      border-radius: 6px;
+      &:hover {
+        transition: .2s;
+        cursor: pointer;
+        opacity: 0.92;
+      }
+      &:active {
+        transition: .1s;
+        transform: translateY(2px);
+      }
+    }
+    figcaption {
+      margin-top: 4px;
+      padding-top: 0;
+      font-size: 1.6em;
+      color: $base-text;
+    }
+    span {
+      font-size: 1.8em;
+      color: $main;
+      margin-bottom: 16px!important;
+    }
+  }
+  &__share {
+    display: flex;
+    justify-content: left;
+    align-content: left;
+    width: 840px;
+    margin: 0 auto;
+    font-size: 1.8em;
+    font-weight: 700;
+
+    p {
+      margin-right: 16px;
+    }
+
+    a {
+      margin-right: 16px;
     }
   }
 }
@@ -740,7 +954,7 @@ input[type="color"]:focus,
         &__e-mail {
           text-decoration: none;
           font-weight: 700;
-          font-size: 1.8em!important;
+          font-size: 1.8em !important;
         }
 
         &__location {
@@ -756,10 +970,31 @@ input[type="color"]:focus,
       &__content {
         &__item {
           width: calc(100% - 32px);
-          float: left!important;
+          float: left !important;
           margin: 16px;
         }
       }
+    }
+  }
+  .article-page {
+    margin-top: -76vh;
+    h1 {
+      font-size: 4em;
+    }
+    h2 {
+      font-size: 3.2em;
+    }
+    h3 {
+      font-size: 2.8em;
+    }
+    h4 {
+      font-size: 2.4em;
+    }
+    h5 {
+      font-size: 2.2em;
+    }
+    h6 {
+      font-size: 2em;
     }
   }
 }
@@ -794,6 +1029,9 @@ input[type="color"]:focus,
         }
       }
     }
+  }
+  .article-page {
+    margin-top: 4px;
   }
 }
 
