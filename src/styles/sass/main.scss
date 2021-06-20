@@ -19,11 +19,11 @@ body {
 }
 
 *:focus-visible {
-  outline-color: lighten($main, 16%) !important;
-  outline-offset: 2px !important;
   outline-style: dashed !important;
   outline-width: 2px !important;
-  transition: 0.1s;
+  outline-offset: 0.128rem !important;
+  outline-color: lighten($main, 16%) !important;
+  transition: outline-offset 0.2s linear;
 }
 
 body,
@@ -32,8 +32,6 @@ textarea,
 button {
   font-family: "Comic Neue", sans-serif;
   font-size: 62.5%;
-  transition: all 0.69s ease;
-  letter-spacing: 0.032em;
 }
 
 mark {
@@ -74,10 +72,11 @@ strong {
   box-shadow: 0px 2px 8px rgba(47, 79, 79, 0.44);
 
   &:hover {
-    -moz-box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.44);
-    -webkit-box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.44);
-    box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.44);
-    background-color: darken($main, 2%);
+    -moz-box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.48);
+    -webkit-box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.48);
+    box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.48);
+    background-color: darken($main, 2.8%);
+    border-color: darken($main, 2.8%);
     cursor: pointer;
   }
 
@@ -104,9 +103,9 @@ strong {
   box-shadow: 0px 2px 8px rgba(47, 79, 79, 0.44);
 
   &:hover {
-    -moz-box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.44);
-    -webkit-box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.44);
-    box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.44);
+    -moz-box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.48);
+    -webkit-box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.48);
+    box-shadow: 0px 2px 12px rgba(47, 79, 79, 0.48);
     background-color: lighten($main, 56%);
     cursor: pointer;
   }
@@ -128,21 +127,30 @@ strong {
   cursor: pointer;
 
   &:hover {
-    color: $main;
+    color: $white;
+    background: $main;
     text-decoration: none;
-    border-bottom: 3.3px solid $main;
-    transition: color 0.2s;
+    border-radius: 0;
+    i {
+      color: $white;
+    }
+    &:visited {
+      background-color: lighten($main, 8%) !important;
+    }
   }
 
   &:active {
     text-decoration: none;
-    color: darken($main, 6%);
-    border-bottom: 3.3px solid $main;
-    transition: 0.1s;
+    border-color: lighten($main, 4%) !important;
+    background-color: lighten($main, 4%) !important;
+    &:visited {
+      background-color: lighten($main, 12%) !important;
+      border-color: lighten($main, 12%) !important;
+    }
   }
 
   &:visited {
-    border-bottom: lighten($main, 20%);
+    border-color: lighten($main, 8%) !important;
   }
 }
 
@@ -155,21 +163,32 @@ strong {
   cursor: pointer;
 
   &:hover {
-    color: $link-alternative !important;
+    background-color: $link-alternative !important;
+    color: $main !important;
     text-decoration: none;
-    border-bottom: 3.3px solid $link-alternative;
-    transition: color 0.2s;
+    border-radius: 0;
+    i {
+      color: $main !important;
+    }
+    &:visited {
+      background-color: lighten($link-alternative, 12%) !important;
+      border-color: lighten($link-alternative, 12%) !important;
+    }
   }
 
   &:active {
     text-decoration: none;
-    color: $link-alternative;
-    border-bottom: 3.3px solid $link-alternative;
+    border-color: darken($link-alternative, 8%) !important;
+    background-color: darken($link-alternative, 8%) !important;
     transition: 0.1s;
+    &:visited {
+      background-color: lighten($link-alternative, 4%) !important;
+      border-color: lighten($link-alternative, 4%) !important;
+    }
   }
 
   &:visited {
-    border-bottom: lighten($link-alternative, 12%);
+    border-color: lighten($link-alternative, 12%) !important;
   }
 }
 
@@ -192,11 +211,10 @@ strong {
 
       &:hover {
         cursor: pointer;
-        transform: translateX(2px);
       }
 
       &:active {
-        transform: translate(1px, 1px);
+        transform: translateY(1px);
       }
     }
 
@@ -227,9 +245,11 @@ strong {
 
   &__check-more {
     height: 80px;
+    width: 180px;
     text-align: center;
     color: $main;
-    margin-top: 240px;
+    margin: 240px auto;
+    margin-bottom: 0px;
 
     a {
       font-size: 1.8em;
@@ -668,7 +688,7 @@ strong {
     li {
       font-size: 1.8em;
       line-height: 1.8em;
-      margin-left: -4px!important;
+      margin-left: -4px !important;
     }
     iframe {
       width: 640px;
@@ -734,23 +754,22 @@ strong {
     img {
       display: block;
       margin: 0 auto;
-      padding: 8px;
-      padding-bottom: 0;
+      padding: 0px;
       max-width: 100%;
-      border: 1px solid $main;
-      border-radius: 6px;
+      //border: 1px solid $main;
+      //border-radius: 6px;
       &:hover {
-        transition: .2s;
+        transition: 0.2s;
         cursor: pointer;
         opacity: 0.92;
       }
       &:active {
-        transition: .1s;
+        transition: 0.1s;
         transform: translateY(2px);
       }
     }
     figcaption {
-      margin-top: 4px;
+      margin-top: 8px;
       padding-top: 0;
       font-size: 1.6em;
       color: $base-text;
@@ -758,7 +777,7 @@ strong {
     span {
       font-size: 1.8em;
       color: $main;
-      margin-bottom: 16px!important;
+      margin-bottom: 16px !important;
     }
   }
   &__share {
@@ -1044,4 +1063,12 @@ input[type="color"]:focus,
       margin-top: 280px;
     }
   }
+}
+
+.selecao-variantes-antiga {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #767676;
+  border-radius: 6px;
+  padding: 8px 16px;
 }
