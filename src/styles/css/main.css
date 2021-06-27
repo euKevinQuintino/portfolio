@@ -27,9 +27,15 @@ button {
   font-size: 62.5%; }
 
 mark {
+  padding: 0px 3.2px;
+  box-shadow: rgba(47, 79, 79, 0.24) 1px 1px;
+  -webkit-print-color-adjust: exact;
   background-color: #ffe383;
+  color: inherit;
+  font-style: inherit;
+  /*background-color: $link-alternative;
   padding: 0;
-  color: #2f4f4f; }
+  color: $main;*/ }
 
 strong {
   font-weight: 700; }
@@ -131,7 +137,7 @@ i {
       background-color: #3e6969 !important; }
   .link:active {
     text-decoration: none;
-    transition: .1s;
+    transition: 0.1s;
     border-color: #375c5c !important;
     background-color: #375c5c !important; }
     .link:active:visited {
@@ -244,7 +250,7 @@ i {
     .under-the-fold__resume p {
       font-size: 1.8em;
       color: #fff;
-      font-weight: 300;
+      font-weight: 400;
       max-width: 840px;
       margin: auto;
       line-height: 1.7em; }
@@ -342,7 +348,7 @@ i {
         padding: 0px 16px 16px 8px; }
       .under-the-fold__contact-me__content p {
         padding: 8px;
-        font-weight: 300;
+        font-weight: 400;
         color: #fff;
         font-size: 1.8em; }
       .under-the-fold__contact-me__content__e-mail {
@@ -359,7 +365,7 @@ i {
         margin-top: 16px;
         padding: 0;
         font-size: 1.8em;
-        font-weight: 300;
+        font-weight: 400;
         color: #fff; }
         .under-the-fold__contact-me__content__location .material-icons-round {
           margin-right: 8px;
@@ -518,7 +524,7 @@ li {
       margin-bottom: 0.5em;
       color: #555; }
     .article-page__content text {
-      font-weight: 300;
+      font-weight: 400;
       line-height: 1.8em;
       color: #555;
       float: center;

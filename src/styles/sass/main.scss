@@ -39,9 +39,15 @@ button {
 }
 
 mark {
-  background-color: $link-alternative;
+  padding: 0px 3.2px;
+  box-shadow: rgba(47,79,79,0.24) 1px 1px;
+  -webkit-print-color-adjust: exact;
+  background-color: #ffe383;
+  color: inherit;
+  font-style: inherit;
+  /*background-color: $link-alternative;
   padding: 0;
-  color: $main;
+  color: $main;*/
 }
 
 strong {
@@ -164,7 +170,7 @@ i {
 
   &:active {
     text-decoration: none;
-    transition: .1s;
+    transition: 0.1s;
     border-color: lighten($main, 4%) !important;
     background-color: lighten($main, 4%) !important;
     &:visited {
@@ -324,7 +330,7 @@ i {
     p {
       font-size: 1.8em;
       color: $white;
-      font-weight: 300;
+      font-weight: 400;
       max-width: 840px;
       margin: auto;
       line-height: 1.7em;
@@ -461,7 +467,7 @@ i {
 
       p {
         padding: 8px;
-        font-weight: 300;
+        font-weight: 400;
         color: $white;
         font-size: 1.8em;
       }
@@ -487,7 +493,7 @@ i {
         margin-top: 16px;
         padding: 0;
         font-size: 1.8em;
-        font-weight: 300;
+        font-weight: 400;
         color: $white;
 
         .material-icons-round {
@@ -712,7 +718,7 @@ li {
 
     text {
       //font-family: "Nunito", sans-serif;
-      font-weight: 300;
+      font-weight: 400;
       line-height: 1.8em;
       color: $titulo;
       float: center;
