@@ -6,6 +6,9 @@ body {
   margin: 0;
   padding: 0; }
 
+* {
+  text-rendering: optimizeLegibility; }
+
 *:focus {
   outline: none; }
 
@@ -31,6 +34,20 @@ mark {
 strong {
   font-weight: 700; }
 
+a,
+input,
+button,
+img,
+i {
+  outline-offset: 0.5rem;
+  transition: outline-offset 0.2s linear; }
+  a:hover,
+  input:hover,
+  button:hover,
+  img:hover,
+  i:hover {
+    outline-offset: 0.125rem; }
+
 ::selection {
   background-color: #ffe383;
   color: #2f4f4f;
@@ -41,8 +58,13 @@ strong {
   color: #2f4f4f;
   font-weight: 400 !important; }
 
+.material-icons-round {
+  vertical-align: -0.2rem;
+  color: inherit;
+  font-size: 1rem;
+  margin-left: 2px; }
+
 .primary-button {
-  font-family: "Nunito", sans-serif;
   font-size: 1.8em;
   font-weight: 500;
   color: #fff;
@@ -69,8 +91,7 @@ strong {
 
 .secondary-button {
   font-size: 1.8em;
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   color: #2f4f4f;
   padding: 4px 12px 4px 12px;
   border-radius: 6px;
@@ -104,12 +125,13 @@ strong {
     background: #2f4f4f;
     text-decoration: none;
     border-radius: 0; }
-    .link:hover i {
+    .link:hover .material-icons-round {
       color: #fff; }
     .link:hover:visited {
       background-color: #3e6969 !important; }
   .link:active {
     text-decoration: none;
+    transition: .1s;
     border-color: #375c5c !important;
     background-color: #375c5c !important; }
     .link:active:visited {
@@ -130,7 +152,7 @@ strong {
     color: #2f4f4f !important;
     text-decoration: none;
     border-radius: 0; }
-    .link-alternative:hover i {
+    .link-alternative:hover .material-icons-round {
       color: #2f4f4f !important; }
     .link-alternative:hover:visited {
       background-color: #fff1c0 !important;
@@ -178,7 +200,6 @@ strong {
     height: 80px;
     font-size: 3.6em;
     text-align: center;
-    line-height: 1.2em;
     padding: 16px;
     margin-top: 160px;
     color: #2f4f4f; }
@@ -193,13 +214,11 @@ strong {
       font-size: 1.8em;
       margin-bottom: 0;
       color: #2f4f4f; }
-    .above-the-fold__check-more i {
+    .above-the-fold__check-more .material-icons-round {
       font-size: 3.2em; }
-    .above-the-fold__check-more:hover {
-      cursor: pointer; }
-      .above-the-fold__check-more:hover i {
-        transition: 0.2s ease-in-out;
-        transform: translateY(4px); }
+    .above-the-fold__check-more:hover .material-icons-round {
+      transition: 0.2s ease-in-out;
+      transform: translateY(4px); }
 
 .under-the-fold {
   width: 100%; }
@@ -219,28 +238,33 @@ strong {
     .under-the-fold__resume h2 {
       font-size: 2.8em;
       color: #fff;
-      font-family: "Nunito", sans-serif;
       text-align: center;
       line-height: 2.8em;
-      font-weight: 600; }
+      font-weight: 700; }
     .under-the-fold__resume p {
       font-size: 1.8em;
       color: #fff;
       font-weight: 300;
       max-width: 840px;
       margin: auto;
-      line-height: 1.5em; }
+      line-height: 1.7em; }
+    .under-the-fold__resume a:hover {
+      font-weight: 400;
+      margin-right: 0.45px; }
   .under-the-fold__summary {
     margin: 64px auto; }
     .under-the-fold__summary h3 {
       font-size: 2.4em;
-      font-weight: 600;
+      font-weight: 700;
       text-align: center;
       margin-bottom: 20px;
-      font-family: "Nunito", sans-serif;
       color: #2f4f4f; }
+    .under-the-fold__summary h4 {
+      color: #555;
+      font-size: 2.2em; }
     .under-the-fold__summary p {
       font-size: 1.8em;
+      line-height: 1.7em;
       margin: 0;
       padding: 8px;
       color: #444; }
@@ -282,8 +306,7 @@ strong {
         color: #2f4f4f;
         margin-bottom: 24px;
         padding: 16px;
-        font-weight: 600;
-        font-family: "Nunito", sans-serif; }
+        font-weight: 700; }
       .under-the-fold__projects__content__item {
         max-width: 576px;
         padding: 16px;
@@ -314,7 +337,7 @@ strong {
       border-radius: 12px; }
       .under-the-fold__contact-me__content h2 {
         font-size: 2.8em;
-        font-family: "Nunito", sans-serif;
+        font-weight: 700;
         color: #fff;
         padding: 0px 16px 16px 8px; }
       .under-the-fold__contact-me__content p {
@@ -326,7 +349,6 @@ strong {
         margin: 8px;
         padding-bottom: 0;
         font-size: 2.2em !important;
-        font-family: "Nunito", sans-serif;
         color: #fff;
         font-weight: 400; }
         .under-the-fold__contact-me__content__e-mail:hover {
@@ -339,7 +361,7 @@ strong {
         font-size: 1.8em;
         font-weight: 300;
         color: #fff; }
-        .under-the-fold__contact-me__content__location i {
+        .under-the-fold__contact-me__content__location .material-icons-round {
           margin-right: 8px;
           color: #fff; }
   .under-the-fold__achievements {
@@ -350,9 +372,8 @@ strong {
       color: #2f4f4f;
       margin-bottom: 24px;
       padding: 16px;
-      font-weight: 600;
-      line-height: 1.7em;
-      font-family: "Nunito", sans-serif; }
+      font-weight: 700;
+      line-height: 1.7em; }
     .under-the-fold__achievements img {
       margin-right: 16px;
       margin-bottom: 64px; }
@@ -379,16 +400,15 @@ strong {
   z-index: 6;
   position: fixed;
   width: 30px;
-  bottom: 16px;
+  bottom: 12px;
   transition: 0.2s;
-  right: 24px; }
-  .back-to-top i {
+  right: 12px; }
+  .back-to-top .material-icons-round {
     float: right;
-    color: #3e6969;
+    color: #426f6f;
     transition: 0.1s;
-    padding: 10px 12px 10px 12px;
     border-radius: 50%; }
-    .back-to-top i:hover {
+    .back-to-top .material-icons-round:hover {
       cursor: pointer;
       background-color: #ffe383;
       color: #2f4f4f;
@@ -410,7 +430,7 @@ strong {
       text-align: center;
       margin-bottom: 0;
       font-size: 2.2em;
-      font-family: "Nunito", sans-serif;
+      font-weight: 700;
       color: #fff; }
     .footer__social-media__links {
       padding-top: 0;
@@ -442,6 +462,14 @@ strong {
     .footer__message i:hover {
       color: white; }
 
+li {
+  color: #444;
+  font-size: 1.8em;
+  line-height: 1.8em;
+  margin-left: -4px !important; }
+  li .link {
+    color: #2f4f4f; }
+
 .article-page {
   width: 100%; }
   .article-page__content {
@@ -449,14 +477,12 @@ strong {
     max-width: 624px;
     padding: 24px; }
     .article-page__content h1 {
-      font-family: "Nunito", sans-serif;
       font-weight: 900;
       font-size: 4.8em;
       color: #2f4f4f;
       line-height: 1.4em;
       margin-bottom: 0.5em; }
     .article-page__content h2 {
-      font-family: "Nunito", sans-serif;
       font-weight: 800;
       line-height: 1.4em;
       font-size: 4em;
@@ -464,7 +490,6 @@ strong {
       margin-top: 1em;
       margin-bottom: 0.5em; }
     .article-page__content h3 {
-      font-family: "Nunito", sans-serif;
       font-weight: 700;
       line-height: 1.4em;
       font-size: 3.2em;
@@ -472,7 +497,6 @@ strong {
       margin-bottom: 0.5em;
       color: #555; }
     .article-page__content h4 {
-      font-family: "Nunito", sans-serif;
       font-weight: 700;
       line-height: 1.4em;
       font-size: 2.8em;
@@ -480,23 +504,20 @@ strong {
       margin-bottom: 0.5em;
       color: #555; }
     .article-page__content h5 {
-      font-family: "Nunito", sans-serif;
-      font-weight: 600;
+      font-weight: 700;
       line-height: 1.4em;
       font-size: 2.4em;
       margin-top: 1em;
       margin-bottom: 0.5em;
       color: #555; }
     .article-page__content h6 {
-      font-family: "Nunito", sans-serif;
-      font-weight: 600;
+      font-weight: 700;
       line-height: 1.4em;
       font-size: 2em;
       margin-top: 1em;
       margin-bottom: 0.5em;
       color: #555; }
     .article-page__content text {
-      font-family: "Nunito", sans-serif;
       font-weight: 300;
       line-height: 1.8em;
       color: #555;
@@ -509,10 +530,6 @@ strong {
       line-height: 1.8em; }
     .article-page__content strong {
       font-family: "Comic Neue", sans-serif; }
-    .article-page__content li {
-      font-size: 1.8em;
-      line-height: 1.8em;
-      margin-left: -4px !important; }
     .article-page__content iframe {
       width: 640px;
       height: 360px;
@@ -613,7 +630,6 @@ strong {
 .modal-title {
   color: #2f4f4f;
   font-size: 2.4em;
-  font-family: "Nunito", sans-serif;
   font-weight: 700; }
 
 .modal-body label {
@@ -626,8 +642,7 @@ strong {
 
 .modal-body h5 {
   font-size: 2.4em;
-  font-weight: 600;
-  font-family: "Nunito", sans-serif;
+  font-weight: 700;
   color: #2f4f4f; }
 
 textarea:focus,
@@ -679,8 +694,9 @@ input[type="color"]:focus,
     padding-top: 64px;
     margin-top: 24px; }
     .under-the-fold__resume h2 {
-      line-height: 1.5em;
+      line-height: 1.4em;
       text-align: left;
+      font-weight: 700;
       padding-bottom: 16px; }
     .under-the-fold__resume p {
       text-align: left; }
