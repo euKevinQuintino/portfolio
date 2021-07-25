@@ -45,6 +45,9 @@ mark {
   background-color: #ffe383;
   color: inherit;
   font-style: inherit;
+  border-radius: 4px/96px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
   /*background-color: $link-alternative;
   padding: 0;
   color: $main;*/
@@ -681,24 +684,24 @@ li {
     h1 {
       //font-family: "Nunito", sans-serif;
       font-weight: 900;
-      font-size: 4.8em;
+      font-size: 4em;
       color: $main;
-      line-height: 1.4em;
+      line-height: 1.2em;
       margin-bottom: 0.5em;
     }
     h2 {
       //font-family: "Nunito", sans-serif;
       font-weight: 800;
-      line-height: 1.4em;
+      line-height: 1.2em;
       font-size: 4em;
       color: $titulo;
       margin-top: 1em;
-      margin-bottom: 0.5em;
+      margin-bottom: 0.25em;
     }
     h3 {
       //font-family: "Nunito", sans-serif;
       font-weight: 700;
-      line-height: 1.4em;
+      line-height: 1.2em;
       font-size: 3.2em;
       margin-top: 1em;
       margin-bottom: 0.5em;
@@ -707,7 +710,7 @@ li {
     h4 {
       //font-family: "Nunito", sans-serif;
       font-weight: 700;
-      line-height: 1.4em;
+      line-height: 1.2em;
       font-size: 2.8em;
       margin-top: 1em;
       margin-bottom: 0.5em;
@@ -717,7 +720,7 @@ li {
     h5 {
       //font-family: "Nunito", sans-serif;
       font-weight: 700;
-      line-height: 1.4em;
+      line-height: 1.2em;
       font-size: 2.4em;
       margin-top: 1em;
       margin-bottom: 0.5em;
@@ -727,7 +730,7 @@ li {
     h6 {
       //font-family: "Nunito", sans-serif;
       font-weight: 700;
-      line-height: 1.4em;
+      line-height: 1.2em;
       font-size: 2em;
       margin-top: 1em;
       margin-bottom: 0.5em;

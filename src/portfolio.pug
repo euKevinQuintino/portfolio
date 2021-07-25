@@ -2,41 +2,60 @@ doctype html
 html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
   head
     include includes/head
-    link(rel="canonical" href="https://kevinnicolasbq.com/")
+    link(rel="canonical" href="https://eu.kevinquintino.com/")
     title seleção das variantes - kevin quintino
   body
     noscript
       iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-N8WW2TZ' height='0' width='0' style='display:none; visibility:hidden')
     section#sectionOne.above-the-fold
       header.above-the-fold__top
-        a(href="https://www.kevinnicolasbq.com/" style="float: left;" data-toggle="tooltip" title="minha logo (clicar levará para a página inicial)" aria-hidden="true")
+        a(href="https://eu.kevinquintino.com/" style="float: left;" data-toggle="tooltip" title="minha logo (clicar levará para a página inicial)" aria-hidden="true")
           img(src="img/logo.svg" alt="" aria-hidden="true")
         p(data-toggle="tooltip" title="este é meu nome :v" style="padding-top: 2px;").above-the-fold__top__name kevin quintino
         div(style="display: block; float: right;")
-          a.link.above-the-fold__top__blog-link(href="https://blog.kevinnicolasbq.com/" data-toggle="tooltip" title="visite meu blog" hidden) confira meu blog
-          input.primary-button(type="button" value="ir para a página inicial" data-toggle="tooltip" title="ir para a página inicial do portfólio")
+          a.link.above-the-fold__top__blog-link(href="https://blog.kevinquintino.com/" data-toggle="tooltip" title="visite meu blog" hidden) confira meu blog
+          input.primary-button(type="button" value="ir para a página inicial" data-toggle="tooltip" title="voltar para a página inicial")
     section.article-page
       article.article-page__content
         h1 design e desenvolvimento deste portfolio
         span #[strong data:] início em 2020, atualizado constantemente.
         p(style="margin-top: 16px") 
+        h2 definindo o público-alvo 
+        p Sendo um portfólio, #[strong defini recrutadores, gestores e outros designers como público-alvo]. E então, a partir de uma pesquisa em diversos sites para os conhecer melhor, defini elementos-chave (informações) que o portfólio precisaria conter para atender às necessidades e expectativas de seu público-alvo.
+        p Elementos-chave definidos:
+        ul 
+          li Quem sou eu, o que eu faço e onde moro;
+          li breve trajetória e minha ocupação atual;
+          li minhas competências (conhecimentos, habilidades e atitudes);
+          li alguns estudos de caso sobre projetos nos quais eu trabalhei;
+          li formação e certificações; e
+          li meios de contato.
         h2 definindo o conteúdo 
+        p 
+        h2 definindo a tipografia 
+        p Considero a tipografia um dos elementos mais importantes de um site, principalmente por portfolios serem sites cheios de conteúdo. 
+        p Sendo assim, #[strong considerei alguns critérios para a definição da tipografia]:
+        ul 
+          li Tamanho satisfatório para atender as necessidades de deficientes visuais;
+          li ser uma fonte projetada para a web (visando desempenho e adequação ao meio);
+          li ter boa legibilidade (inclusive para disléxicos);
+          li representar minha personalidade.
+        p Após pesquisas, encontrei a família de fontes #[a.link(href="http://comicneue.com/" target="_blank" rel="noopener noreferrer" translate="no" data-toggle="tooltip" title="saber mais sobre a Comic Neue" lang="en") Comic Neue]. Ela é uma reinterpretação da famigerada #[a.link(href="https://www.youtube.com/watch?v=GUCcObwIsOs" target="_blank" rel="noopener noreferrer" translate="no" data-toggle="tooltip" title="entender a polêmica sobre a Comic Sans" lang="en") Comic Sans]. 
+        p Ela foi projetada visando resolver os problemas da Comic Sans, mantendo sua essência cômica e casual, que inclusive facilita a leitura para disléxicos. 
+        p Além de se assemelhar à minha caligrafia, eu sou um grande fã de quadrinhos, #[strong por isso ela me conquistou e a defini a família de fontes do portfólio].
+        p Ainda mais, #[strong para potencializar a transmissão desta sensação casual e auxiliar na legibilidade,  aderi ao #[a.link(href="https://www.thecut.com/2019/02/reasons-to-type-in-lowercase.html" target="_blank" rel="noopener noreferrer" translate="no" data-toggle="tooltip" title="saber mais sobre lowercase-only" lang="en") lowercase-only]], exceto em siglas ou textos longos.
+        h2 definindo a paleta de cores 
 
-        h2 escolha da tipografia 
-
-        h2 definição da paleta de cores 
-
-        h2 definição do tom de voz
+        h2 definindo o tom de voz
 
         h2 garantindo acessibilidade
 
         h2 boas práticas de programação e #[abbr(title="Search Engine Optimization" lang="en" translate="no") SEO]
         
         div(style="text-align: center; margin-top: 36px;")
-          a.link(href="http://www.kevinnicolasbq.com" title="voltar para a página inicial" data-toggle="tooltip" style="font-size: 1.8em") #[i(class="fas fa-long-arrow-alt-left" style="color: #2f4f4f;font-size: 0.8em")] voltar para a página inicial 
+          a.link(href="http://eu.kevinquintino.com" title="voltar para a página inicial" data-toggle="tooltip" style="font-size: 1.8em") #[i(class="fas fa-long-arrow-alt-left" style="color: #2f4f4f;font-size: 0.8em")] voltar para a página inicial 
     .back-to-top(style="display: none;")
-      a(href="#" data-toggle="tooltip" title="voltar ao topo" onclick="ScrollTo('sectionOne'); return false;" aria-hidden="true")
-        i.fas.fa-chevron-up.fa-4x
+        span(class="material-icons-round" title="voltar ao topo" onclick="ScrollTo('sectionOne'); return false;" aria-hidden="true" style="font-size: 6.4em") expand_less
     include includes/footer
     script.
       $(".fa-chevron-down").removeClass("link");
