@@ -1,3 +1,3 @@
 ### kevin quintino's portfolio
 
-[kevinnicolasbq.com](kevinnicolasbq.com)
+[eu.kevinquintino.com](eu.kevinquintino.com)
