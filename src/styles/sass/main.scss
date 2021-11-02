@@ -470,6 +470,7 @@ i {
     align-content: center;
     justify-content: center;
     margin: 80px auto;
+    margin-bottom: 48px;
 
     &__content {
       width: 1200px;
@@ -557,17 +558,33 @@ i {
       margin-bottom: 48px;
     }
     &__certifications {
-      border-bottom: 1px solid rgba(47, 79, 79, 0.16);
-      margin-bottom: 48px;
+      max-height: 416px;
+      overflow-y: hidden;
+      &:after {
+        background-image: linear-gradient(to bottom, #2f4f4f00, #fff);
+        content: "";
+        bottom: 0;
+        position: absolute;
+        z-index: 1;
+        height: 56px;
+        width: 1140px;
+        margin-left: -570px;
+      }
     }
     &__books {
       margin-bottom: 48px;
+      padding-top: 48px;
+      margin-top: 40px;
+      border-top: 1px solid rgba(47, 79, 79, 0.16);
       p {
         margin-top: 8px;
       }
       img {
         border: 1px solid $main;
       }
+    }
+    #mostrarMaisLivros {
+      display: none;
     }
   }
 }
@@ -1048,6 +1065,39 @@ input[type="color"]:focus,
         }
       }
     }
+    &__achievements {
+      &__graduations {
+        margin-top: 0;
+        padding-bottom: 36px;
+      }
+      &__certifications {
+        max-height: 624px;
+        padding-bottom: 128px;
+        &:after {
+          height: 172px;
+          width: 100vw;
+          margin-left: -100vw;
+        }
+      }
+      &__books {
+        padding-bottom: 128px;
+        max-height: 760px;
+        overflow-y: hidden;
+        &:after {
+          height: 172px;
+          width: 100vw;
+          margin-left: -100vw;
+          background-image: linear-gradient(to bottom, #2f4f4f00, #fff);
+          content: "";
+          bottom: 0;
+          position: absolute;
+          z-index: 1;
+        }
+      }
+      #mostrarMaisLivros {
+        display: block;
+      }
+    }
 
     &__projects {
       width: 100%;
@@ -1111,6 +1161,18 @@ input[type="color"]:focus,
         &__item {
           width: calc(50% - 32px);
           margin: 16px;
+        }
+      }
+    }
+    &__achievements {
+      &__graduations {
+        padding-bottom: 8px;
+      }
+      &__certifications {
+        padding-bottom: 128px;
+        &:after {
+          width: 100vw;
+          margin-left: -50vw;
         }
       }
     }

@@ -351,7 +351,8 @@ i {
     display: flex;
     align-content: center;
     justify-content: center;
-    margin: 80px auto; }
+    margin: 80px auto;
+    margin-bottom: 48px; }
     .under-the-fold__contact-me__content {
       width: 1200px;
       text-align: center;
@@ -411,14 +412,28 @@ i {
       border-bottom: 1px solid rgba(47, 79, 79, 0.16);
       margin-bottom: 48px; }
     .under-the-fold__achievements__certifications {
-      border-bottom: 1px solid rgba(47, 79, 79, 0.16);
-      margin-bottom: 48px; }
+      max-height: 416px;
+      overflow-y: hidden; }
+      .under-the-fold__achievements__certifications:after {
+        background-image: linear-gradient(to bottom, #2f4f4f00, #fff);
+        content: "";
+        bottom: 0;
+        position: absolute;
+        z-index: 1;
+        height: 56px;
+        width: 1140px;
+        margin-left: -570px; }
     .under-the-fold__achievements__books {
-      margin-bottom: 48px; }
+      margin-bottom: 48px;
+      padding-top: 48px;
+      margin-top: 40px;
+      border-top: 1px solid rgba(47, 79, 79, 0.16); }
       .under-the-fold__achievements__books p {
         margin-top: 8px; }
       .under-the-fold__achievements__books img {
         border: 1px solid #2f4f4f; }
+    .under-the-fold__achievements #mostrarMaisLivros {
+      display: none; }
 
 .back-to-top {
   z-index: 6;
@@ -758,6 +773,31 @@ input[type="color"]:focus,
     .under-the-fold__contact-me__content__location {
       margin-top: 24px;
       text-align: center; }
+  .under-the-fold__achievements__graduations {
+    margin-top: 0;
+    padding-bottom: 36px; }
+  .under-the-fold__achievements__certifications {
+    max-height: 624px;
+    padding-bottom: 128px; }
+    .under-the-fold__achievements__certifications:after {
+      height: 172px;
+      width: 100vw;
+      margin-left: -100vw; }
+  .under-the-fold__achievements__books {
+    padding-bottom: 128px;
+    max-height: 760px;
+    overflow-y: hidden; }
+    .under-the-fold__achievements__books:after {
+      height: 172px;
+      width: 100vw;
+      margin-left: -100vw;
+      background-image: linear-gradient(to bottom, #2f4f4f00, #fff);
+      content: "";
+      bottom: 0;
+      position: absolute;
+      z-index: 1; }
+  .under-the-fold__achievements #mostrarMaisLivros {
+    display: block; }
   .under-the-fold__projects {
     width: 100%;
     margin: 0 auto; }
@@ -796,6 +836,13 @@ input[type="color"]:focus,
     .under-the-fold__projects__content__item {
       width: calc(50% - 32px);
       margin: 16px; }
+  .under-the-fold__achievements__graduations {
+    padding-bottom: 8px; }
+  .under-the-fold__achievements__certifications {
+    padding-bottom: 128px; }
+    .under-the-fold__achievements__certifications:after {
+      width: 100vw;
+      margin-left: -50vw; }
   .article-page {
     margin-top: 4px; } }
 

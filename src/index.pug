@@ -7,52 +7,57 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
     noscript
       iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-TKD49SL" height='0' width='0' style='display:none; visibility:hidden')
     main
-      section#sectionOne.above-the-fold
+      section#apresentacao.above-the-fold
         header.above-the-fold__top
           a(href="." style="float: left;" data-toggle="tooltip" title="minha logo (clicar recarregará a página)" aria-hidden="true")
             img(src="img/logo.svg" alt="")
           h1(data-toggle="tooltip" title="este é meu nome :v").above-the-fold__top__name kevin quintino
           div(style="display: block; float: right;")
             a.link.above-the-fold__top__blog-link(href="https://blog.kevinquintino.com/" data-toggle="tooltip" title="visite meu blog" hidden) confira meu blog
-            a.link(onclick="ScrollTo('contact'); return false;" data-toggle="tooltip" title="fale comigo" style="font-size: 1.8em;") entrar em contato
+            a.link(onclick="RolarPara('contato'); return false;" data-toggle="tooltip" title="fale comigo" style="font-size: 1.8em;") entrar em contato
         .above-the-fold__message
           h2 oi, eu sou o #[mark(data-toggle="tooltip" title="meu nome :v" translate="no") kevin], eu projeto experiências significativas e memoráveis
         .above-the-fold__check-more
-          a.link(href="#" onclick="ScrollTo('sectionTwo'); return false;" data-toggle="tooltip" title="descer para a próxima seção") saiba mais sobre mim #[br]
+          a.link(href="#" onclick="RolarPara('motivacoes'); return false;" data-toggle="tooltip" title="descer para a próxima seção") saiba mais sobre mim #[br]
           span(class="material-icons-round" aria-hidden="true") expand_more
-      section#sectionTwo.under-the-fold
+      section#motivacoes.under-the-fold
         .under-the-fold__bar
         .under-the-fold__resume 
             h2 um pouco sobre minhas motivações
-            p Entregar uma experiência significativa, coesa e memorável para as pessoas me traz muita satisfação e realização pessoal.
+            p entregar uma experiência significativa, coesa e memorável para as pessoas me traz muita satisfação e realização pessoal.
             br
-            p Acredito que empatizar e co-criar com todas as partes interessadas, principalmente as pessoas que vão interagir com a solução, é a forma mais efetiva de projetar uma experiência que atenda aos interesses e necessidades de todos, gerando o máximo de valor para todas as partes.
+            p acredito que empatizar e co-criar com todas as partes interessadas, principalmente com as pessoas que vão interagir com a solução, é a forma mais efetiva de projetar uma experiência que atenda aos interesses e necessidades de todos, gerando o máximo de valor para todas as partes.
             br
-            p Meus principais pontos fortes são:
+            p meus principais pontos fortes são:
             ul(style="max-width: 600px; margin: auto;")
               li(style="color: white;") minha empatia;
               li(style="color: white;") meu autodidatismo;
               li(style="color: white;") e meu pensamento crítico, identificando problemas (ou oportunidades), comunicando-os compassivamente e colaborando com os envolvidos para identificar possíveis soluções.
             br
-            p Atualmente moro em São Paulo e atuo como designer de experiência na 
+            p atualmente moro em são paulo e atuo como designer de experiência na 
               a.link-alternative(href="https://www.vhita.com.br/pages/sobre-nos-vhita" target="_blank" rel="noopener noreferrer" translate="no" data-toggle="tooltip" title="saber mais sobre a Vhita" lang="it") vhita#[span(class="material-icons-round" aria-hidden="true") launch]
-              | . Durante meu lazer eu costumo:
+              |  - eu gosto de:
             div.under-the-fold__resume__hobbies
-              label.under-the-fold__resume__hobbies__hobby jogar jogos
-              label.under-the-fold__resume__hobbies__hobby assistir eSports
-              label.under-the-fold__resume__hobbies__hobby escutar música
-              label.under-the-fold__resume__hobbies__hobby tocar instrumentos musicais
-              label.under-the-fold__resume__hobbies__hobby ler
-              label.under-the-fold__resume__hobbies__hobby assitir vídeos no youtube 
-              label.under-the-fold__resume__hobbies__hobby assistir séries ou filmes
-              label.under-the-fold__resume__hobbies__hobby estudar
-              label.under-the-fold__resume__hobbies__hobby jogar vôlei
-              label.under-the-fold__resume__hobbies__hobby fotografar
-              label.under-the-fold__resume__hobbies__hobby visitar museus ou exposições
+              label.under-the-fold__resume__hobbies__hobby jogos
+              label.under-the-fold__resume__hobbies__hobby #[abbr(title="esportes eletrônicos") eSports]
+              label.under-the-fold__resume__hobbies__hobby design de jogos
+              label.under-the-fold__resume__hobbies__hobby música (rock/#[abbr(title="música popular brasileira") MPB])
+              label.under-the-fold__resume__hobbies__hobby instrumentos musicais
+              label.under-the-fold__resume__hobbies__hobby youtube 
+              label.under-the-fold__resume__hobbies__hobby psicologia
+              label.under-the-fold__resume__hobbies__hobby livros
+              label.under-the-fold__resume__hobbies__hobby séries e filmes
+              label.under-the-fold__resume__hobbies__hobby vôlei
+              label.under-the-fold__resume__hobbies__hobby programação
+              label.under-the-fold__resume__hobbies__hobby computadores
+              label.under-the-fold__resume__hobbies__hobby pessoas
+              label.under-the-fold__resume__hobbies__hobby conhecimento
+              label.under-the-fold__resume__hobbies__hobby fotografia
+              label.under-the-fold__resume__hobbies__hobby museus e exposições
         .container-lg.col-md-12.under-the-fold__summary
           .row.under-the-fold__summary__row
             .col-md-4.under-the-fold__summary__row__left-column
-              h3(lang="en" translate="no") UX researcher
+              h3(lang="en" translate="no") #[abbr(title="experiência do usuário") UX] researcher
               hr
               p como pesquisador, busco conhecer e entender profundamente as partes interessadas, para identificar problemas que elas enfrentam ou oportunidades para melhorar sua experiência.
               hr
@@ -63,7 +68,7 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
                 li #[a.link(href="https://www.nngroup.com/articles/research-ops-101/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="saber mais sobre researchOps" lang="en" translate="no") researchOps#[span(class="material-icons-round" aria-hidden="true") launch]] e
                 li #[a.link(href="https://blog.prototypr.io/what-is-atomic-research-e5d9fbc1285c" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="saber mais sobre atomic UX research" lang="en" translate="no") atomic UX research#[span(class="material-icons-round" aria-hidden="true") launch]]. 
             .col-md-4.under-the-fold__summary__row__middle-column
-              h3(lang="en" translate="no") UX designer
+              h3(lang="en" translate="no") #[abbr(title="experiência do usuário") UX] designer
               hr
               p como designer de experiência, projeto soluções que, além de resolver o problema ou aproveitar uma oportunidade, ofereçam uma experiência significativa para as pessoas.
               hr
@@ -103,9 +108,9 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
             .col-md-6.under-the-fold__projects__content__item(style="float: left;")
               a.link(href="https://eu.kevinquintino.com/solucao-acesso-cadastro" rel="noopener" data-toggle="tooltip" title="") solução para os problemas no acesso/cadastro de contas (vhita)
               p(style="margin-top: 8px;") saiba como foram identificados e solucionados os problemas no acesso ou cadastro de contas, no e-commerce.
-        .under-the-fold__contact-me#contact
+        .under-the-fold__contact-me#contato
           .under-the-fold__contact-me__content
-            h2 vamos fazer algo incrível?!
+            h2 vamos fazer algo memorável?!
             p adoraria te ajudar a solucionar seus problemas ou contribuir com seu projeto.#[br]#[strong envie-me um e-mail, vamos conversar!]
             div(style="text-align: center;")
               a.link-alternative.under-the-fold__contact-me__content__e-mail(href="mailto:eu@kevinquintino.com" data-toggle="tooltip" title="envie-me um e-mail") eu@kevinquintino.com
@@ -207,14 +212,16 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
               div
                 a.link(href="./img/certificates/human-computer-interaction-kevin-quintino-certificate-IxDF.jpg" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado" lang="en") human-computer interaction#[span(class="material-icons-round" aria-hidden="true") launch]
                 p(lang="en" translate="no") interaction design foundation
-            .col-md-6.under-the-fold__achievements__certifications__item(style="float: left;")
+            .col-md-6.under-the-fold__achievements__certifications__item(style="float: right;")
               div(style="float: left;")
                 img(src="./img/covers/interaction-design-foundation-logo.svg" alt="" width="64" height="64")
               div
                 a.link(href="./img/certificates/mobile-user-experience-ux-design-kevin-quintino-certificate-IxDF.jpg" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado" lang="en") mobile user experience design#[span(class="material-icons-round" aria-hidden="true") launch]
                 p(lang="en" translate="no") interaction design foundation
+          a#mostrarMaisCertificados.link(href="#" onclick="MostrarMais('certificados'); return false;" data-toggle="tooltip" title="mostrar mais certificados" style="margin: 16px auto; margin-bottom: 16px;") mostrar mais
+            span(class="material-icons-round" aria-hidden="true") expand_more
           .col-md-12.under-the-fold__achievements__books
-            h2 e estas, as minhas leituras favoritas:
+            h2 e estes, os meus livros favoritos:
             .col-md-4.under-the-fold__achievements__books__item(style="float: left;")
               div(style="float: left;")
                 img(src="./img/covers/non-violent-communication-cover.jpg" alt="capa do livro Non-Violent Communication" width="100" height="150" loading="lazy") 
@@ -245,6 +252,8 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
               div
                 a.link(href="https://www.amazon.com.br/dp/B00HJUBRPG/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar e-book na amazon" aria-label="acessar e-book don't make me think" lang="en" translate="no") don't make me think#[span(class="material-icons-round" aria-hidden="true") launch]
                 p(aria-label="autores" lang="en" translate="no") steve krug
+          a#mostrarMaisLivros.link(href="#" onclick="MostrarMais('livros'); return false;" data-toggle="tooltip" title="mostrar mais livros" style="margin: 16px auto; margin-bottom: 16px;") mostrar mais
+            span(class="material-icons-round" aria-hidden="true") expand_more
       .back-to-top(style="display: none;")
-        span(class="material-icons-round" title="voltar ao topo" onclick="ScrollTo('sectionOne'); return false;" aria-hidden="true" style="font-size: 6.4em") expand_less
+        span(class="material-icons-round" title="voltar ao topo" onclick="RolarPara('apresentacao'); return false;" aria-hidden="true" style="font-size: 6.4em") expand_less
     include includes/footer
