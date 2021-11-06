@@ -9,12 +9,10 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
     main
       section#apresentacao.above-the-fold
         header.above-the-fold__top
-          a(href="." style="float: left;" data-toggle="tooltip" title="minha logo (clicar recarregará a página)" aria-hidden="true")
+          a(href="." data-toggle="tooltip" title="minha logo (clicar recarregará a página)" aria-hidden="true")
             img(src="img/logo.svg" alt="")
           h1(data-toggle="tooltip" title="este é meu nome :v").above-the-fold__top__name kevin quintino
-          div(style="display: block; float: right;")
-            a.link.above-the-fold__top__blog-link(href="https://blog.kevinquintino.com/" data-toggle="tooltip" title="visite meu blog" hidden) confira meu blog
-            a.link(onclick="RolarPara('contato'); return false;" data-toggle="tooltip" title="fale comigo" style="font-size: 1.8em;") entrar em contato
+          a.link(onclick="RolarPara('contato'); return false;" data-toggle="tooltip" title="fale comigo") entrar em contato
         .above-the-fold__message
           h2 oi, eu sou o #[mark(data-toggle="tooltip" title="meu nome :v" translate="no") kevin], eu projeto experiências significativas e memoráveis
         .above-the-fold__check-more
@@ -36,24 +34,23 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
             br
             p atualmente moro em são paulo e atuo como designer de experiência na 
               a.link-alternative(href="https://www.vhita.com.br/pages/sobre-nos-vhita" target="_blank" rel="noopener noreferrer" translate="no" data-toggle="tooltip" title="saber mais sobre a Vhita" lang="it") vhita#[span(class="material-icons-round" aria-hidden="true") launch]
-              |  - eu gosto de:
+              |  -- além de design de experiência, eu gosto de:
             div.under-the-fold__resume__hobbies
               label.under-the-fold__resume__hobbies__hobby jogos
               label.under-the-fold__resume__hobbies__hobby #[abbr(title="esportes eletrônicos") eSports]
-              label.under-the-fold__resume__hobbies__hobby design de jogos
+              label.under-the-fold__resume__hobbies__hobby game design
               label.under-the-fold__resume__hobbies__hobby música (rock/#[abbr(title="música popular brasileira") MPB])
               label.under-the-fold__resume__hobbies__hobby instrumentos musicais
               label.under-the-fold__resume__hobbies__hobby youtube 
               label.under-the-fold__resume__hobbies__hobby psicologia
               label.under-the-fold__resume__hobbies__hobby livros
-              label.under-the-fold__resume__hobbies__hobby séries e filmes
+              label.under-the-fold__resume__hobbies__hobby séries/filmes
               label.under-the-fold__resume__hobbies__hobby vôlei
               label.under-the-fold__resume__hobbies__hobby programação
               label.under-the-fold__resume__hobbies__hobby computadores
-              label.under-the-fold__resume__hobbies__hobby pessoas
               label.under-the-fold__resume__hobbies__hobby conhecimento
               label.under-the-fold__resume__hobbies__hobby fotografia
-              label.under-the-fold__resume__hobbies__hobby museus e exposições
+              label.under-the-fold__resume__hobbies__hobby museus/exposições
         .container-lg.col-md-12.under-the-fold__summary
           .row.under-the-fold__summary__row
             .col-md-4.under-the-fold__summary__row__left-column
@@ -116,7 +113,7 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
               a.link-alternative.under-the-fold__contact-me__content__e-mail(href="mailto:eu@kevinquintino.com" data-toggle="tooltip" title="envie-me um e-mail") eu@kevinquintino.com
             .under-the-fold__contact-me__content__location
               span(class="material-icons-round" aria-hidden="true" style="vertical-align: -0.1rem; margin-left: 0;") location_on 
-              | são paulo, sp, brasil.
+              | são paulo, SP, brasil.
         .row.under-the-fold__achievements
           .col-md-12.under-the-fold__achievements__graduations
             h2 estas são minhas graduações:
@@ -124,55 +121,55 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
               div(style="float: left;")
                 img(src="./img/covers/fatec-sp-logo.svg" alt="" width="64" height="64")
               div
-                a.link(href="http://www.fatecsp.br/?c=ti_new" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar a página do curso" aria-label="acessar página do curso") análise e desenvolvimento de sistemas#[span(class="material-icons-round" aria-hidden="true") launch]
+                a.link(href="http://www.fatecsp.br/index.php?c=ti_new" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar a página do curso" aria-label="acessar página do curso") análise e desenvolvimento de sistemas#[span(class="material-icons-round" aria-hidden="true") launch]
                 p #[strong fatec são paulo] - tecnólogo (em andamento)
-            //.col-md-6.under-the-fold__achievements__graduations__item(style="float: left;")
+            .col-md-6.under-the-fold__achievements__graduations__item(style="float: right;")
               div(style="float: left;")
-                img(src="./img/covers/uc-san-diego-logo.svg" alt="logo da universidade da Califórnia em San Diego" width="64" height="64")
+                img(src="./img/covers/calarts-logo.svg" alt="" width="64" height="64")
               div
-                a.link(href="https://www.coursera.org/specializations/interaction-design" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar a página do curso" aria-label="acessar página do curso") interaction design
-                p #[strong UC san diego] - especialização (em andamento)
+                a.link(href="https://www.coursera.org/specializations/game-design" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar a página do curso" aria-label="acessar página do curso") game design: art and concepts#[span(class="material-icons-round" aria-hidden="true") launch]
+                p #[strong california institute of the arts] - especialização (em andamento)
           .col-md-12.under-the-fold__achievements__certifications    
             h2 estes, os meus principais certificados:
             .col-md-6.under-the-fold__achievements__certifications__item(style="float: left;")
               div(style="float: left;")
-                img(src="./img/covers/interaction-design-foundation-logo.svg" alt="" width="64" height="64")
+                img(src="./img/covers/IxDF-logo.svg" alt="" width="64" height="64")
               div
                 a.link(href="./img/certificates/design-for-the-21st-century-with-don-norman-kevin-quintino-certificate-IxDF.jpg" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado" lang="en") design for the 21st century with don norman#[span(class="material-icons-round" aria-hidden="true") launch]
                 p(lang="en" translate="no") interaction design foundation
             .col-md-6.under-the-fold__achievements__certifications__item(style="float: right;")
               div(style="float: left;")
-                img(src="./img/covers/interaction-design-foundation-logo.svg" alt="" width="64" height="64")
+                img(src="./img/covers/IxDF-logo.svg" alt="" width="64" height="64")
               div
                 a.link(href="./img/certificates/service-design-how-to-design-integrated-service-experiences-kevin-quintino-certificate-IxDF.jpg" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado" lang="en") service design: how to design integrated service experiences#[span(class="material-icons-round" aria-hidden="true") launch]
                 p(lang="en" translate="no") interaction design foundation
             .col-md-6.under-the-fold__achievements__certifications__item(style="float: left;")
               div(style="float: left;")
-                img(src="./img/covers/interaction-design-foundation-logo.svg" alt="" width="64" height="64")
+                img(src="./img/covers/IxDF-logo.svg" alt="" width="64" height="64")
               div
                 a.link(href="./img/certificates/dynamic-user-experience-design-and-usability-kevin-quintino-certificate-IxDF.jpg" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado" lang="en") dynamic user experience: design and usability#[span(class="material-icons-round" aria-hidden="true") launch]
                 p(lang="en" translate="no") interaction design foundation
             .col-md-6.under-the-fold__achievements__certifications__item(style="float: right;")
               div(style="float: left;")
-                img(src="./img/covers/interaction-design-foundation-logo.svg" alt="" width="64" height="64")
+                img(src="./img/covers/IxDF-logo.svg" alt="" width="64" height="64")
               div
                 a.link(href="./img/certificates/gamification-creating-addictive-user-experiences-kevin-quintino-certificate-IxDF.jpg" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado" lang="en") gamification: creating addictive user experiences#[span(class="material-icons-round" aria-hidden="true") launch]
                 p(lang="en" translate="no") interaction design foundation
             .col-md-6.under-the-fold__achievements__certifications__item(style="float: left;")
               div(style="float: left;")
-                img(src="./img/covers/interaction-design-foundation-logo.svg" alt="" width="64" height="64")
+                img(src="./img/covers/IxDF-logo.svg" alt="" width="64" height="64")
               div
                 a.link(href="./img/certificates/data-driven-design-quantitative-research-for-ux-kevin-quintino-certificate-IxDF.jpg" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado" lang="en") data-driven design: quantitative research for UX#[span(class="material-icons-round" aria-hidden="true") launch]
                 p(lang="en" translate="no") interaction design foundation
             .col-md-6.under-the-fold__achievements__certifications__item(style="float: right;")
               div(style="float: left;")
-                img(src="./img/covers/interaction-design-foundation-logo.svg" alt="" width="64" height="64")
+                img(src="./img/covers/IxDF-logo.svg" alt="" width="64" height="64")
               div
                 a.link(href="./img/certificates/interaction-design-for-usability-kevin-quintino-certificate-IxDF.jpg" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado" lang="en") interaction design for usability#[span(class="material-icons-round" aria-hidden="true") launch]
                 p(lang="en" translate="no") interaction design foundation
             .col-md-6.under-the-fold__achievements__certifications__item(style="float: right;")
               div(style="float: left;")
-                img(src="./img/covers/interaction-design-foundation-logo.svg" alt="" width="64" height="64")
+                img(src="./img/covers/IxDF-logo.svg" alt="" width="64" height="64")
               div
                 a.link(href="./img/certificates/psychology-of-interaction-design-the-ultimate-guide-kevin-quintino-certificate-IxDF.jpg" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado" lang="en") psychology of interaction design#[span(class="material-icons-round" aria-hidden="true") launch]
                 p(lang="en" translate="no") interaction design foundation
@@ -180,41 +177,41 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
               div(style="float: left;")
                 img(src="./img/covers/yale-logo.svg" alt="" width="64" height="64")
               div
-                a.link(href="https://www.coursera.org/verify/RU2U5G4HM8YD" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado" lang="en") the science of well-being#[span(class="material-icons-round" aria-hidden="true") launch]
+                a.link(href="./img/certificates/the-science-of-well-being-yale-university-kevin-quintino-certificate.png" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado" lang="en") the science of well-being#[span(class="material-icons-round" aria-hidden="true") launch]
                 p(lang="en" translate="no") yale university
             .col-md-6.under-the-fold__achievements__certifications__item(style="float: right;")
               div(style="float: left;")
-                img(src="./img/covers/interaction-design-foundation-logo.svg" alt="" width="64" height="64")
+                img(src="./img/covers/IxDF-logo.svg" alt="" width="64" height="64")
               div
                 a.link(href="./img/certificates/accessibility-how-to-design-for-all-kevin-quintino-certificate-IxDF.jpg" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado" lang="en") accessibility: how to design for all#[span(class="material-icons-round" aria-hidden="true") launch]
                 p(lang="en" translate="no") interaction design foundation
             .col-md-6.under-the-fold__achievements__certifications__item(style="float: left;")
               div(style="float: left;")
-                img(src="./img/covers/interaction-design-foundation-logo.svg" alt="" width="64" height="64")
+                img(src="./img/covers/IxDF-logo.svg" alt="" width="64" height="64")
               div
                 a.link(href="./img/certificates/user-research-methods-and-best-practices-kevin-quintino-certificate-IxDF.jpg" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado" lang="en") user research: methods and best practices#[span(class="material-icons-round" aria-hidden="true") launch]
                 p(lang="en" translate="no") interaction design foundation
             .col-md-6.under-the-fold__achievements__certifications__item(style="float: right;")
               div(style="float: left;")
-                img(src="./img/covers/interaction-design-foundation-logo.svg" alt="" width="64" height="64")
+                img(src="./img/covers/IxDF-logo.svg" alt="" width="64" height="64")
               div
                 a.link(href="./img/certificates/psychology-of-ecommerce-how-to-sell-online-kevin-quintino-certificate-IxDF.jpg" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado" lang="en") psychology of e-commerce: how to sell online#[span(class="material-icons-round" aria-hidden="true") launch]
                 p(lang="en" translate="no") interaction design foundation
             .col-md-6.under-the-fold__achievements__certifications__item(style="float: right;")
               div(style="float: left;")
-                img(src="./img/covers/interaction-design-foundation-logo.svg" alt="" width="64" height="64")
+                img(src="./img/covers/IxDF-logo.svg" alt="" width="64" height="64")
               div
                 a.link(href="./img/certificates/web-design-for-usability-kevin-quintino-certificate-IxDF.jpg" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado" lang="en") web design for usability#[span(class="material-icons-round" aria-hidden="true") launch]
                 p(lang="en" translate="no") interaction design foundation
             .col-md-6.under-the-fold__achievements__certifications__item(style="float: left;")
               div(style="float: left;")
-                img(src="./img/covers/interaction-design-foundation-logo.svg" alt="" width="64" height="64")
+                img(src="./img/covers/IxDF-logo.svg" alt="" width="64" height="64")
               div
                 a.link(href="./img/certificates/human-computer-interaction-kevin-quintino-certificate-IxDF.jpg" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado" lang="en") human-computer interaction#[span(class="material-icons-round" aria-hidden="true") launch]
                 p(lang="en" translate="no") interaction design foundation
             .col-md-6.under-the-fold__achievements__certifications__item(style="float: right;")
               div(style="float: left;")
-                img(src="./img/covers/interaction-design-foundation-logo.svg" alt="" width="64" height="64")
+                img(src="./img/covers/IxDF-logo.svg" alt="" width="64" height="64")
               div
                 a.link(href="./img/certificates/mobile-user-experience-ux-design-kevin-quintino-certificate-IxDF.jpg" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar certificado" aria-label="acessar certificado" lang="en") mobile user experience design#[span(class="material-icons-round" aria-hidden="true") launch]
                 p(lang="en" translate="no") interaction design foundation
@@ -255,5 +252,5 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
           a#mostrarMaisLivros.link(href="#" onclick="MostrarMais('livros'); return false;" data-toggle="tooltip" title="mostrar mais livros" style="margin: 16px auto; margin-bottom: 16px;") mostrar mais
             span(class="material-icons-round" aria-hidden="true") expand_more
       .back-to-top(style="display: none;")
-        span(class="material-icons-round" title="voltar ao topo" onclick="RolarPara('apresentacao'); return false;" aria-hidden="true" style="font-size: 6.4em") expand_less
+        span(class="material-icons-round" title="voltar ao topo" onclick="RolarPara('apresentacao'); return false;" aria-hidden="true") expand_less
     include includes/footer

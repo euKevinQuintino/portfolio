@@ -1,4 +1,4 @@
-$main: #2f4f4f;//001c7c
+$main: #2f4f4f; //001c7c
 $link-alternative: #ffe383;
 $base-text: #444;
 $titulo: #555;
@@ -95,7 +95,7 @@ i {
 
 .primary-button {
   //font-family: "Nunito", sans-serif;
-  font-size: 1.8em;
+  font-size: 1.1rem;
   font-weight: 500;
   color: $white;
   padding: 4px 16px 4px 16px;
@@ -125,7 +125,7 @@ i {
 }
 
 .secondary-button {
-  font-size: 1.8em;
+  font-size: 1.1rem;
   //font-family: "Nunito", sans-serif;
   font-weight: 700;
   color: $main;
@@ -234,15 +234,15 @@ i {
   margin: 0 auto;
 
   &__top {
-    height: 80px;
+    height: auto;
     padding-top: 32px;
     padding-left: 0px;
     padding-right: 0px;
+    justify-content: space-between;
 
     img {
       width: 48px;
       height: 48px;
-      float: left;
       transition: 0.2s;
       float: left;
 
@@ -256,45 +256,50 @@ i {
     }
 
     &__name {
-      font-size: 2.8em;
+      font-size: 1.6rem;
       color: $main;
-      padding: 8px;
       float: left;
-      margin-left: 16px;
+      margin-left: 20px;
+      margin-top: 8px;
     }
 
-    &__blog-link {
-      font-size: 1.8em;
-      padding-top: 6px;
-      margin-right: 32px;
+    .link {
+      padding-top: 2px;
+      font-size: 1.2rem;
+      line-height: 1em;
+      margin-top: 8px;
+      float: right;
     }
   }
 
   &__message {
     height: 80px;
-    font-size: 2.8em;
     text-align: center;
     padding: 16px;
     margin-top: 160px;
     color: $main;
+    h2 {
+      font-size: 1.6rem;
+      line-height: 1.5em;
+    }
   }
 
   &__check-more {
     height: 80px;
-    width: 180px;
+    width: 188px;
     text-align: center;
     color: $main;
     margin: 240px auto;
     margin-bottom: 0px;
 
     a {
-      font-size: 1.8em;
+      font-size: 1.2rem;
       margin-bottom: 0;
       color: $main;
     }
 
     .material-icons-round {
-      font-size: 3.2em;
+      font-size: 2.2rem;
     }
 
     &:hover {
@@ -311,7 +316,7 @@ i {
 
   &__bar {
     width: 100%;
-    height: 900px;
+    height: 880px;
     background-color: $main;
     position: absolute;
     z-index: -1;
@@ -320,28 +325,27 @@ i {
   &__resume {
     max-width: 1200px;
     margin: 0px auto;
-    padding-bottom: 30px;
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 48px;
 
     h2 {
-      font-size: 2.8em;
+      font-size: 1.6rem;
       color: $white;
       //font-family: "Nunito", sans-serif;
       text-align: center;
-      line-height: 1.2em;
-      margin-bottom: 0.85em;
+      line-height: 1.5em;
+      margin-bottom: 0.85rem;
       font-weight: 700;
     }
 
     p {
-      font-size: 1.8em;
+      font-size: 1.1rem;
       color: $white;
       font-weight: 400;
       max-width: 600px;
       margin: auto;
-      line-height: 1.7em;
+      line-height: 1.5em;
     }
 
     a:hover {
@@ -355,7 +359,7 @@ i {
       margin-bottom: 16px;
       &__hobby {
         padding: 2px 10px;
-        font-size: 1.8em;
+        font-size: 1.1rem;
         color: $main;
         margin: 8px;
         margin-left: 0;
@@ -370,7 +374,7 @@ i {
     margin: 0 auto;
 
     h3 {
-      font-size: 2.4em;
+      font-size: 1.4rem;
       font-weight: 700;
       text-align: center;
       margin-bottom: 20px;
@@ -380,12 +384,12 @@ i {
 
     h4 {
       color: $titulo;
-      font-size: 2.2em;
+      font-size: 1.3rem;
     }
 
     p {
-      font-size: 1.8em;
-      line-height: 1.7em;
+      font-size: 1.1rem;
+      line-height: 1.5em;
       margin: 0;
       padding: 8px;
       color: $base-text;
@@ -393,7 +397,7 @@ i {
 
     input {
       margin-top: 12px;
-      font-size: 1.7em;
+      font-size: 1.7rem;
     }
 
     &__row {
@@ -437,7 +441,7 @@ i {
       margin-bottom: 36px;
 
       h2 {
-        font-size: 2.8em;
+        font-size: 1.6rem;
         color: $main;
         margin-bottom: 24px;
         padding: 16px;
@@ -454,11 +458,11 @@ i {
         //border: 1px solid rgba(47,79,79,1);
       }
       a {
-        font-size: 2.2em;
+        font-size: 1.3rem;
         color: $main;
       }
       p {
-        font-size: 1.8em;
+        font-size: 1.1rem;
         color: $base-text;
       }
     }
@@ -481,7 +485,7 @@ i {
       border-radius: 12px;
 
       h2 {
-        font-size: 2.8em;
+        font-size: 1.6rem;
         font-weight: 700;
         //font-family: "Nunito", sans-serif;
         color: $white;
@@ -492,7 +496,7 @@ i {
         padding: 8px;
         font-weight: 400;
         color: $white;
-        font-size: 1.8em;
+        font-size: 1.1rem;
       }
 
       &__e-mail {
@@ -515,7 +519,7 @@ i {
       &__location {
         margin-top: 16px;
         padding: 0;
-        font-size: 1.8em;
+        font-size: 1.1rem;
         font-weight: 400;
         color: $white;
 
@@ -532,12 +536,12 @@ i {
     margin: 0 auto;
 
     h2 {
-      font-size: 2.8em;
+      font-size: 1.6rem;
       color: $main;
       margin-bottom: 24px;
       padding: 16px;
       font-weight: 700;
-      line-height: 1.7em;
+      line-height: 1.5em;
       //font-family: "Nunito", sans-serif;
     }
     img {
@@ -546,11 +550,11 @@ i {
     }
     a {
       color: $main;
-      font-size: 2.2em;
+      font-size: 1.3rem;
     }
 
     p {
-      font-size: 1.8em;
+      font-size: 1.1rem;
       color: $base-text;
     }
     &__graduations {
@@ -581,6 +585,7 @@ i {
       }
       img {
         border: 1px solid $main;
+        border-radius: 6px;
       }
     }
     #mostrarMaisLivros {
@@ -601,6 +606,7 @@ i {
     float: right;
     color: lighten($main, 10%);
     transition: 0.1s;
+    font-size: 4rem;
     border-radius: 50%;
 
     &:hover {
@@ -615,13 +621,16 @@ i {
 .footer {
   margin-top: 48px;
   width: 100vw;
-  height: 360px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-color: $main;
+  position: relative;
+  vertical-align: middle;
 
   &__social-media {
-    width: 300px;
-    height: 240px;
-    padding-top: 104px;
+    max-width: 300px;
+    //height: 240px;
+    //padding-top: 104px;
     margin: auto;
     text-align: center;
 
@@ -629,41 +638,45 @@ i {
       width: 100%;
       text-align: center;
       margin-bottom: 0;
-      font-size: 2.2em;
+      font-size: 1.5rem;
       font-weight: 700;
       //font-family: "Nunito", sans-serif;
       color: $white;
     }
+  }
+  &__links {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
 
-    &__links {
-      padding-top: 0;
-      margin-top: 28px;
+    a {
+      justify-content: space-around;
+    }
 
-      a {
-        margin-right: 8px;
-        margin-left: 8px;
+    &__icon {
+      width: 48px;
+      height: 48px;
+      border: 1px solid rgba(255, 255, 255, 0.69);
+      padding: 13.5px;
+      border-radius: 50%;
+
+      &:hover {
+        border-color: $link-alternative;
+        cursor: pointer;
+        transition: 0.2s;
       }
+    }
 
-      &__icon {
-        width: 48px;
-        height: 48px;
-        border: 1px solid rgba(255, 255, 255, 0.69);
-        padding: 13.5px;
-        border-radius: 50%;
-
-        &:hover {
-          border-color: $link-alternative;
-          cursor: pointer;
-          transition: 0.2s;
-        }
-      }
-
-      i {
-        color: $white !important;
-        &:hover {
-          color: $link-alternative !important;
-          transition: 0.2s;
-        }
+    i {
+      color: $white !important;
+      &:hover {
+        color: $link-alternative !important;
+        transition: 0.2s;
       }
     }
   }
@@ -672,7 +685,7 @@ i {
     width: 100%;
     text-align: center;
     color: rgba(255, 255, 255, 0.88);
-    font-size: 1.6em;
+    font-size: 1.1rem;
 
     i:hover {
       color: rgba(255, 255, 255, 1);
@@ -682,8 +695,8 @@ i {
 
 li {
   color: $base-text;
-  font-size: 1.8em;
-  line-height: 1.8em;
+  font-size: 1.1rem;
+  line-height: 1.5em;
   margin-left: -4px !important;
   .link {
     color: $main;
@@ -701,74 +714,73 @@ li {
     h1 {
       //font-family: "Nunito", sans-serif;
       font-weight: 900;
-      font-size: 4.8em;
+      font-size: 3.2rem;
       color: $main;
-      line-height: 1.2em;
-      margin-bottom: 0.5em;
+      line-height: 1.5em;
+      margin-bottom: 0.5rem;
     }
     h2 {
       //font-family: "Nunito", sans-serif;
       font-weight: 800;
-      line-height: 1.2em;
-      font-size: 4em;
+      line-height: 1.5em;
+      font-size: 2.8rem;
       color: $titulo;
-      margin-top: 1em;
-      margin-bottom: 0.25em;
+      margin-top: 1rem;
+      margin-bottom: 0.25rem;
     }
     h3 {
       //font-family: "Nunito", sans-serif;
       font-weight: 700;
-      line-height: 1.2em;
-      font-size: 3.2em;
-      margin-top: 1em;
-      margin-bottom: 0.5em;
+      line-height: 1.5em;
+      font-size: 2.2rem;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
       color: $titulo;
     }
     h4 {
       //font-family: "Nunito", sans-serif;
       font-weight: 700;
-      line-height: 1.2em;
-      font-size: 2.8em;
-      margin-top: 1em;
-      margin-bottom: 0.5em;
+      line-height: 1.5em;
+      font-size: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
       color: $titulo;
     }
 
     h5 {
       //font-family: "Nunito", sans-serif;
       font-weight: 700;
-      line-height: 1.2em;
-      font-size: 2.4em;
-      margin-top: 1em;
-      margin-bottom: 0.5em;
+      line-height: 1.5em;
+      font-size: 1.8rem;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
       color: $titulo;
     }
 
     h6 {
       //font-family: "Nunito", sans-serif;
       font-weight: 700;
-      line-height: 1.2em;
-      font-size: 2em;
-      margin-top: 1em;
-      margin-bottom: 0.5em;
+      line-height: 1.5em;
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
       color: $titulo;
     }
 
     text {
       //font-family: "Nunito", sans-serif;
       font-weight: 400;
-      line-height: 1.8em;
       color: $titulo;
       float: center;
-      line-height: 1.6em;
+      line-height: 1.5em;
     }
 
     p {
       //font-family: 'Nunito', sans-serif;
       font-weight: 400;
-      font-size: 1.8em;
+      font-size: 1.1rem;
       color: $base-text;
-      line-height: 1.8em;
+      line-height: 1.5em;
     }
     strong {
       font-family: "Comic Neue", sans-serif;
@@ -780,29 +792,29 @@ li {
       margin: 0 auto;
     }
     figcaption {
-      font-size: 1.6em;
+      font-size: 1.6rem;
       text-align: center;
       padding: 6px;
       color: $base-text;
     }
     q {
-      font-size: 1.8em;
+      font-size: 1.1rem;
     }
     blockquote {
-      font-size: 1.8em;
-      line-height: 1.8em;
+      font-size: 1.1rem;
+      line-height: 1.5em;
       font-style: normal;
       border-left: 4px solid $main;
       border-radius: 4px;
       padding-left: 16px;
       color: $citacao;
       p {
-        font-size: 1em;
+        font-size: 1rem;
         color: $base-text;
       }
     }
     cite {
-      font-size: 1.8em;
+      font-size: 1.1rem;
       font-style: normal;
       font-weight: 400;
       color: $base-text;
@@ -814,7 +826,7 @@ li {
       }
     }
     address {
-      font-size: 1.8em;
+      font-size: 1.1rem;
     }
     abbr {
       color: inherit;
@@ -829,7 +841,7 @@ li {
       border-radius: 8px;
     }
     br {
-      line-height: 2.4em;
+      line-height: 1.7em;
     }
     ul {
       color: $base-text;
@@ -854,11 +866,11 @@ li {
     figcaption {
       margin-top: 8px;
       padding-top: 0;
-      font-size: 1.6em;
+      font-size: 1.6rem;
       color: $base-text;
     }
     span {
-      font-size: 1.8em;
+      font-size: 1.1rem;
       color: $main;
       margin-bottom: 16px !important;
     }
@@ -869,7 +881,7 @@ li {
     align-content: left;
     width: 840px;
     margin: 0 auto;
-    font-size: 1.8em;
+    font-size: 1.1rem;
     font-weight: 700;
 
     p {
@@ -906,24 +918,24 @@ li {
 
 .modal-title {
   color: $main;
-  font-size: 2.4em;
+  font-size: 1.8rem;
   //font-family: "Nunito", sans-serif;
   font-weight: 700;
 }
 
 .modal-body {
   label {
-    font-size: 1.4em;
+    font-size: 1.4rem;
     margin-bottom: 2px;
   }
 
   p {
-    font-size: 1.8em;
+    font-size: 1.1rem;
     color: $main;
   }
 
   h5 {
-    font-size: 2.4em;
+    font-size: 1.8rem;
     font-weight: 700;
     //font-family: "Nunito", sans-serif;
     color: $main;
@@ -963,8 +975,8 @@ input[type="color"]:focus,
       h1 {
         font-size: 1em !important;
       }
-      font-size: 2.8em;
-      margin-top: calc(-240px + 100vh - 44vh);
+      font-size: 2rem;
+      margin-top: calc(-180px + 100vh - 44vh);
     }
     &__check-more {
       position: relative;
@@ -997,7 +1009,7 @@ input[type="color"]:focus,
       margin-top: 24px;
 
       h2 {
-        line-height: 1.4em;
+        line-height: 1.5em;
         text-align: left;
         font-weight: 700;
         padding-bottom: 16px;
@@ -1009,7 +1021,7 @@ input[type="color"]:focus,
     }
 
     &__bar {
-      height: 1440px;
+      height: 1480px;
     }
 
     &__summary {
@@ -1114,22 +1126,22 @@ input[type="color"]:focus,
   .article-page {
     margin-top: -76vh;
     h1 {
-      font-size: 4em;
+      font-size: 2.8rem;
     }
     h2 {
-      font-size: 3.2em;
+      font-size: 2.2rem;
     }
     h3 {
-      font-size: 2.8em;
+      font-size: 2rem;
     }
     h4 {
-      font-size: 2.4em;
+      font-size: 1.8rem;
     }
     h5 {
-      font-size: 2.2em;
+      font-size: 1.5rem;
     }
     h6 {
-      font-size: 2em;
+      font-size: 1.3rem;
     }
   }
 }
