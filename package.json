@@ -1,39 +1,40 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "kevinnicolasbq's portfolio",
+  "description": "euKevinQuintino's portfolio",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kevinnicolasbq/portfolio.git"
+    "url": "git+https://github.com/euKevinQuintino/portfolio.git"
   },
   "keywords": [
     "kevin",
     "quintino",
-    "kevinnicolasbq",
+    "euKevinQuintino",
     "knbq"
   ],
-  "author": "Kevin Quintino (@kevinnicolasbq)",
+  "author": "Kevin Quintino (@euKevinQuintino)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kevinnicolasbq/portfolio/issues"
+    "url": "https://github.com/euKevinQuintino/portfolio/issues"
   },
-  "homepage": "https://github.com/kevinnicolasbq/portfolio#readme",
+  "homepage": "https://github.com/euKevinQuintino/portfolio#readme",
   "dependencies": {
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-cli": "^2.3.0",
     "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-pug": "^4.0.1",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-pug": "^5.0.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.1.0",
+    "gulp-sass": "^5.0.0",
     "gulp-terser-js": "^5.2.2",
     "gulp-uglify": "^3.0.2",
-    "node-sass": "^4.14.1",
+    "node-sass": "^6.0.1",
+    "sass": "^1.44.0",
     "terser": "^4.8.0"
   }
 }
