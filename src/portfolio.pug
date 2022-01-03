@@ -7,7 +7,7 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
   body
     noscript
       iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-TKD49SL" height='0' width='0' style='display:none; visibility:hidden')
-    section#sectionOne.above-the-fold
+    section#topo.above-the-fold
       header.above-the-fold__top
         a(href="https://eu.kevinquintino.com/" style="float: left;" data-toggle="tooltip" title="minha logo (clicar levará para a página inicial)" aria-hidden="true")
           img(src="img/logo.svg" alt="" aria-hidden="true")
@@ -20,7 +20,7 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
         span #[strong data:] início em 2020, atualizado constantemente.
         p(style="margin-top: 16px") 
         h2 definindo o público-alvo 
-        p Sendo um portfólio, #[strong defini recrutadores, gestores e outros designers como público-alvo]. Então, a partir de uma pesquisa para os conhecer melhor, defini elementos-chave (informações) que o site precisaria conter para atender às necessidades e expectativas de seu público-alvo.
+        p Sendo um portfólio, #[mark defini recrutadores, gestores e outros designers como público-alvo]. Então, a partir de uma pesquisa para os conhecer melhor, defini elementos-chave (informações) que o site precisaria conter para atender às necessidades e expectativas de seu público-alvo.
         p Elementos-chave definidos:
         ul 
           li Quem sou eu, o que eu faço e onde moro;
@@ -33,7 +33,7 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
         p 
         h2 definindo a tipografia 
         p Considero a tipografia um dos elementos mais importantes de um site, principalmente portófilos, os quais costumam ter muito conteúdo textual.
-        p Sendo assim, #[strong considerei alguns critérios para a definição da tipografia]:
+        p Sendo assim, #[mark considerei alguns critérios para a definição da tipografia]:
         ul 
           li Tamanho satisfatório para atender as necessidades de deficientes visuais;
           li ser uma fonte projetada para a web (web font), visando desempenho e compatibilidade;
@@ -41,10 +41,10 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
           li representar minha personalidade.
         p Após pesquisas, encontrei a família de fontes #[a.link(href="http://comicneue.com/" target="_blank" rel="noopener noreferrer" translate="no" data-toggle="tooltip" title="saber mais sobre a Comic Neue" lang="en") Comic Neue]. Ela é uma reinterpretação da famigerada #[a.link(href="https://en.wikipedia.org/wiki/Comic_Sans" target="_blank" rel="noopener noreferrer" translate="no" data-toggle="tooltip" title="saber mais sobre a Comic Sans" lang="en") Comic Sans]. 
         p Ela foi projetada visando resolver os problemas da Comic Sans, mantendo sua essência cômica, irregular e casual, que inclusive é considerada boa para pessoas com dislexia. 
-        p Além de se assemelhar à minha caligrafia, eu sou um grande fã de quadrinhos, #[strong por isso ela me conquistou e a defini a família de fontes do site].
-        p Ainda mais, #[strong para potencializar a transmissão desta sensação casual e auxiliar na legibilidade,  aderi ao #[a.link(href="https://www.thecut.com/2019/02/reasons-to-type-in-lowercase.html" target="_blank" rel="noopener noreferrer" translate="no" data-toggle="tooltip" title="saber mais sobre lowercase-only" lang="en") lowercase-only]], exceto em siglas ou textos longos (como este).
+        p Além de se assemelhar à minha caligrafia, eu sou um grande fã de quadrinhos, #[mark por isso ela me conquistou e a defini a família de fontes do site].
+        p Ainda mais, #[mark para potencializar a transmissão desta sensação casual e auxiliar na legibilidade,  aderi ao #[a.link(href="https://www.thecut.com/2019/02/reasons-to-type-in-lowercase.html" target="_blank" rel="noopener noreferrer" translate="no" data-toggle="tooltip" title="saber mais sobre lowercase-only" lang="en") lowercase-only]], exceto em siglas ou textos longos (como este).
         h2 definindo a paleta de cores 
-        p Inegavelmente, #[strong cores são poderosos transmissores de sensações e significados]. Desde o começo desejei uma paleta de cores pequena.
+        p Inegavelmente, #[mark cores são poderosos transmissores de sensações e significados]. Desde o começo desejei uma paleta de cores pequena.
         h3 cor principal 
         p por sorte, minha cor favorita (o cinza ardósia escuro #[text(style="background-color: #2f4f4f; color #2f4f4f;border-radius: 6px; border: 1px solid #2f4f4f;") &nbsp&nbsp&nbsp]):
         ul 
@@ -76,7 +76,7 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
               li(style="font-size: 1em;") quando o fundo é branco: #555555 #[text(style="background-color: #555; color #555;border-radius: 6px; border: 1px solid #2f4f4f;") &nbsp&nbsp&nbsp]
               li(style="font-size: 1em;") quando o fundo é escuro: #ffffff #[text(style="background-color: #fff; color #fff;border-radius: 6px; border: 1px solid #2f4f4f;") &nbsp&nbsp&nbsp]
         h2 definindo o tom de voz
-          p Definir o tom de voz do meu site foi fácil. Afinal, #[strong o único tom de voz que plausível seria o meu tom de voz].
+          p Definir o tom de voz do meu site foi fácil. Afinal, #[mark o único tom de voz que plausível seria o meu tom de voz].
           p Sendo assim, 
         h2 apresentando-me
           p A etapa que mais exigiu das minhas habilidades de autoconhecimento e empatia, pois precisei combinar a minha percepção sobre mim com a percepção que outras pessoas disseram ter sobre mim.
@@ -88,10 +88,5 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
             span(class="material-icons-round" aria-hidden="true" style="font-size: 1em;") arrow_back
             |  voltar para a página inicial 
     .back-to-top(style="display: none;")
-        span(class="material-icons-round" title="voltar ao topo" onclick="ScrollTo('sectionOne'); return false;" aria-hidden="true" style="font-size: 6.4em") expand_less
+        span(class="material-icons-round" title="voltar ao topo" onclick="RolarPara('topo'); return false;" aria-hidden="true" style="font-size: 6.4em") expand_less
     include includes/footer
-    script.
-      $(".fa-chevron-down").removeClass("link");
-      $(document).ready(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-      });

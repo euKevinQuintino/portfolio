@@ -40,17 +40,31 @@ button {
 
 mark {
   padding: 0px 3.2px;
-  box-shadow: rgba(47, 79, 79, 0.24) 1px 1px;
   -webkit-print-color-adjust: exact;
-  background-color: #ffe383;
   color: inherit;
   font-style: inherit;
   border-radius: 4px/96px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  background-color: #fff;
+  //background-size: 200%;
+  background-position: 0 0;
+  display: inline;
+  transition: 0.4s ease-in-out;
   /*background-color: $link-alternative;
   padding: 0;
   color: $main;*/
+}
+
+.highlight {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 227, 131, 1) 50%
+  );
+  background-size: 200%;
+  background-position: -100% 0;
+  box-shadow: rgba(47, 79, 79, 0.24) 1px 1px;
 }
 
 strong {

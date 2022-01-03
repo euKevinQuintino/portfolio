@@ -37,32 +37,3 @@ window.addEventListener('scroll', function() {
     }, 1000);
 	}
 });*/
-
-function toHome() {
-  window.location.reload();
-}
-
-var AlternaRetornarAoTopo = function () {
-  if (window.scrollY <= 69) {
-    document.querySelector(".back-to-top").style.display = "none";
-  } else {
-    document.querySelector(".back-to-top").style.display = "block";
-  }
-};
-window.addEventListener("scroll", AlternaRetornarAoTopo);
-
-function RolarPara(id) {
-  document.getElementById(id).scrollIntoView(true);
-}
-
-function MostrarMais(secao) {
-  if (secao == 'certificados') {
-    document.querySelector(".under-the-fold__achievements__certifications").style.maxHeight = "100%";
-    document.querySelector(".under-the-fold__achievements__books").style.marginTop = "0px";
-    document.querySelector("#mostrarMaisCertificados").style.display = "none";
-  }
-  if (secao == 'livros') {
-    document.querySelector(".under-the-fold__achievements__books").style.maxHeight = "100%";
-    document.querySelector("#mostrarMaisLivros").style.display = "none";
-  }
-}

@@ -14,7 +14,7 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
           h1(data-toggle="tooltip" title="este é meu nome :v").above-the-fold__top__name kevin quintino
           a.link(onclick="RolarPara('contato'); return false;" data-toggle="tooltip" title="fale comigo") entrar em contato
         .above-the-fold__message
-          h2 oi, eu sou o #[mark(data-toggle="tooltip" title="meu nome :v" translate="no") kevin], eu projeto experiências significativas e memoráveis
+          h2 oi, eu sou o #[mark.mark(data-toggle="tooltip" title="meu nome :v" translate="no") kevin], eu projeto experiências significativas e memoráveis
         .above-the-fold__check-more
           a.link(href="#" onclick="RolarPara('motivacoes'); return false;" data-toggle="tooltip" title="descer para a próxima seção") saiba mais sobre mim #[br]
           span(class="material-icons-round" aria-hidden="true") expand_more
@@ -44,11 +44,11 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
               label.under-the-fold__resume__hobbies__hobby youtube 
               label.under-the-fold__resume__hobbies__hobby psicologia
               label.under-the-fold__resume__hobbies__hobby livros
+              label.under-the-fold__resume__hobbies__hobby criptomoedas
               label.under-the-fold__resume__hobbies__hobby séries/filmes
               label.under-the-fold__resume__hobbies__hobby vôlei
               label.under-the-fold__resume__hobbies__hobby programação
               label.under-the-fold__resume__hobbies__hobby computadores
-              label.under-the-fold__resume__hobbies__hobby conhecimento
               label.under-the-fold__resume__hobbies__hobby fotografia
               label.under-the-fold__resume__hobbies__hobby museus/exposições
         .container-lg.col-md-12.under-the-fold__summary
@@ -123,6 +123,7 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
               div
                 a.link(href="http://www.fatecsp.br/index.php?c=ti_new" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar a página do curso" aria-label="acessar página do curso") análise e desenvolvimento de sistemas#[span(class="material-icons-round" aria-hidden="true") launch]
                 p #[strong fatec são paulo] - tecnólogo
+                a.link(href="" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar trabalho de conclusão de curso" aria-label="acessar trabalho de conclusão do curso") visualizar TCC
             .col-md-6.under-the-fold__achievements__graduations__item(style="float: right;")
               div(style="float: left;")
                 img(src="./img/covers/calarts-logo.svg" alt="" width="64" height="64")
@@ -233,15 +234,21 @@ html(lang="pt-br" xmlns="http://www.w3.org/1999/xhtml")
                 p(aria-label="autor" lang="en" translate="no") ryan holiday
             .col-md-4.under-the-fold__achievements__books__item(style="float: left;")
               div(style="float: left;")
+                img(src="./img/covers/steal-like-an-artist-cover.jpg" alt="capa do livro Steal Like An Artist" width="100" height="150" loading="lazy") 
+              div
+                a.link(href="https://www.amazon.com.br/dp/B0074QGGK6/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar e-book na amazon" aria-label="acessar e-book ego is the enemy" lang="en" translate="no") steal like an artist#[span(class="material-icons-round" aria-hidden="true") launch]
+                p(aria-label="autor" lang="en" translate="no") austin kleon
+            .col-md-4.under-the-fold__achievements__books__item(style="float: left;")
+              div(style="float: left;")
                 img(src="./img/covers/lean-ux-cover.jpg" alt="capa do livro Lean UX" width="100" height="150" loading="lazy") 
               div
-                a.link(href="https://www.amazon.com.br/Lean-UX-Designing-Products-English-ebook/dp/B01LYGQ6CH/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar e-book na amazon" aria-label="acessar e-book lean UX" lang="en" translate="no") lean UX#[span(class="material-icons-round" aria-hidden="true") launch]
+                a.link(href="https://www.amazon.com.br/dp/1491953608/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar e-book na amazon" aria-label="acessar e-book lean UX" lang="en" translate="no") lean UX#[span(class="material-icons-round" aria-hidden="true") launch]
                 p(aria-label="autores" lang="en" translate="no") jeff gothelf e josh seiden
             .col-md-4.under-the-fold__achievements__books__item(style="float: left;")
               div(style="float: left;")
                 img(src="./img/covers/made-to-stick-cover.jpg" alt="capa do livro Made to Stick" width="100" height="150" loading="lazy") 
               div
-                a.link(href="https://www.amazon.com.br/Made-Stick-Survive-Others-English-ebook/dp/B000N2HCKQ/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar e-book na amazon" aria-label="acessar e-book made to stick" lang="en" translate="no") made to stick#[span(class="material-icons-round" aria-hidden="true") launch]
+                a.link(href="https://www.amazon.com.br/dp/B000N2HCKQ/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="visualizar e-book na amazon" aria-label="acessar e-book made to stick" lang="en" translate="no") made to stick#[span(class="material-icons-round" aria-hidden="true") launch]
                 p(aria-label="autores" lang="en" translate="no") chip heath e dan heath
             .col-md-4.under-the-fold__achievements__books__item(style="float: left;")
               div(style="float: left;")
